@@ -1,0 +1,17 @@
+L'interaction avec l'interface avec deux bouton pour valider ou annuler une action et un rouleau pour déflier les menus ne sont pas les meilleures facon de le faire.
+
+Les premières intruction tant au-dessus des boutons que sur l'écran sont en francais avant le choix de la langue par l'tilisateur. L'anglais en plus n'aurait pas été un luxe.
+
+lors du premier choix entre le rechargement du Pass navigo ou l'achat de billet, le défilement commence en plein milieu de l'écran.
+
+Toutes les langues sont Affichés en bas de l'écran mais aucunes indication de la langue en cours d'utilisation.
+
+L'affichage ne s'adapte pas selon le nombre d'éléments à l'image.
+
+Toute la bande de gauche sert uniquement à l'affichage de la réservation en cours alors qu'elle ne prend qu'un tiers de la dites bandes.
+
+La fente où insérer les pièces est bien trop de l'écran et des boutons.
+
+Le support pour les sacs est trop bas.
+
+
