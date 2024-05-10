@@ -1,0 +1,12 @@
+D:\P_UX-ACD\P_UX-ACD-EgalAhmeOmar\obj\Debug\P_UX-ACD-EgalAhmeOmar.csproj.AssemblyReference.cache
+D:\P_UX-ACD\P_UX-ACD-EgalAhmeOmar\obj\Debug\P_UX_ACD_EgalAhmeOmar.Properties.Resources.resources
+D:\P_UX-ACD\P_UX-ACD-EgalAhmeOmar\obj\Debug\P_UX_ACD_EgalAhmeOmar.View.resources
+D:\P_UX-ACD\P_UX-ACD-EgalAhmeOmar\obj\Debug\P_UX-ACD-EgalAhmeOmar.csproj.GenerateResource.cache
+D:\P_UX-ACD\P_UX-ACD-EgalAhmeOmar\obj\Debug\P_UX-ACD-EgalAhmeOmar.csproj.CoreCompileInputs.cache
+D:\P_UX-ACD\P_UX-ACD-EgalAhmeOmar\bin\Debug\P_UX-ACD-EgalAhmeOmar.exe.config
+D:\P_UX-ACD\P_UX-ACD-EgalAhmeOmar\bin\Debug\P_UX-ACD-EgalAhmeOmar.exe
+D:\P_UX-ACD\P_UX-ACD-EgalAhmeOmar\bin\Debug\P_UX-ACD-EgalAhmeOmar.pdb
+D:\P_UX-ACD\P_UX-ACD-EgalAhmeOmar\obj\Debug\P_UX-ACD-EgalAhmeOmar.exe
+D:\P_UX-ACD\P_UX-ACD-EgalAhmeOmar\obj\Debug\P_UX-ACD-EgalAhmeOmar.pdb
+D:\P_UX-ACD\P_UX-ACD-EgalAhmeOmar\obj\Debug\P_UX_ACD_EgalAhmeOmar.Views.View2.resources
+D:\P_UX-ACD\P_UX-ACD-EgalAhmeOmar\obj\Debug\P_UX_ACD_EgalAhmeOmar.Views.View3.resources
