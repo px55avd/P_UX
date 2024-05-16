@@ -30,15 +30,15 @@
         {
             this.lblSelectlangages = new System.Windows.Forms.Label();
             this.pnlSelectlanguages = new System.Windows.Forms.Panel();
-            this.lblPasstoFrench = new System.Windows.Forms.Label();
-            this.btnEnglishinFirstpage = new System.Windows.Forms.Button();
-            this.btnSpanishinFirstpage = new System.Windows.Forms.Button();
-            this.btnDeutshinFirstpage = new System.Windows.Forms.Button();
-            this.btnItalianinFirstpage = new System.Windows.Forms.Button();
-            this.lblEnglishLangage = new System.Windows.Forms.Label();
-            this.lblDeutshlangage = new System.Windows.Forms.Label();
-            this.lblSpanishlangage = new System.Windows.Forms.Label();
             this.lblItalianlangage = new System.Windows.Forms.Label();
+            this.lblSpanishlangage = new System.Windows.Forms.Label();
+            this.lblDeutshlangage = new System.Windows.Forms.Label();
+            this.lblEnglishLangage = new System.Windows.Forms.Label();
+            this.btnItalianinFirstpage = new System.Windows.Forms.Button();
+            this.btnDeutshinFirstpage = new System.Windows.Forms.Button();
+            this.btnSpanishinFirstpage = new System.Windows.Forms.Button();
+            this.btnEnglishinFirstpage = new System.Windows.Forms.Button();
+            this.lblPasstoFrench = new System.Windows.Forms.Label();
             this.pnlSelectlanguages.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,68 +66,14 @@
             this.pnlSelectlanguages.Size = new System.Drawing.Size(776, 378);
             this.pnlSelectlanguages.TabIndex = 1;
             // 
-            // lblPasstoFrench
+            // lblItalianlangage
             // 
-            this.lblPasstoFrench.AutoSize = true;
-            this.lblPasstoFrench.Location = new System.Drawing.Point(621, 31);
-            this.lblPasstoFrench.Name = "lblPasstoFrench";
-            this.lblPasstoFrench.Size = new System.Drawing.Size(167, 13);
-            this.lblPasstoFrench.TabIndex = 2;
-            this.lblPasstoFrench.Text = "Passer Vous êtes déjâ en français";
-            // 
-            // btnEnglishinFirstpage
-            // 
-            this.btnEnglishinFirstpage.Location = new System.Drawing.Point(40, 49);
-            this.btnEnglishinFirstpage.Name = "btnEnglishinFirstpage";
-            this.btnEnglishinFirstpage.Size = new System.Drawing.Size(203, 92);
-            this.btnEnglishinFirstpage.TabIndex = 0;
-            this.btnEnglishinFirstpage.Text = "English";
-            this.btnEnglishinFirstpage.UseVisualStyleBackColor = true;
-            // 
-            // btnSpanishinFirstpage
-            // 
-            this.btnSpanishinFirstpage.Location = new System.Drawing.Point(40, 226);
-            this.btnSpanishinFirstpage.Name = "btnSpanishinFirstpage";
-            this.btnSpanishinFirstpage.Size = new System.Drawing.Size(203, 92);
-            this.btnSpanishinFirstpage.TabIndex = 1;
-            this.btnSpanishinFirstpage.Text = "Español";
-            this.btnSpanishinFirstpage.UseVisualStyleBackColor = true;
-            // 
-            // btnDeutshinFirstpage
-            // 
-            this.btnDeutshinFirstpage.Location = new System.Drawing.Point(401, 49);
-            this.btnDeutshinFirstpage.Name = "btnDeutshinFirstpage";
-            this.btnDeutshinFirstpage.Size = new System.Drawing.Size(203, 92);
-            this.btnDeutshinFirstpage.TabIndex = 2;
-            this.btnDeutshinFirstpage.Text = "Deutsch";
-            this.btnDeutshinFirstpage.UseVisualStyleBackColor = true;
-            // 
-            // btnItalianinFirstpage
-            // 
-            this.btnItalianinFirstpage.Location = new System.Drawing.Point(401, 226);
-            this.btnItalianinFirstpage.Name = "btnItalianinFirstpage";
-            this.btnItalianinFirstpage.Size = new System.Drawing.Size(203, 92);
-            this.btnItalianinFirstpage.TabIndex = 3;
-            this.btnItalianinFirstpage.Text = "Italino";
-            this.btnItalianinFirstpage.UseVisualStyleBackColor = true;
-            // 
-            // lblEnglishLangage
-            // 
-            this.lblEnglishLangage.AutoSize = true;
-            this.lblEnglishLangage.Location = new System.Drawing.Point(249, 89);
-            this.lblEnglishLangage.Name = "lblEnglishLangage";
-            this.lblEnglishLangage.Size = new System.Drawing.Size(41, 13);
-            this.lblEnglishLangage.TabIndex = 4;
-            this.lblEnglishLangage.Text = "English";
-            // 
-            // lblDeutshlangage
-            // 
-            this.lblDeutshlangage.AutoSize = true;
-            this.lblDeutshlangage.Location = new System.Drawing.Point(610, 89);
-            this.lblDeutshlangage.Name = "lblDeutshlangage";
-            this.lblDeutshlangage.Size = new System.Drawing.Size(47, 13);
-            this.lblDeutshlangage.TabIndex = 5;
-            this.lblDeutshlangage.Text = "Deutsch";
+            this.lblItalianlangage.AutoSize = true;
+            this.lblItalianlangage.Location = new System.Drawing.Point(610, 266);
+            this.lblItalianlangage.Name = "lblItalianlangage";
+            this.lblItalianlangage.Size = new System.Drawing.Size(41, 13);
+            this.lblItalianlangage.TabIndex = 7;
+            this.lblItalianlangage.Text = "Italiano";
             // 
             // lblSpanishlangage
             // 
@@ -138,14 +84,72 @@
             this.lblSpanishlangage.TabIndex = 6;
             this.lblSpanishlangage.Text = "Español";
             // 
-            // lblItalianlangage
+            // lblDeutshlangage
             // 
-            this.lblItalianlangage.AutoSize = true;
-            this.lblItalianlangage.Location = new System.Drawing.Point(610, 266);
-            this.lblItalianlangage.Name = "lblItalianlangage";
-            this.lblItalianlangage.Size = new System.Drawing.Size(41, 13);
-            this.lblItalianlangage.TabIndex = 7;
-            this.lblItalianlangage.Text = "Italiano";
+            this.lblDeutshlangage.AutoSize = true;
+            this.lblDeutshlangage.Location = new System.Drawing.Point(610, 89);
+            this.lblDeutshlangage.Name = "lblDeutshlangage";
+            this.lblDeutshlangage.Size = new System.Drawing.Size(47, 13);
+            this.lblDeutshlangage.TabIndex = 5;
+            this.lblDeutshlangage.Text = "Deutsch";
+            // 
+            // lblEnglishLangage
+            // 
+            this.lblEnglishLangage.AutoSize = true;
+            this.lblEnglishLangage.Location = new System.Drawing.Point(249, 89);
+            this.lblEnglishLangage.Name = "lblEnglishLangage";
+            this.lblEnglishLangage.Size = new System.Drawing.Size(41, 13);
+            this.lblEnglishLangage.TabIndex = 4;
+            this.lblEnglishLangage.Text = "English";
+            // 
+            // btnItalianinFirstpage
+            // 
+            this.btnItalianinFirstpage.Location = new System.Drawing.Point(401, 226);
+            this.btnItalianinFirstpage.Name = "btnItalianinFirstpage";
+            this.btnItalianinFirstpage.Size = new System.Drawing.Size(203, 92);
+            this.btnItalianinFirstpage.TabIndex = 3;
+            this.btnItalianinFirstpage.Text = "Italino";
+            this.btnItalianinFirstpage.UseVisualStyleBackColor = true;
+            this.btnItalianinFirstpage.Click += new System.EventHandler(this.btnItalianinFirstpage_Click);
+            // 
+            // btnDeutshinFirstpage
+            // 
+            this.btnDeutshinFirstpage.Location = new System.Drawing.Point(401, 49);
+            this.btnDeutshinFirstpage.Name = "btnDeutshinFirstpage";
+            this.btnDeutshinFirstpage.Size = new System.Drawing.Size(203, 92);
+            this.btnDeutshinFirstpage.TabIndex = 2;
+            this.btnDeutshinFirstpage.Text = "Deutsch";
+            this.btnDeutshinFirstpage.UseVisualStyleBackColor = true;
+            this.btnDeutshinFirstpage.Click += new System.EventHandler(this.btnDeutshinFirstpage_Click);
+            // 
+            // btnSpanishinFirstpage
+            // 
+            this.btnSpanishinFirstpage.Location = new System.Drawing.Point(40, 226);
+            this.btnSpanishinFirstpage.Name = "btnSpanishinFirstpage";
+            this.btnSpanishinFirstpage.Size = new System.Drawing.Size(203, 92);
+            this.btnSpanishinFirstpage.TabIndex = 1;
+            this.btnSpanishinFirstpage.Text = "Español";
+            this.btnSpanishinFirstpage.UseVisualStyleBackColor = true;
+            this.btnSpanishinFirstpage.Click += new System.EventHandler(this.btnSpanishinFirstpage_Click);
+            // 
+            // btnEnglishinFirstpage
+            // 
+            this.btnEnglishinFirstpage.Location = new System.Drawing.Point(40, 49);
+            this.btnEnglishinFirstpage.Name = "btnEnglishinFirstpage";
+            this.btnEnglishinFirstpage.Size = new System.Drawing.Size(203, 92);
+            this.btnEnglishinFirstpage.TabIndex = 0;
+            this.btnEnglishinFirstpage.Text = "English";
+            this.btnEnglishinFirstpage.UseVisualStyleBackColor = true;
+            this.btnEnglishinFirstpage.Click += new System.EventHandler(this.btnEnglishinFirstpage_Click);
+            // 
+            // lblPasstoFrench
+            // 
+            this.lblPasstoFrench.AutoSize = true;
+            this.lblPasstoFrench.Location = new System.Drawing.Point(621, 31);
+            this.lblPasstoFrench.Name = "lblPasstoFrench";
+            this.lblPasstoFrench.Size = new System.Drawing.Size(167, 13);
+            this.lblPasstoFrench.TabIndex = 2;
+            this.lblPasstoFrench.Text = "Passer Vous êtes déjâ en français";
             // 
             // View
             // 

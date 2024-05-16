@@ -1,5 +1,4 @@
-﻿using P_UX_ACD_EgalAhmeOmar.Controller;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace P_UX_ACD_EgalAhmeOmar
+namespace P_UX_ACD_EgalAhmeOmar.Views
 {
-    public partial class View : Form
+    public partial class ViewselectSpecialtickets : Form
     {
-        public View()
+        public ViewselectSpecialtickets()
         {
             InitializeComponent();
         }
@@ -28,10 +27,9 @@ namespace P_UX_ACD_EgalAhmeOmar
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void btnEnglishinFirstpage_Click(object sender, EventArgs e)
+        private void btnBackinHeader_Click(object sender, EventArgs e)
         {
-            //
-            Controller.ShowViewselectNavigoOrnot();
+            Controller.ShowViewselectSpecialorNormalticketstoViewselectSpecialticket();
         }
 
         /// <summary>
@@ -39,10 +37,10 @@ namespace P_UX_ACD_EgalAhmeOmar
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void btnDeutshinFirstpage_Click(object sender, EventArgs e)
+        private void btnChessydisneyTicket_Click(object sender, EventArgs e)
         {
             //
-            Controller.ShowViewselectNavigoOrnot();
+            Controller.ShowViewSpecialticketChoices();
         }
 
         /// <summary>
@@ -50,10 +48,10 @@ namespace P_UX_ACD_EgalAhmeOmar
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void btnSpanishinFirstpage_Click(object sender, EventArgs e)
+        private void btnParisvisite_Click(object sender, EventArgs e)
         {
             //
-            Controller.ShowViewselectNavigoOrnot();
+            Controller.ShowViewSpecialticketChoices();
         }
 
         /// <summary>
@@ -61,10 +59,10 @@ namespace P_UX_ACD_EgalAhmeOmar
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void btnItalianinFirstpage_Click(object sender, EventArgs e)
+        private void btnAirportticket_Click(object sender, EventArgs e)
         {
             //
-            Controller.ShowViewselectNavigoOrnot();
+            Controller.ShowViewSpecialticketChoices();
         }
     }
 }

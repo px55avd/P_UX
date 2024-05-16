@@ -1,6 +1,6 @@
 ﻿namespace P_UX_ACD_EgalAhmeOmar.Views
 {
-    partial class View2
+    partial class ViewselectNavigoorNot
     {
         /// <summary>
         /// Required designer variable.
@@ -30,8 +30,8 @@
         {
             this.btnBack = new System.Windows.Forms.Button();
             this.pnlSelectnavigoOrnot = new System.Windows.Forms.Panel();
+            this.btnDonthaveNavigo = new System.Windows.Forms.Button();
             this.btnPlacenavigoPass = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.pnlSelectnavigoOrnot.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -43,15 +43,26 @@
             this.btnBack.TabIndex = 0;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // pnlSelectnavigoOrnot
             // 
-            this.pnlSelectnavigoOrnot.Controls.Add(this.button2);
+            this.pnlSelectnavigoOrnot.Controls.Add(this.btnDonthaveNavigo);
             this.pnlSelectnavigoOrnot.Controls.Add(this.btnPlacenavigoPass);
             this.pnlSelectnavigoOrnot.Location = new System.Drawing.Point(12, 92);
             this.pnlSelectnavigoOrnot.Name = "pnlSelectnavigoOrnot";
             this.pnlSelectnavigoOrnot.Size = new System.Drawing.Size(776, 345);
             this.pnlSelectnavigoOrnot.TabIndex = 1;
+            // 
+            // btnDonthaveNavigo
+            // 
+            this.btnDonthaveNavigo.Location = new System.Drawing.Point(422, 31);
+            this.btnDonthaveNavigo.Name = "btnDonthaveNavigo";
+            this.btnDonthaveNavigo.Size = new System.Drawing.Size(342, 281);
+            this.btnDonthaveNavigo.TabIndex = 1;
+            this.btnDonthaveNavigo.Text = "Vous n\'avez de Carte Navigo, Appuyer ici";
+            this.btnDonthaveNavigo.UseVisualStyleBackColor = true;
+            this.btnDonthaveNavigo.Click += new System.EventHandler(this.btnDonthaveNavigo_Click);
             // 
             // btnPlacenavigoPass
             // 
@@ -62,23 +73,14 @@
             this.btnPlacenavigoPass.Text = "Déposer votre carte Navigo";
             this.btnPlacenavigoPass.UseVisualStyleBackColor = true;
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(422, 31);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(342, 281);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Vous n\'avez de Carte Navigo, Appuyer ici";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // View2
+            // ViewselectNavigoorNot
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.pnlSelectnavigoOrnot);
             this.Controls.Add(this.btnBack);
-            this.Name = "View2";
+            this.Name = "ViewselectNavigoorNot";
             this.Text = "View2";
             this.pnlSelectnavigoOrnot.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -89,7 +91,7 @@
 
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Panel pnlSelectnavigoOrnot;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnDonthaveNavigo;
         private System.Windows.Forms.Button btnPlacenavigoPass;
     }
 }

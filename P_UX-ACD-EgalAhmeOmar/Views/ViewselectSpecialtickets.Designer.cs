@@ -1,6 +1,6 @@
 ﻿namespace P_UX_ACD_EgalAhmeOmar.Views
 {
-    partial class View4
+    partial class ViewselectSpecialtickets
     {
         /// <summary>
         /// Required designer variable.
@@ -41,17 +41,12 @@
             this.pnlCurrentpurchase = new System.Windows.Forms.Panel();
             this.lblTextInside = new System.Windows.Forms.Label();
             this.pnlInfos = new System.Windows.Forms.Panel();
-            this.lblStandardprice = new System.Windows.Forms.Label();
-            this.lblReducedprice = new System.Windows.Forms.Label();
-            this.lblDate = new System.Windows.Forms.Label();
-            this.lblNumberstandardTickets = new System.Windows.Forms.Label();
-            this.lblNumberreducedTickets = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.btnValidatorInfos = new System.Windows.Forms.Button();
-            this.btnUpstandardPrice = new System.Windows.Forms.Button();
-            this.btnDownstandardPrice = new System.Windows.Forms.Button();
-            this.btnUpreducedPrice = new System.Windows.Forms.Button();
-            this.btnDownreducedPrice = new System.Windows.Forms.Button();
+            this.btnAirportticket = new System.Windows.Forms.Button();
+            this.btnParisvisite = new System.Windows.Forms.Button();
+            this.btnChessydisneyTicket = new System.Windows.Forms.Button();
+            this.lblAirportTicket = new System.Windows.Forms.Label();
+            this.lblParisvisiteTicket = new System.Windows.Forms.Label();
+            this.lblChessydisneyTicket = new System.Windows.Forms.Label();
             this.pnlHeader.SuspendLayout();
             this.pnlFooter.SuspendLayout();
             this.pnlCurrentpurchase.SuspendLayout();
@@ -65,7 +60,7 @@
             this.pnlHeader.Location = new System.Drawing.Point(-1, 0);
             this.pnlHeader.Name = "pnlHeader";
             this.pnlHeader.Size = new System.Drawing.Size(692, 61);
-            this.pnlHeader.TabIndex = 6;
+            this.pnlHeader.TabIndex = 10;
             // 
             // lbltextinHeader
             // 
@@ -84,6 +79,7 @@
             this.btnBackinHeader.TabIndex = 4;
             this.btnBackinHeader.Text = "RETOUR";
             this.btnBackinHeader.UseVisualStyleBackColor = true;
+            this.btnBackinHeader.Click += new System.EventHandler(this.btnBackinHeader_Click);
             // 
             // pnlFooter
             // 
@@ -96,7 +92,7 @@
             this.pnlFooter.Location = new System.Drawing.Point(-1, 389);
             this.pnlFooter.Name = "pnlFooter";
             this.pnlFooter.Size = new System.Drawing.Size(802, 61);
-            this.pnlFooter.TabIndex = 7;
+            this.pnlFooter.TabIndex = 11;
             // 
             // btnItalianinFooter
             // 
@@ -158,7 +154,7 @@
             this.pnlCurrentpurchase.Location = new System.Drawing.Point(691, 1);
             this.pnlCurrentpurchase.Name = "pnlCurrentpurchase";
             this.pnlCurrentpurchase.Size = new System.Drawing.Size(109, 388);
-            this.pnlCurrentpurchase.TabIndex = 8;
+            this.pnlCurrentpurchase.TabIndex = 12;
             // 
             // lblTextInside
             // 
@@ -171,120 +167,78 @@
             // 
             // pnlInfos
             // 
-            this.pnlInfos.Controls.Add(this.btnDownreducedPrice);
-            this.pnlInfos.Controls.Add(this.btnUpreducedPrice);
-            this.pnlInfos.Controls.Add(this.btnDownstandardPrice);
-            this.pnlInfos.Controls.Add(this.btnUpstandardPrice);
-            this.pnlInfos.Controls.Add(this.btnValidatorInfos);
-            this.pnlInfos.Controls.Add(this.dateTimePicker1);
-            this.pnlInfos.Controls.Add(this.lblNumberreducedTickets);
-            this.pnlInfos.Controls.Add(this.lblNumberstandardTickets);
-            this.pnlInfos.Controls.Add(this.lblDate);
-            this.pnlInfos.Controls.Add(this.lblReducedprice);
-            this.pnlInfos.Controls.Add(this.lblStandardprice);
+            this.pnlInfos.Controls.Add(this.btnAirportticket);
+            this.pnlInfos.Controls.Add(this.btnParisvisite);
+            this.pnlInfos.Controls.Add(this.btnChessydisneyTicket);
+            this.pnlInfos.Controls.Add(this.lblAirportTicket);
+            this.pnlInfos.Controls.Add(this.lblParisvisiteTicket);
+            this.pnlInfos.Controls.Add(this.lblChessydisneyTicket);
             this.pnlInfos.Location = new System.Drawing.Point(3, 64);
             this.pnlInfos.Name = "pnlInfos";
             this.pnlInfos.Size = new System.Drawing.Size(681, 319);
-            this.pnlInfos.TabIndex = 9;
+            this.pnlInfos.TabIndex = 13;
             // 
-            // lblStandardprice
+            // btnAirportticket
             // 
-            this.lblStandardprice.AutoSize = true;
-            this.lblStandardprice.Location = new System.Drawing.Point(26, 40);
-            this.lblStandardprice.Name = "lblStandardprice";
-            this.lblStandardprice.Size = new System.Drawing.Size(74, 13);
-            this.lblStandardprice.TabIndex = 0;
-            this.lblStandardprice.Text = "Prix standard :";
+            this.btnAirportticket.Location = new System.Drawing.Point(96, 220);
+            this.btnAirportticket.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAirportticket.Name = "btnAirportticket";
+            this.btnAirportticket.Size = new System.Drawing.Size(186, 47);
+            this.btnAirportticket.TabIndex = 5;
+            this.btnAirportticket.Text = "Aéroport ";
+            this.btnAirportticket.UseVisualStyleBackColor = true;
+            this.btnAirportticket.Click += new System.EventHandler(this.btnAirportticket_Click);
             // 
-            // lblReducedprice
+            // btnParisvisite
             // 
-            this.lblReducedprice.AutoSize = true;
-            this.lblReducedprice.Location = new System.Drawing.Point(26, 141);
-            this.lblReducedprice.Name = "lblReducedprice";
-            this.lblReducedprice.Size = new System.Drawing.Size(64, 13);
-            this.lblReducedprice.TabIndex = 1;
-            this.lblReducedprice.Text = "Prix réduits :";
+            this.btnParisvisite.Location = new System.Drawing.Point(96, 126);
+            this.btnParisvisite.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnParisvisite.Name = "btnParisvisite";
+            this.btnParisvisite.Size = new System.Drawing.Size(186, 47);
+            this.btnParisvisite.TabIndex = 4;
+            this.btnParisvisite.Text = "Paris Visite";
+            this.btnParisvisite.UseVisualStyleBackColor = true;
+            this.btnParisvisite.Click += new System.EventHandler(this.btnParisvisite_Click);
             // 
-            // lblDate
+            // btnChessydisneyTicket
             // 
-            this.lblDate.AutoSize = true;
-            this.lblDate.Location = new System.Drawing.Point(26, 222);
-            this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(36, 13);
-            this.lblDate.TabIndex = 2;
-            this.lblDate.Text = "Date :";
+            this.btnChessydisneyTicket.Location = new System.Drawing.Point(96, 23);
+            this.btnChessydisneyTicket.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnChessydisneyTicket.Name = "btnChessydisneyTicket";
+            this.btnChessydisneyTicket.Size = new System.Drawing.Size(186, 47);
+            this.btnChessydisneyTicket.TabIndex = 3;
+            this.btnChessydisneyTicket.Text = "Disneyland Paris";
+            this.btnChessydisneyTicket.UseVisualStyleBackColor = true;
+            this.btnChessydisneyTicket.Click += new System.EventHandler(this.btnChessydisneyTicket_Click);
             // 
-            // lblNumberstandardTickets
+            // lblAirportTicket
             // 
-            this.lblNumberstandardTickets.AutoSize = true;
-            this.lblNumberstandardTickets.Location = new System.Drawing.Point(229, 40);
-            this.lblNumberstandardTickets.Name = "lblNumberstandardTickets";
-            this.lblNumberstandardTickets.Size = new System.Drawing.Size(13, 13);
-            this.lblNumberstandardTickets.TabIndex = 3;
-            this.lblNumberstandardTickets.Text = "0";
+            this.lblAirportTicket.AutoSize = true;
+            this.lblAirportTicket.Location = new System.Drawing.Point(26, 237);
+            this.lblAirportTicket.Name = "lblAirportTicket";
+            this.lblAirportTicket.Size = new System.Drawing.Size(16, 13);
+            this.lblAirportTicket.TabIndex = 2;
+            this.lblAirportTicket.Text = "3.";
             // 
-            // lblNumberreducedTickets
+            // lblParisvisiteTicket
             // 
-            this.lblNumberreducedTickets.AutoSize = true;
-            this.lblNumberreducedTickets.Location = new System.Drawing.Point(229, 141);
-            this.lblNumberreducedTickets.Name = "lblNumberreducedTickets";
-            this.lblNumberreducedTickets.Size = new System.Drawing.Size(13, 13);
-            this.lblNumberreducedTickets.TabIndex = 4;
-            this.lblNumberreducedTickets.Text = "2";
+            this.lblParisvisiteTicket.AutoSize = true;
+            this.lblParisvisiteTicket.Location = new System.Drawing.Point(26, 143);
+            this.lblParisvisiteTicket.Name = "lblParisvisiteTicket";
+            this.lblParisvisiteTicket.Size = new System.Drawing.Size(16, 13);
+            this.lblParisvisiteTicket.TabIndex = 1;
+            this.lblParisvisiteTicket.Text = "2.";
             // 
-            // dateTimePicker1
+            // lblChessydisneyTicket
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(146, 215);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(173, 20);
-            this.dateTimePicker1.TabIndex = 5;
+            this.lblChessydisneyTicket.AutoSize = true;
+            this.lblChessydisneyTicket.Location = new System.Drawing.Point(26, 40);
+            this.lblChessydisneyTicket.Name = "lblChessydisneyTicket";
+            this.lblChessydisneyTicket.Size = new System.Drawing.Size(16, 13);
+            this.lblChessydisneyTicket.TabIndex = 0;
+            this.lblChessydisneyTicket.Text = "1.";
             // 
-            // btnValidatorInfos
-            // 
-            this.btnValidatorInfos.Location = new System.Drawing.Point(514, 261);
-            this.btnValidatorInfos.Name = "btnValidatorInfos";
-            this.btnValidatorInfos.Size = new System.Drawing.Size(167, 55);
-            this.btnValidatorInfos.TabIndex = 6;
-            this.btnValidatorInfos.Text = "VALIDER";
-            this.btnValidatorInfos.UseVisualStyleBackColor = true;
-            // 
-            // btnUpstandardPrice
-            // 
-            this.btnUpstandardPrice.Location = new System.Drawing.Point(248, 13);
-            this.btnUpstandardPrice.Name = "btnUpstandardPrice";
-            this.btnUpstandardPrice.Size = new System.Drawing.Size(29, 26);
-            this.btnUpstandardPrice.TabIndex = 7;
-            this.btnUpstandardPrice.Text = "Up";
-            this.btnUpstandardPrice.UseVisualStyleBackColor = true;
-            // 
-            // btnDownstandardPrice
-            // 
-            this.btnDownstandardPrice.Location = new System.Drawing.Point(248, 45);
-            this.btnDownstandardPrice.Name = "btnDownstandardPrice";
-            this.btnDownstandardPrice.Size = new System.Drawing.Size(29, 26);
-            this.btnDownstandardPrice.TabIndex = 8;
-            this.btnDownstandardPrice.Text = "Down";
-            this.btnDownstandardPrice.UseVisualStyleBackColor = true;
-            // 
-            // btnUpreducedPrice
-            // 
-            this.btnUpreducedPrice.Location = new System.Drawing.Point(248, 115);
-            this.btnUpreducedPrice.Name = "btnUpreducedPrice";
-            this.btnUpreducedPrice.Size = new System.Drawing.Size(29, 26);
-            this.btnUpreducedPrice.TabIndex = 9;
-            this.btnUpreducedPrice.Text = "Up";
-            this.btnUpreducedPrice.UseVisualStyleBackColor = true;
-            // 
-            // btnDownreducedPrice
-            // 
-            this.btnDownreducedPrice.Location = new System.Drawing.Point(248, 147);
-            this.btnDownreducedPrice.Name = "btnDownreducedPrice";
-            this.btnDownreducedPrice.Size = new System.Drawing.Size(29, 26);
-            this.btnDownreducedPrice.TabIndex = 10;
-            this.btnDownreducedPrice.Text = "Down";
-            this.btnDownreducedPrice.UseVisualStyleBackColor = true;
-            // 
-            // View4
+            // ViewselectSpecialtickets
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -293,8 +247,9 @@
             this.Controls.Add(this.pnlFooter);
             this.Controls.Add(this.pnlCurrentpurchase);
             this.Controls.Add(this.pnlInfos);
-            this.Name = "View4";
-            this.Text = "View4";
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Name = "ViewselectSpecialtickets";
+            this.Text = "View5";
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();
             this.pnlFooter.ResumeLayout(false);
@@ -321,16 +276,11 @@
         private System.Windows.Forms.Panel pnlCurrentpurchase;
         private System.Windows.Forms.Label lblTextInside;
         private System.Windows.Forms.Panel pnlInfos;
-        private System.Windows.Forms.Label lblDate;
-        private System.Windows.Forms.Label lblReducedprice;
-        private System.Windows.Forms.Label lblStandardprice;
-        private System.Windows.Forms.Label lblNumberreducedTickets;
-        private System.Windows.Forms.Label lblNumberstandardTickets;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Button btnValidatorInfos;
-        private System.Windows.Forms.Button btnUpstandardPrice;
-        private System.Windows.Forms.Button btnDownreducedPrice;
-        private System.Windows.Forms.Button btnUpreducedPrice;
-        private System.Windows.Forms.Button btnDownstandardPrice;
+        private System.Windows.Forms.Label lblAirportTicket;
+        private System.Windows.Forms.Label lblParisvisiteTicket;
+        private System.Windows.Forms.Label lblChessydisneyTicket;
+        private System.Windows.Forms.Button btnChessydisneyTicket;
+        private System.Windows.Forms.Button btnAirportticket;
+        private System.Windows.Forms.Button btnParisvisite;
     }
 }

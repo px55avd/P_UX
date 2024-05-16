@@ -1,6 +1,6 @@
 ﻿namespace P_UX_ACD_EgalAhmeOmar.Views
 {
-    partial class View3
+    partial class ViewselectPaymentmethod
     {
         /// <summary>
         /// Required designer variable.
@@ -31,8 +31,6 @@
             this.pnlHeader = new System.Windows.Forms.Panel();
             this.lbltextinHeader = new System.Windows.Forms.Label();
             this.btnBackinHeader = new System.Windows.Forms.Button();
-            this.btnBasicTickets = new System.Windows.Forms.Button();
-            this.btnSpecialtickets = new System.Windows.Forms.Button();
             this.pnlFooter = new System.Windows.Forms.Panel();
             this.btnItalianinFooter = new System.Windows.Forms.Button();
             this.btnDeutshinFooter = new System.Windows.Forms.Button();
@@ -43,29 +41,41 @@
             this.pnlCurrentpurchase = new System.Windows.Forms.Panel();
             this.lblTextInside = new System.Windows.Forms.Label();
             this.pnlInfos = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnValidatorgooglePay = new System.Windows.Forms.Button();
+            this.lblTypeofPayement = new System.Windows.Forms.Label();
+            this.pnlAcceptedcoinsAndnotes = new System.Windows.Forms.Panel();
+            this.btnValidatorcoinsAndnotes = new System.Windows.Forms.Button();
+            this.lblAcceptedcoinsAndnotes = new System.Windows.Forms.Label();
+            this.pnlAcceptedbankCards = new System.Windows.Forms.Panel();
+            this.btnValidatorcard = new System.Windows.Forms.Button();
+            this.lblAcceptedbankCards = new System.Windows.Forms.Label();
             this.pnlHeader.SuspendLayout();
             this.pnlFooter.SuspendLayout();
             this.pnlCurrentpurchase.SuspendLayout();
             this.pnlInfos.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.pnlAcceptedcoinsAndnotes.SuspendLayout();
+            this.pnlAcceptedbankCards.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlHeader
             // 
             this.pnlHeader.Controls.Add(this.lbltextinHeader);
             this.pnlHeader.Controls.Add(this.btnBackinHeader);
-            this.pnlHeader.Location = new System.Drawing.Point(0, 0);
+            this.pnlHeader.Location = new System.Drawing.Point(-1, 0);
             this.pnlHeader.Name = "pnlHeader";
             this.pnlHeader.Size = new System.Drawing.Size(692, 61);
-            this.pnlHeader.TabIndex = 0;
+            this.pnlHeader.TabIndex = 14;
             // 
             // lbltextinHeader
             // 
             this.lbltextinHeader.AutoSize = true;
             this.lbltextinHeader.Location = new System.Drawing.Point(10, 19);
             this.lbltextinHeader.Name = "lbltextinHeader";
-            this.lbltextinHeader.Size = new System.Drawing.Size(78, 13);
+            this.lbltextinHeader.Size = new System.Drawing.Size(75, 13);
             this.lbltextinHeader.TabIndex = 5;
-            this.lbltextinHeader.Text = "Faites un choix";
+            this.lbltextinHeader.Text = "Total à payer :";
             // 
             // btnBackinHeader
             // 
@@ -75,24 +85,7 @@
             this.btnBackinHeader.TabIndex = 4;
             this.btnBackinHeader.Text = "RETOUR";
             this.btnBackinHeader.UseVisualStyleBackColor = true;
-            // 
-            // btnBasicTickets
-            // 
-            this.btnBasicTickets.Location = new System.Drawing.Point(22, 42);
-            this.btnBasicTickets.Name = "btnBasicTickets";
-            this.btnBasicTickets.Size = new System.Drawing.Size(276, 230);
-            this.btnBasicTickets.TabIndex = 3;
-            this.btnBasicTickets.Text = "Tickets Normaux";
-            this.btnBasicTickets.UseVisualStyleBackColor = true;
-            // 
-            // btnSpecialtickets
-            // 
-            this.btnSpecialtickets.Location = new System.Drawing.Point(362, 42);
-            this.btnSpecialtickets.Name = "btnSpecialtickets";
-            this.btnSpecialtickets.Size = new System.Drawing.Size(276, 230);
-            this.btnSpecialtickets.TabIndex = 4;
-            this.btnSpecialtickets.Text = "Tickets Spéciaux";
-            this.btnSpecialtickets.UseVisualStyleBackColor = true;
+            this.btnBackinHeader.Click += new System.EventHandler(this.btnBackinHeader_Click);
             // 
             // pnlFooter
             // 
@@ -102,10 +95,10 @@
             this.pnlFooter.Controls.Add(this.btnEnglishinFooter);
             this.pnlFooter.Controls.Add(this.btnFrenchinFooter);
             this.pnlFooter.Controls.Add(this.btnStopInFooter);
-            this.pnlFooter.Location = new System.Drawing.Point(0, 389);
+            this.pnlFooter.Location = new System.Drawing.Point(-1, 389);
             this.pnlFooter.Name = "pnlFooter";
             this.pnlFooter.Size = new System.Drawing.Size(802, 61);
-            this.pnlFooter.TabIndex = 1;
+            this.pnlFooter.TabIndex = 15;
             // 
             // btnItalianinFooter
             // 
@@ -164,10 +157,10 @@
             // pnlCurrentpurchase
             // 
             this.pnlCurrentpurchase.Controls.Add(this.lblTextInside);
-            this.pnlCurrentpurchase.Location = new System.Drawing.Point(692, 1);
+            this.pnlCurrentpurchase.Location = new System.Drawing.Point(691, 1);
             this.pnlCurrentpurchase.Name = "pnlCurrentpurchase";
             this.pnlCurrentpurchase.Size = new System.Drawing.Size(109, 388);
-            this.pnlCurrentpurchase.TabIndex = 2;
+            this.pnlCurrentpurchase.TabIndex = 16;
             // 
             // lblTextInside
             // 
@@ -180,31 +173,125 @@
             // 
             // pnlInfos
             // 
-            this.pnlInfos.Controls.Add(this.btnSpecialtickets);
-            this.pnlInfos.Controls.Add(this.btnBasicTickets);
-            this.pnlInfos.Location = new System.Drawing.Point(4, 64);
+            this.pnlInfos.Controls.Add(this.panel1);
+            this.pnlInfos.Controls.Add(this.pnlAcceptedcoinsAndnotes);
+            this.pnlInfos.Controls.Add(this.pnlAcceptedbankCards);
+            this.pnlInfos.Location = new System.Drawing.Point(3, 64);
             this.pnlInfos.Name = "pnlInfos";
             this.pnlInfos.Size = new System.Drawing.Size(681, 319);
-            this.pnlInfos.TabIndex = 5;
+            this.pnlInfos.TabIndex = 17;
             // 
-            // View3
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.btnValidatorgooglePay);
+            this.panel1.Controls.Add(this.lblTypeofPayement);
+            this.panel1.Location = new System.Drawing.Point(15, 16);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(654, 94);
+            this.panel1.TabIndex = 5;
+            // 
+            // btnValidatorgooglePay
+            // 
+            this.btnValidatorgooglePay.Location = new System.Drawing.Point(524, 54);
+            this.btnValidatorgooglePay.Name = "btnValidatorgooglePay";
+            this.btnValidatorgooglePay.Size = new System.Drawing.Size(127, 37);
+            this.btnValidatorgooglePay.TabIndex = 8;
+            this.btnValidatorgooglePay.Text = "VALIDER";
+            this.btnValidatorgooglePay.UseVisualStyleBackColor = true;
+            this.btnValidatorgooglePay.Click += new System.EventHandler(this.btnValidatorgooglePay_Click);
+            // 
+            // lblTypeofPayement
+            // 
+            this.lblTypeofPayement.AutoSize = true;
+            this.lblTypeofPayement.Location = new System.Drawing.Point(9, 8);
+            this.lblTypeofPayement.Name = "lblTypeofPayement";
+            this.lblTypeofPayement.Size = new System.Drawing.Size(102, 13);
+            this.lblTypeofPayement.TabIndex = 2;
+            this.lblTypeofPayement.Text = "Utiliser Google Pay :";
+            // 
+            // pnlAcceptedcoinsAndnotes
+            // 
+            this.pnlAcceptedcoinsAndnotes.Controls.Add(this.btnValidatorcoinsAndnotes);
+            this.pnlAcceptedcoinsAndnotes.Controls.Add(this.lblAcceptedcoinsAndnotes);
+            this.pnlAcceptedcoinsAndnotes.Location = new System.Drawing.Point(15, 225);
+            this.pnlAcceptedcoinsAndnotes.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlAcceptedcoinsAndnotes.Name = "pnlAcceptedcoinsAndnotes";
+            this.pnlAcceptedcoinsAndnotes.Size = new System.Drawing.Size(654, 94);
+            this.pnlAcceptedcoinsAndnotes.TabIndex = 4;
+            // 
+            // btnValidatorcoinsAndnotes
+            // 
+            this.btnValidatorcoinsAndnotes.Location = new System.Drawing.Point(524, 54);
+            this.btnValidatorcoinsAndnotes.Name = "btnValidatorcoinsAndnotes";
+            this.btnValidatorcoinsAndnotes.Size = new System.Drawing.Size(127, 37);
+            this.btnValidatorcoinsAndnotes.TabIndex = 8;
+            this.btnValidatorcoinsAndnotes.Text = "VALIDER";
+            this.btnValidatorcoinsAndnotes.UseVisualStyleBackColor = true;
+            this.btnValidatorcoinsAndnotes.Click += new System.EventHandler(this.btnValidatorcoinsAndnotes_Click);
+            // 
+            // lblAcceptedcoinsAndnotes
+            // 
+            this.lblAcceptedcoinsAndnotes.AutoSize = true;
+            this.lblAcceptedcoinsAndnotes.Location = new System.Drawing.Point(9, 8);
+            this.lblAcceptedcoinsAndnotes.Name = "lblAcceptedcoinsAndnotes";
+            this.lblAcceptedcoinsAndnotes.Size = new System.Drawing.Size(136, 13);
+            this.lblAcceptedcoinsAndnotes.TabIndex = 2;
+            this.lblAcceptedcoinsAndnotes.Text = "Pièces et billets acceptés : ";
+            // 
+            // pnlAcceptedbankCards
+            // 
+            this.pnlAcceptedbankCards.Controls.Add(this.btnValidatorcard);
+            this.pnlAcceptedbankCards.Controls.Add(this.lblAcceptedbankCards);
+            this.pnlAcceptedbankCards.Location = new System.Drawing.Point(15, 123);
+            this.pnlAcceptedbankCards.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlAcceptedbankCards.Name = "pnlAcceptedbankCards";
+            this.pnlAcceptedbankCards.Size = new System.Drawing.Size(654, 90);
+            this.pnlAcceptedbankCards.TabIndex = 3;
+            // 
+            // btnValidatorcard
+            // 
+            this.btnValidatorcard.Location = new System.Drawing.Point(524, 50);
+            this.btnValidatorcard.Name = "btnValidatorcard";
+            this.btnValidatorcard.Size = new System.Drawing.Size(127, 37);
+            this.btnValidatorcard.TabIndex = 7;
+            this.btnValidatorcard.Text = "VALIDER";
+            this.btnValidatorcard.UseVisualStyleBackColor = true;
+            this.btnValidatorcard.Click += new System.EventHandler(this.btnValidatorcard_Click);
+            // 
+            // lblAcceptedbankCards
+            // 
+            this.lblAcceptedbankCards.AutoSize = true;
+            this.lblAcceptedbankCards.Location = new System.Drawing.Point(11, 14);
+            this.lblAcceptedbankCards.Name = "lblAcceptedbankCards";
+            this.lblAcceptedbankCards.Size = new System.Drawing.Size(151, 13);
+            this.lblAcceptedbankCards.TabIndex = 1;
+            this.lblAcceptedbankCards.Text = "Cartes banquaires acceptées :";
+            // 
+            // ViewselectPaymentmethod
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pnlInfos);
-            this.Controls.Add(this.pnlCurrentpurchase);
-            this.Controls.Add(this.pnlFooter);
             this.Controls.Add(this.pnlHeader);
-            this.Name = "View3";
-            this.Text = "View3";
-            this.Load += new System.EventHandler(this.View3_Load);
+            this.Controls.Add(this.pnlFooter);
+            this.Controls.Add(this.pnlCurrentpurchase);
+            this.Controls.Add(this.pnlInfos);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "ViewselectPaymentmethod";
+            this.Text = "View8";
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();
             this.pnlFooter.ResumeLayout(false);
             this.pnlCurrentpurchase.ResumeLayout(false);
             this.pnlCurrentpurchase.PerformLayout();
             this.pnlInfos.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.pnlAcceptedcoinsAndnotes.ResumeLayout(false);
+            this.pnlAcceptedcoinsAndnotes.PerformLayout();
+            this.pnlAcceptedbankCards.ResumeLayout(false);
+            this.pnlAcceptedbankCards.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -212,19 +299,26 @@
         #endregion
 
         private System.Windows.Forms.Panel pnlHeader;
+        private System.Windows.Forms.Label lbltextinHeader;
+        private System.Windows.Forms.Button btnBackinHeader;
         private System.Windows.Forms.Panel pnlFooter;
-        private System.Windows.Forms.Panel pnlCurrentpurchase;
-        private System.Windows.Forms.Button btnBasicTickets;
-        private System.Windows.Forms.Button btnSpecialtickets;
         private System.Windows.Forms.Button btnItalianinFooter;
         private System.Windows.Forms.Button btnDeutshinFooter;
         private System.Windows.Forms.Button btnSpanishinFooter;
         private System.Windows.Forms.Button btnEnglishinFooter;
         private System.Windows.Forms.Button btnFrenchinFooter;
         private System.Windows.Forms.Button btnStopInFooter;
-        private System.Windows.Forms.Label lbltextinHeader;
-        private System.Windows.Forms.Button btnBackinHeader;
+        private System.Windows.Forms.Panel pnlCurrentpurchase;
         private System.Windows.Forms.Label lblTextInside;
         private System.Windows.Forms.Panel pnlInfos;
+        private System.Windows.Forms.Label lblAcceptedcoinsAndnotes;
+        private System.Windows.Forms.Label lblAcceptedbankCards;
+        private System.Windows.Forms.Panel pnlAcceptedcoinsAndnotes;
+        private System.Windows.Forms.Panel pnlAcceptedbankCards;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lblTypeofPayement;
+        private System.Windows.Forms.Button btnValidatorcard;
+        private System.Windows.Forms.Button btnValidatorgooglePay;
+        private System.Windows.Forms.Button btnValidatorcoinsAndnotes;
     }
 }
