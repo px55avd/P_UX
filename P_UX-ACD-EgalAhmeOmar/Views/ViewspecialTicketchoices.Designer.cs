@@ -188,6 +188,7 @@
             this.btnParisvisiteFiveday.TabIndex = 9;
             this.btnParisvisiteFiveday.Text = "5";
             this.btnParisvisiteFiveday.UseVisualStyleBackColor = true;
+            this.btnParisvisiteFiveday.Click += new System.EventHandler(this.btnParisvisiteFiveday_Click);
             // 
             // btnParisvisiteThreeday
             // 
@@ -197,6 +198,7 @@
             this.btnParisvisiteThreeday.TabIndex = 8;
             this.btnParisvisiteThreeday.Text = "3";
             this.btnParisvisiteThreeday.UseVisualStyleBackColor = true;
+            this.btnParisvisiteThreeday.Click += new System.EventHandler(this.btnParisvisiteThreeday_Click);
             // 
             // btnParisvisiteOneday
             // 
@@ -206,6 +208,7 @@
             this.btnParisvisiteOneday.TabIndex = 7;
             this.btnParisvisiteOneday.Text = "1";
             this.btnParisvisiteOneday.UseVisualStyleBackColor = true;
+            this.btnParisvisiteOneday.Click += new System.EventHandler(this.btnParisvisiteOneday_Click);
             // 
             // btnValidatorInfos
             // 
@@ -251,7 +254,7 @@
             this.Controls.Add(this.pnlFooter);
             this.Controls.Add(this.pnlCurrentpurchase);
             this.Controls.Add(this.pnlInfos);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ViewspecialTicketchoices";
             this.Text = "View6";
             this.pnlHeader.ResumeLayout(false);

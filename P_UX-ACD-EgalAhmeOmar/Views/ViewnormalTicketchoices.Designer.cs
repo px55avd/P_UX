@@ -46,7 +46,7 @@
             this.btnDownstandardPrice = new System.Windows.Forms.Button();
             this.btnUpstandardPrice = new System.Windows.Forms.Button();
             this.btnValidatorInfos = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerNormalTicket = new System.Windows.Forms.DateTimePicker();
             this.lblNumberreducedTickets = new System.Windows.Forms.Label();
             this.lblNumberstandardTickets = new System.Windows.Forms.Label();
             this.lblDate = new System.Windows.Forms.Label();
@@ -177,7 +177,7 @@
             this.pnlInfos.Controls.Add(this.btnDownstandardPrice);
             this.pnlInfos.Controls.Add(this.btnUpstandardPrice);
             this.pnlInfos.Controls.Add(this.btnValidatorInfos);
-            this.pnlInfos.Controls.Add(this.dateTimePicker1);
+            this.pnlInfos.Controls.Add(this.dateTimePickerNormalTicket);
             this.pnlInfos.Controls.Add(this.lblNumberreducedTickets);
             this.pnlInfos.Controls.Add(this.lblNumberstandardTickets);
             this.pnlInfos.Controls.Add(this.lblDate);
@@ -196,6 +196,7 @@
             this.btnDownreducedPrice.TabIndex = 10;
             this.btnDownreducedPrice.Text = "Down";
             this.btnDownreducedPrice.UseVisualStyleBackColor = true;
+            this.btnDownreducedPrice.Click += new System.EventHandler(this.btnDownreducedPrice_Click);
             // 
             // btnUpreducedPrice
             // 
@@ -205,6 +206,7 @@
             this.btnUpreducedPrice.TabIndex = 9;
             this.btnUpreducedPrice.Text = "Up";
             this.btnUpreducedPrice.UseVisualStyleBackColor = true;
+            this.btnUpreducedPrice.Click += new System.EventHandler(this.btnUpreducedPrice_Click);
             // 
             // btnDownstandardPrice
             // 
@@ -214,6 +216,7 @@
             this.btnDownstandardPrice.TabIndex = 8;
             this.btnDownstandardPrice.Text = "Down";
             this.btnDownstandardPrice.UseVisualStyleBackColor = true;
+            this.btnDownstandardPrice.Click += new System.EventHandler(this.btnDownstandardPrice_Click);
             // 
             // btnUpstandardPrice
             // 
@@ -223,6 +226,7 @@
             this.btnUpstandardPrice.TabIndex = 7;
             this.btnUpstandardPrice.Text = "Up";
             this.btnUpstandardPrice.UseVisualStyleBackColor = true;
+            this.btnUpstandardPrice.Click += new System.EventHandler(this.btnUpstandardPrice_Click);
             // 
             // btnValidatorInfos
             // 
@@ -234,12 +238,12 @@
             this.btnValidatorInfos.UseVisualStyleBackColor = true;
             this.btnValidatorInfos.Click += new System.EventHandler(this.btnValidatorInfos_Click);
             // 
-            // dateTimePicker1
+            // dateTimePickerNormalTicket
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(146, 215);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(173, 20);
-            this.dateTimePicker1.TabIndex = 5;
+            this.dateTimePickerNormalTicket.Location = new System.Drawing.Point(146, 215);
+            this.dateTimePickerNormalTicket.Name = "dateTimePickerNormalTicket";
+            this.dateTimePickerNormalTicket.Size = new System.Drawing.Size(173, 20);
+            this.dateTimePickerNormalTicket.TabIndex = 5;
             // 
             // lblNumberreducedTickets
             // 
@@ -328,7 +332,7 @@
         private System.Windows.Forms.Label lblStandardprice;
         private System.Windows.Forms.Label lblNumberreducedTickets;
         private System.Windows.Forms.Label lblNumberstandardTickets;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateTimePickerNormalTicket;
         private System.Windows.Forms.Button btnValidatorInfos;
         private System.Windows.Forms.Button btnUpstandardPrice;
         private System.Windows.Forms.Button btnDownreducedPrice;

@@ -40,7 +40,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Views
         private void btnChessydisneyTicket_Click(object sender, EventArgs e)
         {
             //
-            Controller.ShowViewSpecialticketChoices();
+            Controller.ShowViewSpecialticketChoices(btnChessydisneyTicket.Text);
         }
 
         /// <summary>
@@ -51,7 +51,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Views
         private void btnParisvisite_Click(object sender, EventArgs e)
         {
             //
-            Controller.ShowViewSpecialticketChoices();
+            Controller.ShowViewSpecialticketChoices(btnParisvisite.Text);
         }
 
         /// <summary>
@@ -62,7 +62,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Views
         private void btnAirportticket_Click(object sender, EventArgs e)
         {
             //
-            Controller.ShowViewSpecialticketChoices();
+            Controller.ShowViewSpecialticketChoices(btnAirportticket.Text);
         }
     }
 }

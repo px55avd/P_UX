@@ -8,8 +8,6 @@ D:\P_UX-ACD\P_UX-ACD-EgalAhmeOmar\bin\Debug\P_UX-ACD-EgalAhmeOmar.exe
 D:\P_UX-ACD\P_UX-ACD-EgalAhmeOmar\bin\Debug\P_UX-ACD-EgalAhmeOmar.pdb
 D:\P_UX-ACD\P_UX-ACD-EgalAhmeOmar\obj\Debug\P_UX-ACD-EgalAhmeOmar.exe
 D:\P_UX-ACD\P_UX-ACD-EgalAhmeOmar\obj\Debug\P_UX-ACD-EgalAhmeOmar.pdb
-D:\P_UX-ACD\P_UX-ACD-EgalAhmeOmar\obj\Debug\P_UX_ACD_EgalAhmeOmar.Views.View2.resources
-D:\P_UX-ACD\P_UX-ACD-EgalAhmeOmar\obj\Debug\P_UX_ACD_EgalAhmeOmar.Views.View3.resources
 C:\Users\px55avd\Desktop\P_UX-master\P_UX-ACD-EgalAhmeOmar\bin\Debug\P_UX-ACD-EgalAhmeOmar.exe.config
 C:\Users\px55avd\Desktop\P_UX-master\P_UX-ACD-EgalAhmeOmar\bin\Debug\P_UX-ACD-EgalAhmeOmar.exe
 C:\Users\px55avd\Desktop\P_UX-master\P_UX-ACD-EgalAhmeOmar\bin\Debug\P_UX-ACD-EgalAhmeOmar.pdb
@@ -28,3 +26,12 @@ C:\Users\px55avd\Desktop\P_UX-master\P_UX-ACD-EgalAhmeOmar\obj\Debug\P_UX-ACD-Eg
 C:\Users\px55avd\Desktop\P_UX-master\P_UX-ACD-EgalAhmeOmar\obj\Debug\P_UX-ACD-EgalAhmeOmar.csproj.CoreCompileInputs.cache
 C:\Users\px55avd\Desktop\P_UX-master\P_UX-ACD-EgalAhmeOmar\obj\Debug\P_UX-ACD-EgalAhmeOmar.exe
 C:\Users\px55avd\Desktop\P_UX-master\P_UX-ACD-EgalAhmeOmar\obj\Debug\P_UX-ACD-EgalAhmeOmar.pdb
+D:\P_UX-ACD\P_UX-ACD-EgalAhmeOmar\obj\Debug\P_UX_ACD_EgalAhmeOmar.Ressources.French.resources
+D:\P_UX-ACD\P_UX-ACD-EgalAhmeOmar\obj\Debug\P_UX_ACD_EgalAhmeOmar.Views.ViewselectNavigoorNot.resources
+D:\P_UX-ACD\P_UX-ACD-EgalAhmeOmar\obj\Debug\P_UX_ACD_EgalAhmeOmar.Views.ViewselectSpecialorNormaltickets.resources
+D:\P_UX-ACD\P_UX-ACD-EgalAhmeOmar\obj\Debug\P_UX_ACD_EgalAhmeOmar.Views.ViewnormalTicketchoices.resources
+D:\P_UX-ACD\P_UX-ACD-EgalAhmeOmar\obj\Debug\P_UX_ACD_EgalAhmeOmar.Views.ViewselectSpecialtickets.resources
+D:\P_UX-ACD\P_UX-ACD-EgalAhmeOmar\obj\Debug\P_UX_ACD_EgalAhmeOmar.Views.ViewspecialTicketchoices.resources
+D:\P_UX-ACD\P_UX-ACD-EgalAhmeOmar\obj\Debug\P_UX_ACD_EgalAhmeOmar.Views.ViewmyAllchoices.resources
+D:\P_UX-ACD\P_UX-ACD-EgalAhmeOmar\obj\Debug\P_UX_ACD_EgalAhmeOmar.Views.ViewselectPaymentmethod.resources
+D:\P_UX-ACD\P_UX-ACD-EgalAhmeOmar\obj\Debug\P_UX_ACD_EgalAhmeOmar.Views.ViewbillOrnot.resources

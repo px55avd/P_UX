@@ -42,6 +42,41 @@ namespace P_UX_ACD_EgalAhmeOmar.Views
         {
             //
             Controller.ShowViewallMychoicestoViewspecialTicketChoices();
+            
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnParisvisiteOneday_Click(object sender, EventArgs e)
+        {
+            //
+            Controller.GetnumberofSpecialTicket(btnParisvisiteOneday.Text);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnParisvisiteThreeday_Click(object sender, EventArgs e)
+        {
+            //
+            Controller.GetnumberofSpecialTicket(btnParisvisiteThreeday.Text);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnParisvisiteFiveday_Click(object sender, EventArgs e)
+        {
+            //
+            Controller.GetnumberofSpecialTicket(btnParisvisiteFiveday.Text);
+
         }
     }
 }

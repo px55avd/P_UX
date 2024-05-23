@@ -1,11 +1,15 @@
-﻿using P_UX_ACD_EgalAhmeOmar.Views;
+﻿using P_UX_ACD_EgalAhmeOmar.Model;
+using P_UX_ACD_EgalAhmeOmar.Properties;
+using P_UX_ACD_EgalAhmeOmar.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Resources;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using System.Web;
 using System.Windows.Forms;
 
 namespace P_UX_ACD_EgalAhmeOmar.Controller
@@ -28,6 +32,19 @@ namespace P_UX_ACD_EgalAhmeOmar.Controller
 
         //
         private int _specialOrnormalTickets = 0;
+        private int _countNormalpriceTicket = 0;
+        private int _countReducedpriceTicket = 0;
+        private string _currentSpecialticket= "";
+        private int _numberDayofspecialTicket = 0;
+
+        // Enumération pour les langues disponibles.
+        public enum Language { French, English };
+
+        // Langue actuelle de l'application.
+        private Language _currentLanguage;
+
+        // Gestionnaire de ressources pour la localisation.
+        ResourceManager rManager = new ResourceManager(typeof(Ressources.French));
 
         /// <summary>
         /// 
@@ -109,8 +126,12 @@ namespace P_UX_ACD_EgalAhmeOmar.Controller
         /// <summary>
         /// 
         /// </summary>
-        public void ShowViewSpecialticketChoices()
+        public void ShowViewSpecialticketChoices(string infoSpecialticket)
         {
+            //
+            _currentSpecialticket = infoSpecialticket;
+
+            //
             HideShow(_viewSelectspecialtickets, _viewSpecialticketsChoices);
         }
 
@@ -162,8 +183,6 @@ namespace P_UX_ACD_EgalAhmeOmar.Controller
         {
             HideShow(_viewSelectspecialorNormaltickets, _viewNormalticketChoices);
         }
-
-
 
 
         /// <summary>
@@ -295,6 +314,148 @@ namespace P_UX_ACD_EgalAhmeOmar.Controller
         public void ShowViewselectSpecialorNormaltickettoViewallMychoices()
         {
             HideShow(_viewMyallChoices, _viewSelectspecialorNormaltickets);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="infoNumberofDayspecialTicket"></param>
+        public void GetnumberofSpecialTicket(string infoNumberofDayspecialTicket)
+        {
+            _numberDayofspecialTicket = Convert.ToInt16(infoNumberofDayspecialTicket);
+        }
+
+        public void GetnewTicket(string infoLabelTicket, DateTime date, int numberTicket )
+        {
+
+            Ticket x = new Ticket(price: _model.PriceStandardTicket, name: infoLabelTicket, created: date);
+
+            for (int i =0; i < numberTicket; i++)
+            {
+                _model.Tickets.Add(x);
+            }
+
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="numberTicketnormalPrice"></param>
+        /// <param name="numberTicketreducedprice"></param>
+        /// <returns></returns>
+        public bool ChecktwoLabelcontainZeroTicket(int numberTicketnormalPrice, int numberTicketreducedprice)
+        {
+            //
+            bool isRight = false;
+
+            if (numberTicketreducedprice == 0 && numberTicketnormalPrice == 0)
+            {
+                //
+                ShowmessageZeroTicket();
+                isRight = true;
+            }
+            else
+            {
+                //
+                isRight = false;
+            }
+
+            return isRight;
+        }
+
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="numberTickets"></param>
+        /// <param name="infoNumbernormalTicket"></param>
+        public string UpCountNormalprice(string infoNumbernormalTicket)
+        {
+
+            _countNormalpriceTicket = Convert.ToInt32(infoNumbernormalTicket);
+
+            _countNormalpriceTicket++;
+
+            infoNumbernormalTicket = Convert.ToString(_countNormalpriceTicket);
+
+            return infoNumbernormalTicket;
+
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="numberTickets"></param>
+        /// <param name="infoNumbernormalTicket"></param>
+        /// <returns></returns>
+        public string DownCountNormalprice(string infoNumbernormalTicket)
+        {
+            
+            //
+            _countNormalpriceTicket = Convert.ToInt32(infoNumbernormalTicket);
+
+            _countNormalpriceTicket--;
+
+            if (_countNormalpriceTicket < 0)
+            {
+                _countNormalpriceTicket = 0;
+
+            }
+
+            infoNumbernormalTicket = Convert.ToString(_countNormalpriceTicket);
+
+            return infoNumbernormalTicket;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="numberTickets"></param>
+        /// <param name="infoNumberreducedTicket"></param>
+        public string UpCountReducedprice(string infoNumberreducedTicket)
+        {
+            _countNormalpriceTicket = Convert.ToInt32(infoNumberreducedTicket);
+
+            _countNormalpriceTicket++;
+
+            infoNumberreducedTicket = Convert.ToString(_countNormalpriceTicket);
+
+            return infoNumberreducedTicket;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="numberTickets"></param>
+        /// <param name="infoNumberreducedTicket"></param>
+        /// <returns></returns>
+        public string DowmCountReducedprice(string infoNumberreducedTicket)
+        {
+
+            //
+            _countNormalpriceTicket = Convert.ToInt32(infoNumberreducedTicket);
+
+            _countNormalpriceTicket--;
+
+            if (_countNormalpriceTicket < 0)
+            {
+                _countNormalpriceTicket = 0;
+
+            }
+            
+            infoNumberreducedTicket = Convert.ToString(_countNormalpriceTicket);
+
+            return infoNumberreducedTicket;
+        }
+
+
+        /// <summary>
+        /// Méthode pour appeler le texte de controle de champs nombre de tickets
+        /// </summary>
+        public void ShowmessageZeroTicket()
+        {
+            //Affiche du message
+            MessageBox.Show(rManager.GetString("zeroTicketselected"));
         }
     }
 }
