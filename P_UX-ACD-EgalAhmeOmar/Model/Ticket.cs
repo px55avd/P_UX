@@ -9,7 +9,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Model
     public class Ticket
     {
         // Liste privée pour stocker les prix des billets.
-        private double _price = 0;
+        private double _price = 0.00;
         // Propriété publique pour accéder et modifier la liste des soldes.
         public double Price
         {
@@ -41,7 +41,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Model
         /// <param name="price"></param>
         /// <param name="name"></param>
         /// <param name="created"></param>
-        public Ticket(int price ,string name, DateTime created) 
+        public Ticket(double price ,string name, DateTime created) 
         {
             _price = price;
             _name = name;

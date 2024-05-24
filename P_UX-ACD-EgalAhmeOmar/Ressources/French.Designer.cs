@@ -61,6 +61,60 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Ticket Aéroport.
+        /// </summary>
+        internal static string _nameAirporticket {
+            get {
+                return ResourceManager.GetString("_nameAirporticket", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Ticket Dineyland Paris.
+        /// </summary>
+        internal static string _nameChessyDisneyticket {
+            get {
+                return ResourceManager.GetString("_nameChessyDisneyticket", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Ticket Paris Visite.
+        /// </summary>
+        internal static string _nameParisVisiteticket {
+            get {
+                return ResourceManager.GetString("_nameParisVisiteticket", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Ticket à prix Réduit.
+        /// </summary>
+        internal static string _nameReducedticket {
+            get {
+                return ResourceManager.GetString("_nameReducedticket", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Ticket standard.
+        /// </summary>
+        internal static string _nameStandardticket {
+            get {
+                return ResourceManager.GetString("_nameStandardticket", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Vos billet ont bien été ajoutée au panier..
+        /// </summary>
+        internal static string validTicketselected {
+            get {
+                return ResourceManager.GetString("validTicketselected", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Aucun ticket n&apos;est selectionné !.
         /// </summary>
         internal static string zeroTicketselected {

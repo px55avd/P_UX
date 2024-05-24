@@ -117,7 +117,25 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="validTicketselected" xml:space="preserve">
+    <value>Vos billet ont bien été ajoutée au panier.</value>
+  </data>
   <data name="zeroTicketselected" xml:space="preserve">
     <value>Aucun ticket n'est selectionné !</value>
+  </data>
+  <data name="_nameAirporticket" xml:space="preserve">
+    <value>Ticket Aéroport</value>
+  </data>
+  <data name="_nameChessyDisneyticket" xml:space="preserve">
+    <value>Ticket Dineyland Paris</value>
+  </data>
+  <data name="_nameParisVisiteticket" xml:space="preserve">
+    <value>Ticket Paris Visite</value>
+  </data>
+  <data name="_nameReducedticket" xml:space="preserve">
+    <value>Ticket à prix Réduit</value>
+  </data>
+  <data name="_nameStandardticket" xml:space="preserve">
+    <value>Ticket standard</value>
   </data>
 </root>

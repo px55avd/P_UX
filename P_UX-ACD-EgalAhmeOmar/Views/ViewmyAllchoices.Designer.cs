@@ -26,7 +26,7 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
+        public void InitializeComponent()
         {
             this.pnlHeader = new System.Windows.Forms.Panel();
             this.lbltextinHeader = new System.Windows.Forms.Label();
@@ -40,7 +40,6 @@
             this.btnStopInFooter = new System.Windows.Forms.Button();
             this.pnlCurrentpurchase = new System.Windows.Forms.Panel();
             this.lblTextInside = new System.Windows.Forms.Label();
-            this.lblTicketschoicesAndtotal = new System.Windows.Forms.Label();
             this.btnPay = new System.Windows.Forms.Button();
             this.pnlInfos = new System.Windows.Forms.Panel();
             this.btnNextpurchase = new System.Windows.Forms.Button();
@@ -162,15 +161,6 @@
             this.lblTextInside.TabIndex = 0;
             this.lblTextInside.Text = "First Purchase :";
             // 
-            // lblTicketschoicesAndtotal
-            // 
-            this.lblTicketschoicesAndtotal.AutoSize = true;
-            this.lblTicketschoicesAndtotal.Location = new System.Drawing.Point(26, 40);
-            this.lblTicketschoicesAndtotal.Name = "lblTicketschoicesAndtotal";
-            this.lblTicketschoicesAndtotal.Size = new System.Drawing.Size(124, 13);
-            this.lblTicketschoicesAndtotal.TabIndex = 0;
-            this.lblTicketschoicesAndtotal.Text = "1. Prix standard x1 1.50$";
-            // 
             // btnPay
             // 
             this.btnPay.Location = new System.Drawing.Point(514, 261);
@@ -185,7 +175,6 @@
             // 
             this.pnlInfos.Controls.Add(this.btnNextpurchase);
             this.pnlInfos.Controls.Add(this.btnPay);
-            this.pnlInfos.Controls.Add(this.lblTicketschoicesAndtotal);
             this.pnlInfos.Location = new System.Drawing.Point(3, 64);
             this.pnlInfos.Name = "pnlInfos";
             this.pnlInfos.Size = new System.Drawing.Size(681, 319);
@@ -210,16 +199,17 @@
             this.Controls.Add(this.pnlFooter);
             this.Controls.Add(this.pnlCurrentpurchase);
             this.Controls.Add(this.pnlInfos);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ViewmyAllchoices";
             this.Text = "View7";
+            this.Load += new System.EventHandler(this.ViewmyAllchoices_Load);
+            this.Shown += new System.EventHandler(this.ViewmyAllchoices_Shown);
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();
             this.pnlFooter.ResumeLayout(false);
             this.pnlCurrentpurchase.ResumeLayout(false);
             this.pnlCurrentpurchase.PerformLayout();
             this.pnlInfos.ResumeLayout(false);
-            this.pnlInfos.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -238,7 +228,6 @@
         private System.Windows.Forms.Button btnStopInFooter;
         private System.Windows.Forms.Panel pnlCurrentpurchase;
         private System.Windows.Forms.Label lblTextInside;
-        private System.Windows.Forms.Label lblTicketschoicesAndtotal;
         private System.Windows.Forms.Button btnPay;
         private System.Windows.Forms.Panel pnlInfos;
         private System.Windows.Forms.Button btnNextpurchase;
