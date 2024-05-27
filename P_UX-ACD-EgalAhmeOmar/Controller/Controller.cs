@@ -1,16 +1,8 @@
 ﻿using P_UX_ACD_EgalAhmeOmar.Model;
-using P_UX_ACD_EgalAhmeOmar.Properties;
 using P_UX_ACD_EgalAhmeOmar.Views;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Resources;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading;
-using System.Threading.Tasks;
-using System.Web;
 using System.Windows.Forms;
 
 namespace P_UX_ACD_EgalAhmeOmar.Controller
@@ -123,18 +115,51 @@ namespace P_UX_ACD_EgalAhmeOmar.Controller
         public void ShowViewselectSpecialtickets()
         {
             HideShow(_viewSelectnavigoOrnot, _viewSelectspecialtickets);
+            
         }
 
         /// <summary>
         /// 
         /// </summary>
-        public void ShowViewSpecialticketChoices(string infoSpecialticket)
+        public void ShowViewSpecialticketChoices()
         {
-            //
-            _currentSpecialticket = infoSpecialticket;
 
             //
             HideShow(_viewSelectspecialtickets, _viewSpecialticketsChoices);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="currentSpecialticket"></param>
+        public void GetlabelHeardertextChessydisneyTicket()
+        {
+             _currentSpecialticket = rManager.GetString("_nameChessyDisneyticket").ToString();
+        }
+
+
+        public void GetlabelHeardertextAirportticket()
+        {
+            _currentSpecialticket = rManager.GetString("_nameAirporticket").ToString();
+        }
+
+
+        public void GetlabelHeardertextParisvisiteTicket()
+        {
+            _currentSpecialticket = rManager.GetString("_nameParisVisiteticket").ToString();
+        }
+
+        public string SetcurrentSpecialticket()
+        {
+            string value = "";
+
+            if (_currentSpecialticket != null)
+            {
+                value = _currentSpecialticket;
+            }
+            
+            
+            return value;
         }
 
         /// <summary>
@@ -323,9 +348,54 @@ namespace P_UX_ACD_EgalAhmeOmar.Controller
         /// 
         /// </summary>
         /// <param name="infoNumberofDayspecialTicket"></param>
-        public void GetnumberofSpecialTicket(string infoNumberofDayspecialTicket)
+        public void GetnumberofSpecialTicket(bool oneDayspecialTicket, bool threeDayspecialTicket, bool fiveDayspecialTicket, bool standardPrice,
+            bool reducedPrice, DateTime date)
         {
-            _numberDayofspecialTicket = Convert.ToInt16(infoNumberofDayspecialTicket);
+            if (standardPrice)
+            {
+                if (oneDayspecialTicket)
+                {
+                    GetnewSpecialticket(date, 1, 1);
+                }
+                if (threeDayspecialTicket)
+                {
+                    GetnewSpecialticket(date, 1, 0.85);
+                }
+                if (fiveDayspecialTicket)
+                {
+                    GetnewSpecialticket(date, 1, 0.75);
+                }
+            }
+
+            if (reducedPrice)
+            {
+
+                if (oneDayspecialTicket)
+                {
+                    GetnewSpecialticket(date, 1, 0.75);
+
+                }
+                if (threeDayspecialTicket)
+                {
+                    GetnewSpecialticket(date, 1, 0.70);
+                }
+                if (fiveDayspecialTicket)
+                {
+                    GetnewSpecialticket(date, 1, 0.60);
+                }
+
+            }
+        }
+        public void GetnewSpecialticket(DateTime date, int numberTicket, double reducedMultiply)
+        {
+            
+
+            //
+            for (int i = 0; i < numberTicket; i++)
+            {
+                _model.Tickets.Add(new Ticket(price: (_model.PricesParisVisiteticketOne) * reducedMultiply, name: _currentSpecialticket, created: date));
+            }
+
         }
 
 
@@ -343,7 +413,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Controller
             {
                 //attribut la bonne langue.
                 case Language.English:
-                    //rManager = new ResourceManager(typeof());
+                    rManager = new ResourceManager(typeof(Ressources.English));
                     break;
                 case Language.French:
                     rManager = new ResourceManager(typeof(Ressources.French));
@@ -542,27 +612,47 @@ namespace P_UX_ACD_EgalAhmeOmar.Controller
             int parisVisitecount = parisVisitetikets.Count;
             double parisVisitetotalprice = parisVisitetikets.Sum(t => t.Price);
 
-            // Create and position labels
-            AddLabelToPanel(panel, rManager.GetString("_nameReducedticket").ToString(), discountedCount, 0);
-            AddLabelToPanel(panel, rManager.GetString("_nameStandardticket").ToString(), standardCount, 1);
-            AddLabelToPanel(panel, rManager.GetString("_nameChessyDisneyticket").ToString(), disneyChessycount, 2);
-            AddLabelToPanel(panel, rManager.GetString("_nameAirporticket").ToString(), airportCount, 3);
-            AddLabelToPanel(panel, rManager.GetString("_nameParisVisiteticket").ToString(), parisVisitecount, 4);
-
-            AddLabelPriceToPanel(panel, "x", discountedTotalPrice, 0);
-            AddLabelPriceToPanel(panel, "x", standardTotalPrice, 1);
-            AddLabelPriceToPanel(panel, "X", disneyChessyTotalPrice, 2);
-            AddLabelPriceToPanel(panel, "x", airportTotalPrice, 3);
-            AddLabelPriceToPanel(panel,"x", parisVisitetotalprice, 4);
-
-
-
             // Add a total label
             int totalTickets = discountedCount + standardCount + disneyChessycount + airportCount + parisVisitecount;
-            AddLabelToPanel(panel, "Total Tickets", totalTickets, 5);
 
             double totalPrice = discountedTotalPrice + standardTotalPrice + disneyChessyTotalPrice + airportTotalPrice + parisVisitetotalprice;
-            AddLabelPriceToPanel(panel, "Total price",totalPrice, 5);
+            
+
+            // Create and position labels
+            AddLabelToPanel(panel, rManager.GetString("_nameReducedticket").ToString(), 0);
+            AddLabelToPanel(panel, rManager.GetString("_nameStandardticket").ToString(), 1);
+            AddLabelToPanel(panel, rManager.GetString("_nameChessyDisneyticket").ToString(), 2);
+            AddLabelToPanel(panel, rManager.GetString("_nameAirporticket").ToString(), 3);
+            AddLabelToPanel(panel, rManager.GetString("_nameParisVisiteticket").ToString(), 4);
+            AddLabelToPanel(panel, "Total des tickets :", 5);
+
+
+            AddLabelCountToPanel(panel, totalTickets,5);
+            AddLabelCountToPanel(panel, discountedCount, 4);
+            AddLabelCountToPanel(panel, standardCount, 1);
+            AddLabelCountToPanel(panel, disneyChessycount, 2);
+            AddLabelCountToPanel(panel, airportCount, 3);
+            AddLabelCountToPanel(panel, parisVisitecount, 0);
+
+            
+
+            AddLabelPriceToPanel(panel,  totalPrice, 5);
+            AddLabelPriceToPanel(panel,  discountedTotalPrice, 4);
+            AddLabelPriceToPanel(panel, standardTotalPrice, 1);
+            AddLabelPriceToPanel(panel, disneyChessyTotalPrice, 2);
+            AddLabelPriceToPanel(panel, airportTotalPrice, 3);
+            AddLabelPriceToPanel(panel, parisVisitetotalprice, 0);
+
+
+
+
+           
+            
+
+            
+
+
+
 
         }
 
@@ -573,7 +663,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Controller
         /// <param name="labelText"></param>
         /// <param name="count"></param>
         /// <param name="rowIndex"></param>
-        private static void AddLabelToPanel(Panel panel, string labelText, double count, int rowIndex)
+        private static void AddLabelToPanel(Panel panel, string labelText, int rowIndex)
         {
             int labelWidth = 150;
             int labelHeight = 20;
@@ -587,6 +677,19 @@ namespace P_UX_ACD_EgalAhmeOmar.Controller
                 Size = new System.Drawing.Size(labelWidth, labelHeight)
             };
 
+            
+            // Add labels to panel
+            panel.Controls.Add(lblText);
+        }
+
+
+        private static void AddLabelCountToPanel(Panel panel, double count, int rowIndex)
+        {
+
+            int labelWidth = 150;
+            int labelHeight = 20;
+            int labelSpacing = 30;
+
             // Create label for count
             Label lblCount = new Label
             {
@@ -595,16 +698,10 @@ namespace P_UX_ACD_EgalAhmeOmar.Controller
                 Size = new System.Drawing.Size(labelWidth, labelHeight)
             };
 
-
-            // Add labels to panel
-            panel.Controls.Add(lblText);
             panel.Controls.Add(lblCount);
-            
-
         }
 
-
-        private static void AddLabelPriceToPanel(Panel panel, string labelText, double count, int rowIndex)
+            private static void AddLabelPriceToPanel(Panel panel, double count, int rowIndex)
         {
             int labelWidth = 150;
             int labelHeight = 20;

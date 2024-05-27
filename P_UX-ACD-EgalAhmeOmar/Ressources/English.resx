@@ -121,16 +121,16 @@
     <value>Aéroport</value>
   </data>
   <data name="btnBack" xml:space="preserve">
-    <value>Retour</value>
+    <value>Back</value>
   </data>
   <data name="btnBackinHeader" xml:space="preserve">
-    <value>Retour</value>
+    <value>Back</value>
   </data>
   <data name="btnBasicTickets" xml:space="preserve">
-    <value>Tickets Normaux</value>
+    <value>Standard Tickets</value>
   </data>
   <data name="btnChessydisneyTicket" xml:space="preserve">
-    <value>Disneyland Paris</value>
+    <value>Chessy Disney Paris</value>
   </data>
   <data name="btnDeutshinFirstpage" xml:space="preserve">
     <value>Deutsh</value>
@@ -139,13 +139,13 @@
     <value>Deutsh</value>
   </data>
   <data name="btnDonthaveNavigo" xml:space="preserve">
-    <value>Vous n'avez de Carte Navigo, Appuyer ici</value>
+    <value>You do not have a Navigo card. Push here.</value>
   </data>
   <data name="btnDownreducedPrice" xml:space="preserve">
-    <value>Moins</value>
+    <value>Less</value>
   </data>
   <data name="btnDownstandardPrice" xml:space="preserve">
-    <value>Moins</value>
+    <value>Less</value>
   </data>
   <data name="btnEnglishinFirstpage" xml:space="preserve">
     <value>English</value>
@@ -163,10 +163,10 @@
     <value>Italino</value>
   </data>
   <data name="btnNextpurchase" xml:space="preserve">
-    <value>Prochain Achat</value>
+    <value>Next Purchase</value>
   </data>
   <data name="btnNoforReceipt" xml:space="preserve">
-    <value>Non</value>
+    <value>No</value>
   </data>
   <data name="btnParisvisite" xml:space="preserve">
     <value>Paris Visite</value>
@@ -178,7 +178,7 @@
     <value>Payer</value>
   </data>
   <data name="btnPlacenavigoPass" xml:space="preserve">
-    <value>Déposer votre carte Navigo</value>
+    <value>Deposite your Navigo card.</value>
   </data>
   <data name="btnSpanishinFirstpage" xml:space="preserve">
     <value>Español</value>
@@ -187,31 +187,31 @@
     <value>Español</value>
   </data>
   <data name="btnSpecialtickets" xml:space="preserve">
-    <value>Tickets Spéciaux</value>
+    <value>Special Tickets</value>
   </data>
   <data name="btnStopInFooter" xml:space="preserve">
     <value>Stop</value>
   </data>
   <data name="btnUpreducedPrice" xml:space="preserve">
-    <value>Plus</value>
+    <value>More</value>
   </data>
   <data name="btnUpstandardPrice" xml:space="preserve">
-    <value>Plus</value>
+    <value>More</value>
   </data>
   <data name="btnValidatorcard" xml:space="preserve">
-    <value>Valider</value>
+    <value>Valid</value>
   </data>
   <data name="btnValidatorcoinsAndnotes" xml:space="preserve">
-    <value>Valider</value>
+    <value>Valid</value>
   </data>
   <data name="btnValidatorgooglePay" xml:space="preserve">
-    <value>Valider</value>
+    <value>Valid</value>
   </data>
   <data name="btnValidatorInfos" xml:space="preserve">
-    <value>Valider</value>
+    <value>Valid</value>
   </data>
   <data name="btnYesforReceipt" xml:space="preserve">
-    <value>Oui</value>
+    <value>Yes</value>
   </data>
   <data name="lblAcceptedbankCards" xml:space="preserve">
     <value>Cartes banquaires acceptées :</value>

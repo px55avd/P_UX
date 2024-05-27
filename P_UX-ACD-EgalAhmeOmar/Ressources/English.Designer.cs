@@ -22,14 +22,14 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class French {
+    internal class English {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal French() {
+        internal English() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("P_UX_ACD_EgalAhmeOmar.Ressources.French", typeof(French).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("P_UX_ACD_EgalAhmeOmar.Ressources.English", typeof(English).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -115,7 +115,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Retour.
+        ///   Recherche une chaîne localisée semblable à Back.
         /// </summary>
         internal static string btnBack {
             get {
@@ -124,7 +124,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Retour.
+        ///   Recherche une chaîne localisée semblable à Back.
         /// </summary>
         internal static string btnBackinHeader {
             get {
@@ -133,7 +133,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Tickets Normaux.
+        ///   Recherche une chaîne localisée semblable à Standard Tickets.
         /// </summary>
         internal static string btnBasicTickets {
             get {
@@ -142,7 +142,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Disneyland Paris.
+        ///   Recherche une chaîne localisée semblable à Chessy Disney Paris.
         /// </summary>
         internal static string btnChessydisneyTicket {
             get {
@@ -169,7 +169,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Vous n&apos;avez de Carte Navigo, Appuyer ici.
+        ///   Recherche une chaîne localisée semblable à You do not have a Navigo card. Push here..
         /// </summary>
         internal static string btnDonthaveNavigo {
             get {
@@ -178,7 +178,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Moins.
+        ///   Recherche une chaîne localisée semblable à Less.
         /// </summary>
         internal static string btnDownreducedPrice {
             get {
@@ -187,7 +187,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Moins.
+        ///   Recherche une chaîne localisée semblable à Less.
         /// </summary>
         internal static string btnDownstandardPrice {
             get {
@@ -241,7 +241,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Prochain Achat.
+        ///   Recherche une chaîne localisée semblable à Next Purchase.
         /// </summary>
         internal static string btnNextpurchase {
             get {
@@ -250,7 +250,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Non.
+        ///   Recherche une chaîne localisée semblable à No.
         /// </summary>
         internal static string btnNoforReceipt {
             get {
@@ -286,7 +286,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Déposer votre carte Navigo.
+        ///   Recherche une chaîne localisée semblable à Deposite your Navigo card..
         /// </summary>
         internal static string btnPlacenavigoPass {
             get {
@@ -313,7 +313,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Tickets Spéciaux.
+        ///   Recherche une chaîne localisée semblable à Special Tickets.
         /// </summary>
         internal static string btnSpecialtickets {
             get {
@@ -331,7 +331,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Plus.
+        ///   Recherche une chaîne localisée semblable à More.
         /// </summary>
         internal static string btnUpreducedPrice {
             get {
@@ -340,7 +340,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Plus.
+        ///   Recherche une chaîne localisée semblable à More.
         /// </summary>
         internal static string btnUpstandardPrice {
             get {
@@ -349,7 +349,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Valider.
+        ///   Recherche une chaîne localisée semblable à Valid.
         /// </summary>
         internal static string btnValidatorcard {
             get {
@@ -358,7 +358,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Valider.
+        ///   Recherche une chaîne localisée semblable à Valid.
         /// </summary>
         internal static string btnValidatorcoinsAndnotes {
             get {
@@ -367,7 +367,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Valider.
+        ///   Recherche une chaîne localisée semblable à Valid.
         /// </summary>
         internal static string btnValidatorgooglePay {
             get {
@@ -376,7 +376,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Valider.
+        ///   Recherche une chaîne localisée semblable à Valid.
         /// </summary>
         internal static string btnValidatorInfos {
             get {
@@ -385,7 +385,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Oui.
+        ///   Recherche une chaîne localisée semblable à Yes.
         /// </summary>
         internal static string btnYesforReceipt {
             get {

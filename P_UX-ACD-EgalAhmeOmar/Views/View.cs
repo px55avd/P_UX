@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Resources;
@@ -24,6 +25,7 @@ namespace P_UX_ACD_EgalAhmeOmar
         /// </summary>
         public Controller.Controller Controller { get; set; }
 
+
         /// <summary>
         /// Met à jour la langue de l'interface utilisateur en utilisant un ResourceManager.
         /// </summary>
@@ -31,13 +33,35 @@ namespace P_UX_ACD_EgalAhmeOmar
         public void UpdateLang(ResourceManager _resourcesManager)
         {
             ResourceManager resources = _resourcesManager;
+            UpdateControlText(this, resources);
+        }
 
-            // Parcourt tous les contrôles de la vue et met à jour leur texte selon la langue sélectionnée.
-            foreach (Control c in Controls)
+        /// <summary>
+        /// Parcourt tous les contrôles de la vue et met à jour leur texte selon la langue sélectionnée.
+        /// </summary>
+        /// <param name="parentControl">Le contrôle parent dont les sous-contrôles doivent être mis à jour.</param>
+        /// <param name="resources">Le ResourceManager contenant les ressources de localisation.</param>
+        private void UpdateControlText(Control parentControl, ResourceManager resources)
+        {
+            foreach (Control c in parentControl.Controls)
             {
-                if (resources.GetString(c.Name) != null)
+                if (!string.IsNullOrEmpty(c.Name))
                 {
-                    c.Text = resources.GetString(c.Name);
+                    string resourceValue = resources.GetString(c.Name);
+                    if (resourceValue != null)
+                    {
+                        Debug.Assert(resourceValue != null, $"Updating {c.Name} to {resourceValue}");
+                        c.Text = resourceValue;
+                    }
+                    else
+                    {
+                        Debug.Assert(condition: resourceValue == null, $"No resource found for {c.Name}");
+                    }
+                }
+
+                if (c.HasChildren)
+                {
+                    UpdateControlText(c, resources);
                 }
             }
         }
@@ -49,6 +73,8 @@ namespace P_UX_ACD_EgalAhmeOmar
         /// <param name="e"></param>
         private void btnEnglishinFirstpage_Click(object sender, EventArgs e)
         {
+            Controller.Lang(P_UX_ACD_EgalAhmeOmar.Controller.Controller.Language.English);
+               
             //
             Controller.ShowViewselectNavigoOrnot();
         }

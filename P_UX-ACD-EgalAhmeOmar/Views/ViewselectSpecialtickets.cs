@@ -59,7 +59,10 @@ namespace P_UX_ACD_EgalAhmeOmar.Views
         private void btnChessydisneyTicket_Click(object sender, EventArgs e)
         {
             //
-            Controller.ShowViewSpecialticketChoices(btnChessydisneyTicket.Text);
+            Controller.GetlabelHeardertextChessydisneyTicket();
+
+            //
+            Controller.ShowViewSpecialticketChoices();
         }
 
         /// <summary>
@@ -70,7 +73,10 @@ namespace P_UX_ACD_EgalAhmeOmar.Views
         private void btnParisvisite_Click(object sender, EventArgs e)
         {
             //
-            Controller.ShowViewSpecialticketChoices(btnParisvisite.Text);
+            Controller.GetlabelHeardertextParisvisiteTicket();
+
+            //
+            Controller.ShowViewSpecialticketChoices();
         }
 
         /// <summary>
@@ -81,7 +87,10 @@ namespace P_UX_ACD_EgalAhmeOmar.Views
         private void btnAirportticket_Click(object sender, EventArgs e)
         {
             //
-            Controller.ShowViewSpecialticketChoices(btnAirportticket.Text);
+            Controller.GetlabelHeardertextAirportticket();
+
+            //
+            Controller.ShowViewSpecialticketChoices();
         }
     }
 }

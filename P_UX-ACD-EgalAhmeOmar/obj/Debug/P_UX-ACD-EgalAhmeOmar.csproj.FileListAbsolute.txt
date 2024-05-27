@@ -55,3 +55,4 @@ E:\P_UX-ACD\P_UX-ACD-EgalAhmeOmar\obj\Debug\P_UX-ACD-EgalAhmeOmar.csproj.CoreCom
 E:\P_UX-ACD\P_UX-ACD-EgalAhmeOmar\obj\Debug\P_UX-ACD-EgalAhmeOmar.exe
 E:\P_UX-ACD\P_UX-ACD-EgalAhmeOmar\obj\Debug\P_UX-ACD-EgalAhmeOmar.pdb
 D:\P_UX-ACD\P_UX-ACD-EgalAhmeOmar\obj\Debug\P_UX-ACD-EgalAhmeOmar.csproj.SuggestedBindingRedirects.cache
+E:\P_UX-ACD\P_UX-ACD-EgalAhmeOmar\obj\Debug\P_UX_ACD_EgalAhmeOmar.Ressources.English.resources

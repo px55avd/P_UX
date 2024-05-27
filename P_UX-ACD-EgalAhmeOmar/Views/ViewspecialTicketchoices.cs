@@ -60,42 +60,27 @@ namespace P_UX_ACD_EgalAhmeOmar.Views
         private void btnValidatorInfos_Click(object sender, EventArgs e)
         {
             //
+            Controller.GetnumberofSpecialTicket(radioBtnoneSpecialticket.Checked, radioBtnthreeSpecialticket.Checked, 
+                radioBtnfiveSpecialticket.Checked, radioBtnStandardprice.Checked, radioBtnreducedPrice.Checked, dateTimepickerSelected.Value);
+
+            //
+            Controller.ShowvalidTicketmessage();
+
+            //
             Controller.ShowViewallMychoicestoViewspecialTicketChoices();
             
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void btnParisvisiteOneday_Click(object sender, EventArgs e)
+
+        private void ViewspecialTicketchoices_Shown(object sender, EventArgs e)
         {
             //
-            Controller.GetnumberofSpecialTicket(btnParisvisiteOneday.Text);
+            lbltextinHeader.Text = Controller.SetcurrentSpecialticket();
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void btnParisvisiteThreeday_Click(object sender, EventArgs e)
+        private void ViewspecialTicketchoices_Load(object sender, EventArgs e)
         {
-            //
-            Controller.GetnumberofSpecialTicket(btnParisvisiteThreeday.Text);
-        }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void btnParisvisiteFiveday_Click(object sender, EventArgs e)
-        {
-            //
-            Controller.GetnumberofSpecialTicket(btnParisvisiteFiveday.Text);
-
+            lbltextinHeader.Text = Controller.SetcurrentSpecialticket();
         }
     }
 }

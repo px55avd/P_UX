@@ -61,6 +61,8 @@ namespace P_UX_ACD_EgalAhmeOmar.Views
         {
             //
             Controller.ShowViewnormalTicketChoices();
+
+            
         }
         
         /// <summary>

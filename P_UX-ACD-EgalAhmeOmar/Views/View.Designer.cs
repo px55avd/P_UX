@@ -38,16 +38,17 @@
             this.btnDeutshinFirstpage = new System.Windows.Forms.Button();
             this.btnSpanishinFirstpage = new System.Windows.Forms.Button();
             this.btnEnglishinFirstpage = new System.Windows.Forms.Button();
-            this.lblPasstoFrench = new System.Windows.Forms.Label();
+            this.btnPasstoFrench = new System.Windows.Forms.Button();
             this.pnlSelectlanguages.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblSelectlangages
             // 
             this.lblSelectlangages.AutoSize = true;
-            this.lblSelectlangages.Location = new System.Drawing.Point(12, 31);
+            this.lblSelectlangages.Location = new System.Drawing.Point(18, 48);
+            this.lblSelectlangages.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSelectlangages.Name = "lblSelectlangages";
-            this.lblSelectlangages.Size = new System.Drawing.Size(131, 13);
+            this.lblSelectlangages.Size = new System.Drawing.Size(194, 20);
             this.lblSelectlangages.TabIndex = 0;
             this.lblSelectlangages.Text = "Selectionnner une langue ";
             // 
@@ -61,52 +62,58 @@
             this.pnlSelectlanguages.Controls.Add(this.btnDeutshinFirstpage);
             this.pnlSelectlanguages.Controls.Add(this.btnSpanishinFirstpage);
             this.pnlSelectlanguages.Controls.Add(this.btnEnglishinFirstpage);
-            this.pnlSelectlanguages.Location = new System.Drawing.Point(12, 60);
+            this.pnlSelectlanguages.Location = new System.Drawing.Point(18, 92);
+            this.pnlSelectlanguages.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pnlSelectlanguages.Name = "pnlSelectlanguages";
-            this.pnlSelectlanguages.Size = new System.Drawing.Size(776, 378);
+            this.pnlSelectlanguages.Size = new System.Drawing.Size(1164, 582);
             this.pnlSelectlanguages.TabIndex = 1;
             // 
             // lblItalianlangage
             // 
             this.lblItalianlangage.AutoSize = true;
-            this.lblItalianlangage.Location = new System.Drawing.Point(610, 266);
+            this.lblItalianlangage.Location = new System.Drawing.Point(915, 409);
+            this.lblItalianlangage.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblItalianlangage.Name = "lblItalianlangage";
-            this.lblItalianlangage.Size = new System.Drawing.Size(41, 13);
+            this.lblItalianlangage.Size = new System.Drawing.Size(61, 20);
             this.lblItalianlangage.TabIndex = 7;
             this.lblItalianlangage.Text = "Italiano";
             // 
             // lblSpanishlangage
             // 
             this.lblSpanishlangage.AutoSize = true;
-            this.lblSpanishlangage.Location = new System.Drawing.Point(249, 266);
+            this.lblSpanishlangage.Location = new System.Drawing.Point(374, 409);
+            this.lblSpanishlangage.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSpanishlangage.Name = "lblSpanishlangage";
-            this.lblSpanishlangage.Size = new System.Drawing.Size(45, 13);
+            this.lblSpanishlangage.Size = new System.Drawing.Size(67, 20);
             this.lblSpanishlangage.TabIndex = 6;
             this.lblSpanishlangage.Text = "Español";
             // 
             // lblDeutshlangage
             // 
             this.lblDeutshlangage.AutoSize = true;
-            this.lblDeutshlangage.Location = new System.Drawing.Point(610, 89);
+            this.lblDeutshlangage.Location = new System.Drawing.Point(915, 137);
+            this.lblDeutshlangage.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDeutshlangage.Name = "lblDeutshlangage";
-            this.lblDeutshlangage.Size = new System.Drawing.Size(47, 13);
+            this.lblDeutshlangage.Size = new System.Drawing.Size(69, 20);
             this.lblDeutshlangage.TabIndex = 5;
             this.lblDeutshlangage.Text = "Deutsch";
             // 
             // lblEnglishLangage
             // 
             this.lblEnglishLangage.AutoSize = true;
-            this.lblEnglishLangage.Location = new System.Drawing.Point(249, 89);
+            this.lblEnglishLangage.Location = new System.Drawing.Point(374, 137);
+            this.lblEnglishLangage.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEnglishLangage.Name = "lblEnglishLangage";
-            this.lblEnglishLangage.Size = new System.Drawing.Size(41, 13);
+            this.lblEnglishLangage.Size = new System.Drawing.Size(61, 20);
             this.lblEnglishLangage.TabIndex = 4;
             this.lblEnglishLangage.Text = "English";
             // 
             // btnItalianinFirstpage
             // 
-            this.btnItalianinFirstpage.Location = new System.Drawing.Point(401, 226);
+            this.btnItalianinFirstpage.Location = new System.Drawing.Point(602, 348);
+            this.btnItalianinFirstpage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnItalianinFirstpage.Name = "btnItalianinFirstpage";
-            this.btnItalianinFirstpage.Size = new System.Drawing.Size(203, 92);
+            this.btnItalianinFirstpage.Size = new System.Drawing.Size(304, 142);
             this.btnItalianinFirstpage.TabIndex = 3;
             this.btnItalianinFirstpage.Text = "Italino";
             this.btnItalianinFirstpage.UseVisualStyleBackColor = true;
@@ -114,9 +121,10 @@
             // 
             // btnDeutshinFirstpage
             // 
-            this.btnDeutshinFirstpage.Location = new System.Drawing.Point(401, 49);
+            this.btnDeutshinFirstpage.Location = new System.Drawing.Point(602, 75);
+            this.btnDeutshinFirstpage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnDeutshinFirstpage.Name = "btnDeutshinFirstpage";
-            this.btnDeutshinFirstpage.Size = new System.Drawing.Size(203, 92);
+            this.btnDeutshinFirstpage.Size = new System.Drawing.Size(304, 142);
             this.btnDeutshinFirstpage.TabIndex = 2;
             this.btnDeutshinFirstpage.Text = "Deutsch";
             this.btnDeutshinFirstpage.UseVisualStyleBackColor = true;
@@ -124,9 +132,10 @@
             // 
             // btnSpanishinFirstpage
             // 
-            this.btnSpanishinFirstpage.Location = new System.Drawing.Point(40, 226);
+            this.btnSpanishinFirstpage.Location = new System.Drawing.Point(60, 348);
+            this.btnSpanishinFirstpage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSpanishinFirstpage.Name = "btnSpanishinFirstpage";
-            this.btnSpanishinFirstpage.Size = new System.Drawing.Size(203, 92);
+            this.btnSpanishinFirstpage.Size = new System.Drawing.Size(304, 142);
             this.btnSpanishinFirstpage.TabIndex = 1;
             this.btnSpanishinFirstpage.Text = "Español";
             this.btnSpanishinFirstpage.UseVisualStyleBackColor = true;
@@ -134,31 +143,34 @@
             // 
             // btnEnglishinFirstpage
             // 
-            this.btnEnglishinFirstpage.Location = new System.Drawing.Point(40, 49);
+            this.btnEnglishinFirstpage.Location = new System.Drawing.Point(60, 75);
+            this.btnEnglishinFirstpage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnEnglishinFirstpage.Name = "btnEnglishinFirstpage";
-            this.btnEnglishinFirstpage.Size = new System.Drawing.Size(203, 92);
+            this.btnEnglishinFirstpage.Size = new System.Drawing.Size(304, 142);
             this.btnEnglishinFirstpage.TabIndex = 0;
             this.btnEnglishinFirstpage.Text = "English";
             this.btnEnglishinFirstpage.UseVisualStyleBackColor = true;
             this.btnEnglishinFirstpage.Click += new System.EventHandler(this.btnEnglishinFirstpage_Click);
             // 
-            // lblPasstoFrench
+            // btnPasstoFrench
             // 
-            this.lblPasstoFrench.AutoSize = true;
-            this.lblPasstoFrench.Location = new System.Drawing.Point(621, 31);
-            this.lblPasstoFrench.Name = "lblPasstoFrench";
-            this.lblPasstoFrench.Size = new System.Drawing.Size(167, 13);
-            this.lblPasstoFrench.TabIndex = 2;
-            this.lblPasstoFrench.Text = "Passer Vous êtes déjâ en français";
+            this.btnPasstoFrench.Location = new System.Drawing.Point(918, 28);
+            this.btnPasstoFrench.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnPasstoFrench.Name = "btnPasstoFrench";
+            this.btnPasstoFrench.Size = new System.Drawing.Size(264, 54);
+            this.btnPasstoFrench.TabIndex = 8;
+            this.btnPasstoFrench.Text = "Passer, Vous êtes déjâ en français";
+            this.btnPasstoFrench.UseVisualStyleBackColor = true;
             // 
             // View
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.lblPasstoFrench);
+            this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.Controls.Add(this.btnPasstoFrench);
             this.Controls.Add(this.pnlSelectlanguages);
             this.Controls.Add(this.lblSelectlangages);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "View";
             this.Text = "RATP";
             this.pnlSelectlanguages.ResumeLayout(false);
@@ -176,11 +188,11 @@
         private System.Windows.Forms.Button btnDeutshinFirstpage;
         private System.Windows.Forms.Button btnSpanishinFirstpage;
         private System.Windows.Forms.Button btnEnglishinFirstpage;
-        private System.Windows.Forms.Label lblPasstoFrench;
         private System.Windows.Forms.Label lblItalianlangage;
         private System.Windows.Forms.Label lblSpanishlangage;
         private System.Windows.Forms.Label lblDeutshlangage;
         private System.Windows.Forms.Label lblEnglishLangage;
+        private System.Windows.Forms.Button btnPasstoFrench;
     }
 }
 

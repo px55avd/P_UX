@@ -48,6 +48,11 @@
   <ItemGroup>
     <Compile Include="Controller\Controller.cs" />
     <Compile Include="Model\Ticket.cs" />
+    <Compile Include="Ressources\English.Designer.cs">
+      <DependentUpon>English.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Ressources\French.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -119,6 +124,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Ressources\English.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>English.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ressources\French.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>French.Designer.cs</LastGenOutput>
