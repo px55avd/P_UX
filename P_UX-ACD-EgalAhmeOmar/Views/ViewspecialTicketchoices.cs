@@ -48,6 +48,8 @@ namespace P_UX_ACD_EgalAhmeOmar.Views
         /// <param name="e"></param>
         private void btnBackinHeader_Click(object sender, EventArgs e)
         {
+            lbltextinHeader.Text = Controller.SetnullSpecialticket();
+
             //
             Controller.ShowViewselectSpecialtickettoViewspecialTicketChoices();
         }
@@ -79,6 +81,11 @@ namespace P_UX_ACD_EgalAhmeOmar.Views
         }
 
         private void ViewspecialTicketchoices_Load(object sender, EventArgs e)
+        {
+            lbltextinHeader.Text = Controller.SetcurrentSpecialticket();
+        }
+
+        private void ViewspecialTicketchoices_Activated(object sender, EventArgs e)
         {
             lbltextinHeader.Text = Controller.SetcurrentSpecialticket();
         }

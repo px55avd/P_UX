@@ -26,43 +26,38 @@ namespace P_UX_ACD_EgalAhmeOmar
         public Controller.Controller Controller { get; set; }
 
 
-        /// <summary>
-        /// Met à jour la langue de l'interface utilisateur en utilisant un ResourceManager.
-        /// </summary>
-        /// <param name="_resourcesManager">ResourceManager pour les ressources de localisation.</param>
-        public void UpdateLang(ResourceManager _resourcesManager)
-        {
-            ResourceManager resources = _resourcesManager;
-            UpdateControlText(this, resources);
-        }
+
 
         /// <summary>
-        /// Parcourt tous les contrôles de la vue et met à jour leur texte selon la langue sélectionnée.
+        /// Iterate through every Controls in the view recursivly and update language with ressource 
         /// </summary>
-        /// <param name="parentControl">Le contrôle parent dont les sous-contrôles doivent être mis à jour.</param>
-        /// <param name="resources">Le ResourceManager contenant les ressources de localisation.</param>
-        private void UpdateControlText(Control parentControl, ResourceManager resources)
+        /// <param name="resourceManager">Ressource manager for target language</param>
+        public void UpdateLang(ResourceManager _resourceManager)
         {
-            foreach (Control c in parentControl.Controls)
+
+            ResourceManager resourceManager = _resourceManager;
+
+            foreach (Control c in this.Controls)
             {
-                if (!string.IsNullOrEmpty(c.Name))
+                UpdateLevel(c);
+            }
+
+            // Recursivly translate in child control
+            void UpdateLevel(Control parentControl)
+            {
+
+                if (parentControl.HasChildren)
                 {
-                    string resourceValue = resources.GetString(c.Name);
-                    if (resourceValue != null)
+                    foreach (Control childControl in parentControl.Controls)
                     {
-                        Debug.Assert(resourceValue != null, $"Updating {c.Name} to {resourceValue}");
-                        c.Text = resourceValue;
+                        UpdateLevel(childControl);
                     }
-                    else
-                    {
-                        Debug.Assert(condition: resourceValue == null, $"No resource found for {c.Name}");
-                    }
+                }
+                if (resourceManager.GetString(parentControl.Name) != null)
+                {
+                    parentControl.Text = resourceManager.GetString(parentControl.Name);
                 }
 
-                if (c.HasChildren)
-                {
-                    UpdateControlText(c, resources);
-                }
             }
         }
 

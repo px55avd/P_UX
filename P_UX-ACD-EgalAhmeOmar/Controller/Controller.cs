@@ -151,14 +151,14 @@ namespace P_UX_ACD_EgalAhmeOmar.Controller
 
         public string SetcurrentSpecialticket()
         {
+            return _currentSpecialticket;
+        }
+
+
+        public string SetnullSpecialticket()
+        {
             string value = "";
 
-            if (_currentSpecialticket != null)
-            {
-                value = _currentSpecialticket;
-            }
-            
-            
             return value;
         }
 
@@ -388,13 +388,34 @@ namespace P_UX_ACD_EgalAhmeOmar.Controller
         }
         public void GetnewSpecialticket(DateTime date, int numberTicket, double reducedMultiply)
         {
-            
-
-            //
-            for (int i = 0; i < numberTicket; i++)
+            if (_currentSpecialticket == rManager.GetString("_nameChessyDisneyticket").ToString())
             {
-                _model.Tickets.Add(new Ticket(price: (_model.PricesParisVisiteticketOne) * reducedMultiply, name: _currentSpecialticket, created: date));
+                //
+                for (int i = 0; i < numberTicket; i++)
+                {
+                    _model.Tickets.Add(new Ticket(price: (_model.PricesChessyDisneyticketOne) * reducedMultiply, name: _currentSpecialticket, created: date));
+                }
             }
+
+            if (_currentSpecialticket == rManager.GetString("_nameAirporticket").ToString())
+            {
+                //
+                for (int i = 0; i < numberTicket; i++)
+                {
+                    _model.Tickets.Add(new Ticket(price: (_model.PricesAirportyticketOne) * reducedMultiply, name: _currentSpecialticket, created: date));
+                }
+            }
+
+            if (_currentSpecialticket == rManager.GetString("_nameParisVisiteticket").ToString())
+            {
+                //
+                for (int i = 0; i < numberTicket; i++)
+                {
+                    _model.Tickets.Add(new Ticket(price: (_model.PricesParisVisiteticketOne) * reducedMultiply, name: _currentSpecialticket, created: date));
+                }
+            }
+
+
 
         }
 
@@ -462,7 +483,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Controller
         public void GetnewReducedticket(DateTime date, int numberTicket)
         {
 
-            _model.NameReducedticket = rManager.GetString("_nameParisVisiteticket").ToString();
+            _model.NameReducedticket = rManager.GetString("_nameReducedticket").ToString();
 
             //
             for (int i = 0; i < numberTicket; i++)
@@ -550,11 +571,11 @@ namespace P_UX_ACD_EgalAhmeOmar.Controller
         /// <param name="infoNumberreducedTicket"></param>
         public string UpCountReducedprice(string infoNumberreducedTicket)
         {
-            _countNormalpriceTicket = Convert.ToInt32(infoNumberreducedTicket);
+            _countReducedpriceTicket = Convert.ToInt32(infoNumberreducedTicket);
 
-            _countNormalpriceTicket++;
+            _countReducedpriceTicket++;
 
-            infoNumberreducedTicket = Convert.ToString(_countNormalpriceTicket);
+            infoNumberreducedTicket = Convert.ToString(_countReducedpriceTicket);
 
             return infoNumberreducedTicket;
         }
@@ -569,17 +590,17 @@ namespace P_UX_ACD_EgalAhmeOmar.Controller
         {
 
             //
-            _countNormalpriceTicket = Convert.ToInt32(infoNumberreducedTicket);
+            _countReducedpriceTicket = Convert.ToInt32(infoNumberreducedTicket);
 
-            _countNormalpriceTicket--;
+            _countReducedpriceTicket--;
 
-            if (_countNormalpriceTicket < 0)
+            if (_countReducedpriceTicket < 0)
             {
-                _countNormalpriceTicket = 0;
+                _countReducedpriceTicket = 0;
 
             }
             
-            infoNumberreducedTicket = Convert.ToString(_countNormalpriceTicket);
+            infoNumberreducedTicket = Convert.ToString(_countReducedpriceTicket);
 
             return infoNumberreducedTicket;
         }
@@ -587,7 +608,6 @@ namespace P_UX_ACD_EgalAhmeOmar.Controller
 
         public void DisplayTickets(Panel panel)
         {
-            // Définir les colonnes du DataGridView
 
             // Groupement des tickets à prix réduit
             var discountedTickets = _model.Tickets.Where(t => t.Name == (rManager.GetString("_nameReducedticket")).ToString()).ToList();
@@ -644,17 +664,8 @@ namespace P_UX_ACD_EgalAhmeOmar.Controller
             AddLabelPriceToPanel(panel, parisVisitetotalprice, 0);
 
 
-
-
-           
-            
-
-            
-
-
-
-
         }
+
 
         /// <summary>
         /// 
@@ -701,7 +712,9 @@ namespace P_UX_ACD_EgalAhmeOmar.Controller
             panel.Controls.Add(lblCount);
         }
 
-            private static void AddLabelPriceToPanel(Panel panel, double count, int rowIndex)
+
+
+        private static void AddLabelPriceToPanel(Panel panel, double count, int rowIndex)
         {
             int labelWidth = 150;
             int labelHeight = 20;

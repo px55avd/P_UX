@@ -35,20 +35,35 @@ namespace P_UX_ACD_EgalAhmeOmar.Views
         }
 
         /// <summary>
-        /// Met à jour la langue de l'interface utilisateur en utilisant un ResourceManager.
+        /// Iterate through every Controls in the view recursivly and update language with ressource 
         /// </summary>
-        /// <param name="_resourcesManager">ResourceManager pour les ressources de localisation.</param>
-        public void UpdateLang(ResourceManager _resourcesManager)
+        /// <param name="resourceManager">Ressource manager for target language</param>
+        public void UpdateLang(ResourceManager _resourceManager)
         {
-            ResourceManager resources = _resourcesManager;
 
-            // Parcourt tous les contrôles de la vue et met à jour leur texte selon la langue sélectionnée.
-            foreach (Control c in Controls)
+            ResourceManager resourceManager = _resourceManager;
+
+            foreach (Control c in this.Controls)
             {
-                if (resources.GetString(c.Name) != null)
+                UpdateLevel(c);
+            }
+
+            // Recursivly translate in child control
+            void UpdateLevel(Control parentControl)
+            {
+
+                if (parentControl.HasChildren)
                 {
-                    c.Text = resources.GetString(c.Name);
+                    foreach (Control childControl in parentControl.Controls)
+                    {
+                        UpdateLevel(childControl);
+                    }
                 }
+                if (resourceManager.GetString(parentControl.Name) != null)
+                {
+                    parentControl.Text = resourceManager.GetString(parentControl.Name);
+                }
+
             }
         }
 
@@ -77,9 +92,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Views
                 Controller.ShowvalidTicketmessage();
 
                 //Applle de la méthode dans le controleur
-                Controller.ShowViewallMychoicestoViewnormalTicketChoices();
-
-                
+                Controller.ShowViewallMychoicestoViewnormalTicketChoices(); 
             }
             else
             {
@@ -103,7 +116,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Views
         private void btnUpreducedPrice_Click(object sender, EventArgs e)
         {
             //
-            lblNumberreducedTickets.Text = Controller.UpCountReducedprice(lblNumberstandardTickets.Text);
+            lblNumberreducedTickets.Text = Controller.UpCountReducedprice(lblNumberreducedTickets.Text);
         }
 
         private void btnDownreducedPrice_Click(object sender, EventArgs e)
