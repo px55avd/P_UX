@@ -3,6 +3,38 @@
   "WorkspaceRootPath": "E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\controller\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|solutionrelative:controller\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\views\\view.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|solutionrelative:views\\view.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\views\\viewmyallchoices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|solutionrelative:views\\viewmyallchoices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|e:\\p_ux-acd\\p_ux-acd-egalahmeomar\\views\\viewselectpaymentmethod.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|solutionrelative:views\\viewselectpaymentmethod.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\views\\viewselectpaymentmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|solutionrelative:views\\viewselectpaymentmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\views\\viewbillornot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|solutionrelative:views\\viewbillornot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\views\\viewmyallchoices.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|solutionrelative:views\\viewmyallchoices.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\views\\viewmyallchoices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|solutionrelative:views\\viewmyallchoices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\views\\viewnormalticketchoices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|solutionrelative:views\\viewnormalticketchoices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -11,52 +43,80 @@
       "RelativeMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|solutionrelative:views\\viewspecialticketchoices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\views\\viewnormalticketchoices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|solutionrelative:views\\viewnormalticketchoices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\views\\viewnormalticketchoices.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|solutionrelative:views\\viewnormalticketchoices.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\views\\viewspecialticketchoices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|solutionrelative:views\\viewspecialticketchoices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\views\\viewspecialticketchoices.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|solutionrelative:views\\viewspecialticketchoices.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\views\\viewselectspecialtickets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|solutionrelative:views\\viewselectspecialtickets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\views\\viewselectspecialtickets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|solutionrelative:views\\viewselectspecialtickets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\views\\viewselectspecialtickets.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|solutionrelative:views\\viewselectspecialtickets.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\views\\viewselectspecialornormaltickets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|solutionrelative:views\\viewselectspecialornormaltickets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\views\\viewselectspecialornormaltickets.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|solutionrelative:views\\viewselectspecialornormaltickets.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\views\\viewselectspecialornormaltickets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|solutionrelative:views\\viewselectspecialornormaltickets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\views\\viewselectnavigoornot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|solutionrelative:views\\viewselectnavigoornot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\views\\viewselectnavigoornot.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|solutionrelative:views\\viewselectnavigoornot.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\views\\viewselectnavigoornot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|solutionrelative:views\\viewselectnavigoornot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\views\\viewbillornot.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|solutionrelative:views\\viewbillornot.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\views\\view.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|solutionrelative:views\\view.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\views\\view.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|solutionrelative:views\\view.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|e:\\p_ux-acd\\p_ux-acd-egalahmeomar\\ressources\\english.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
-      "RelativeMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|solutionrelative:ressources\\english.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|e:\\p_ux-acd\\p_ux-acd-egalahmeomar\\views\\view.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|solutionrelative:views\\view.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\controller\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|solutionrelative:controller\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\model\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|solutionrelative:model\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\ressources\\english.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|solutionrelative:ressources\\english.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\ressources\\french.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
       "RelativeMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|solutionrelative:ressources\\french.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\views\\viewbillornot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|solutionrelative:views\\viewbillornot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|e:\\p_ux-acd\\p_ux-acd-egalahmeomar\\views\\viewselectpaymentmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|solutionrelative:views\\viewselectpaymentmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\views\\viewmyallchoices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F2D74A09-0D64-4AF5-AAE5-AF400F096AC5}|P_UX-ACD-EgalAhmeOmar.csproj|solutionrelative:views\\viewmyallchoices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,11 +126,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 27,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 25,
               "Title": "View.cs [Design]",
               "DocumentMoniker": "E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\Views\\View.cs",
               "RelativeDocumentMoniker": "Views\\View.cs",
@@ -83,7 +143,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 22,
               "Title": "ViewselectNavigoorNot.cs [Design]",
               "DocumentMoniker": "E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\Views\\ViewselectNavigoorNot.cs",
               "RelativeDocumentMoniker": "Views\\ViewselectNavigoorNot.cs",
@@ -91,12 +151,11 @@
               "RelativeToolTip": "Views\\ViewselectNavigoorNot.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-16T12:09:10.19Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 19,
               "Title": "ViewselectSpecialorNormaltickets.cs [Design]",
               "DocumentMoniker": "E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\Views\\ViewselectSpecialorNormaltickets.cs",
               "RelativeDocumentMoniker": "Views\\ViewselectSpecialorNormaltickets.cs",
@@ -104,12 +163,11 @@
               "RelativeToolTip": "Views\\ViewselectSpecialorNormaltickets.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-16T12:09:11.393Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 14,
               "Title": "ViewselectSpecialtickets.cs [Design]",
               "DocumentMoniker": "E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\Views\\ViewselectSpecialtickets.cs",
               "RelativeDocumentMoniker": "Views\\ViewselectSpecialtickets.cs",
@@ -117,12 +175,11 @@
               "RelativeToolTip": "Views\\ViewselectSpecialtickets.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-16T12:09:12.257Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "ViewspecialTicketchoices.cs [Design]",
               "DocumentMoniker": "E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\Views\\ViewspecialTicketchoices.cs",
               "RelativeDocumentMoniker": "Views\\ViewspecialTicketchoices.cs",
@@ -130,12 +187,11 @@
               "RelativeToolTip": "Views\\ViewspecialTicketchoices.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-16T12:09:13.681Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "ViewnormalTicketchoices.cs [Design]",
               "DocumentMoniker": "E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\Views\\ViewnormalTicketchoices.cs",
               "RelativeDocumentMoniker": "Views\\ViewnormalTicketchoices.cs",
@@ -143,12 +199,11 @@
               "RelativeToolTip": "Views\\ViewnormalTicketchoices.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-16T12:09:09.489Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 7,
               "Title": "ViewmyAllchoices.cs [Design]",
               "DocumentMoniker": "E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\Views\\ViewmyAllchoices.cs",
               "RelativeDocumentMoniker": "Views\\ViewmyAllchoices.cs",
@@ -161,7 +216,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 4,
               "Title": "ViewselectPaymentmethod.cs [Design]",
               "DocumentMoniker": "E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\Views\\ViewselectPaymentmethod.cs",
               "RelativeDocumentMoniker": "Views\\ViewselectPaymentmethod.cs",
@@ -169,12 +224,11 @@
               "RelativeToolTip": "Views\\ViewselectPaymentmethod.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-16T12:09:10.809Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 5,
               "Title": "ViewbillOrnot.cs [Design]",
               "DocumentMoniker": "E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\Views\\ViewbillOrnot.cs",
               "RelativeDocumentMoniker": "Views\\ViewbillOrnot.cs",
@@ -182,8 +236,7 @@
               "RelativeToolTip": "Views\\ViewbillOrnot.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-16T12:07:57.914Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -191,66 +244,247 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
+              "Title": "ViewselectPaymentmethod.Designer.cs",
+              "DocumentMoniker": "E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\Views\\ViewselectPaymentmethod.Designer.cs",
+              "RelativeDocumentMoniker": "Views\\ViewselectPaymentmethod.Designer.cs",
+              "ToolTip": "E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\Views\\ViewselectPaymentmethod.Designer.cs",
+              "RelativeToolTip": "Views\\ViewselectPaymentmethod.Designer.cs",
+              "ViewState": "AQIAAD8BAAAAAAAAAAAAAD4BAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T17:58:04.438Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ViewmyAllchoices.cs",
+              "DocumentMoniker": "E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\Views\\ViewmyAllchoices.cs",
+              "RelativeDocumentMoniker": "Views\\ViewmyAllchoices.cs",
+              "ToolTip": "E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\Views\\ViewmyAllchoices.cs",
+              "RelativeToolTip": "Views\\ViewmyAllchoices.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAwwFoAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T17:49:36.57Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ViewmyAllchoices.Designer.cs",
+              "DocumentMoniker": "E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\Views\\ViewmyAllchoices.Designer.cs",
+              "RelativeDocumentMoniker": "Views\\ViewmyAllchoices.Designer.cs",
+              "ToolTip": "E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\Views\\ViewmyAllchoices.Designer.cs",
+              "RelativeToolTip": "Views\\ViewmyAllchoices.Designer.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAADwv+kAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T17:44:32.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ViewnormalTicketchoices.cs",
+              "DocumentMoniker": "E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\Views\\ViewnormalTicketchoices.cs",
+              "RelativeDocumentMoniker": "Views\\ViewnormalTicketchoices.cs",
+              "ToolTip": "E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\Views\\ViewnormalTicketchoices.cs",
+              "RelativeToolTip": "Views\\ViewnormalTicketchoices.cs",
+              "ViewState": "AQIAAGUAAAAAAAAAAAAowIAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T17:37:37.906Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ViewnormalTicketchoices.Designer.cs",
+              "DocumentMoniker": "E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\Views\\ViewnormalTicketchoices.Designer.cs",
+              "RelativeDocumentMoniker": "Views\\ViewnormalTicketchoices.Designer.cs",
+              "ToolTip": "E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\Views\\ViewnormalTicketchoices.Designer.cs",
+              "RelativeToolTip": "Views\\ViewnormalTicketchoices.Designer.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAIwE0BAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T17:36:38.854Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ViewspecialTicketchoices.cs",
+              "DocumentMoniker": "E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\Views\\ViewspecialTicketchoices.cs",
+              "RelativeDocumentMoniker": "Views\\ViewspecialTicketchoices.cs",
+              "ToolTip": "E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\Views\\ViewspecialTicketchoices.cs",
+              "RelativeToolTip": "Views\\ViewspecialTicketchoices.cs",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAswF0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T17:34:26.86Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ViewspecialTicketchoices.Designer.cs",
+              "DocumentMoniker": "E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\Views\\ViewspecialTicketchoices.Designer.cs",
+              "RelativeDocumentMoniker": "Views\\ViewspecialTicketchoices.Designer.cs",
+              "ToolTip": "E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\Views\\ViewspecialTicketchoices.Designer.cs",
+              "RelativeToolTip": "Views\\ViewspecialTicketchoices.Designer.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAIwHEBAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T17:33:23.102Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ViewselectSpecialtickets.cs",
+              "DocumentMoniker": "E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\Views\\ViewselectSpecialtickets.cs",
+              "RelativeDocumentMoniker": "Views\\ViewselectSpecialtickets.cs",
+              "ToolTip": "E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\Views\\ViewselectSpecialtickets.cs",
+              "RelativeToolTip": "Views\\ViewselectSpecialtickets.cs",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAwwGAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T17:30:10.432Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ViewselectSpecialtickets.Designer.cs",
+              "DocumentMoniker": "E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\Views\\ViewselectSpecialtickets.Designer.cs",
+              "RelativeDocumentMoniker": "Views\\ViewselectSpecialtickets.Designer.cs",
+              "ToolTip": "E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\Views\\ViewselectSpecialtickets.Designer.cs",
+              "RelativeToolTip": "Views\\ViewselectSpecialtickets.Designer.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAmwB0BAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T17:29:14.404Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ViewselectSpecialorNormaltickets.cs",
+              "DocumentMoniker": "E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\Views\\ViewselectSpecialorNormaltickets.cs",
+              "RelativeDocumentMoniker": "Views\\ViewselectSpecialorNormaltickets.cs",
+              "ToolTip": "E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\Views\\ViewselectSpecialorNormaltickets.cs",
+              "RelativeToolTip": "Views\\ViewselectSpecialorNormaltickets.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAiwD0AAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T17:26:37.221Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ViewselectSpecialorNormaltickets.Designer.cs",
+              "DocumentMoniker": "E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\Views\\ViewselectSpecialorNormaltickets.Designer.cs",
+              "RelativeDocumentMoniker": "Views\\ViewselectSpecialorNormaltickets.Designer.cs",
+              "ToolTip": "E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\Views\\ViewselectSpecialorNormaltickets.Designer.cs",
+              "RelativeToolTip": "Views\\ViewselectSpecialorNormaltickets.Designer.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAmwOcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T17:25:14.305Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ViewselectNavigoorNot.cs",
+              "DocumentMoniker": "E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\Views\\ViewselectNavigoorNot.cs",
+              "RelativeDocumentMoniker": "Views\\ViewselectNavigoorNot.cs",
+              "ToolTip": "E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\Views\\ViewselectNavigoorNot.cs",
+              "RelativeToolTip": "Views\\ViewselectNavigoorNot.cs",
+              "ViewState": "AQIAADMAAAAAAAAAAAAiwFEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T17:22:24.637Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ViewselectNavigoorNot.Designer.cs",
+              "DocumentMoniker": "E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\Views\\ViewselectNavigoorNot.Designer.cs",
+              "RelativeDocumentMoniker": "Views\\ViewselectNavigoorNot.Designer.cs",
+              "ToolTip": "E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\Views\\ViewselectNavigoorNot.Designer.cs",
+              "RelativeToolTip": "Views\\ViewselectNavigoorNot.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGAAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T17:19:50.112Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ViewbillOrnot.Designer.cs",
+              "DocumentMoniker": "E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\Views\\ViewbillOrnot.Designer.cs",
+              "RelativeDocumentMoniker": "Views\\ViewbillOrnot.Designer.cs",
+              "ToolTip": "E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\Views\\ViewbillOrnot.Designer.cs",
+              "RelativeToolTip": "Views\\ViewbillOrnot.Designer.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAmwNoAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T17:15:18.651Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "View.Designer.cs",
+              "DocumentMoniker": "E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\Views\\View.Designer.cs",
+              "RelativeDocumentMoniker": "Views\\View.Designer.cs",
+              "ToolTip": "E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\Views\\View.Designer.cs",
+              "RelativeToolTip": "Views\\View.Designer.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAIwMYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T17:11:23.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "View.cs",
               "DocumentMoniker": "E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\Views\\View.cs",
               "RelativeDocumentMoniker": "Views\\View.cs",
               "ToolTip": "E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\Views\\View.cs",
               "RelativeToolTip": "Views\\View.cs",
-              "ViewState": "AQIAAD4AAAAAAAAAAAArwE8AAAAIAAAA",
+              "ViewState": "AQIAABMAAAAAAAAAAAAswCIAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-27T19:00:02.225Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 27,
               "Title": "English.resx",
               "DocumentMoniker": "E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\Ressources\\English.resx",
               "RelativeDocumentMoniker": "Ressources\\English.resx",
               "ToolTip": "E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\Ressources\\English.resx",
               "RelativeToolTip": "Ressources\\English.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-05-27T18:55:49.723Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-27T18:55:49.723Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
               "Title": "Controller.cs",
               "DocumentMoniker": "E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\Controller\\Controller.cs",
               "RelativeDocumentMoniker": "Controller\\Controller.cs",
               "ToolTip": "E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\Controller\\Controller.cs",
               "RelativeToolTip": "Controller\\Controller.cs",
-              "ViewState": "AQIAAJ4BAAAAAAAAAAAvwLMBAAAIAAAA",
+              "ViewState": "AQIAANwAAAAAAAAAAAAWwL4BAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-23T19:03:16.39Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 26,
               "Title": "Model.cs",
               "DocumentMoniker": "E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\Model\\Model.cs",
               "RelativeDocumentMoniker": "Model\\Model.cs",
               "ToolTip": "E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\Model\\Model.cs",
               "RelativeToolTip": "Model\\Model.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAYwF4AAAAuAAAA",
+              "ViewState": "AQIAAGEAAAAAAAAAAAAswH8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T19:14:19.436Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-23T19:14:19.436Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 28,
               "Title": "French.resx",
               "DocumentMoniker": "E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\Ressources\\French.resx",
               "RelativeDocumentMoniker": "Ressources\\French.resx",
               "ToolTip": "E:\\P_UX-ACD\\P_UX-ACD-EgalAhmeOmar\\Ressources\\French.resx",
               "RelativeToolTip": "Ressources\\French.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-05-24T17:40:14.188Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-24T17:40:14.188Z"
             }
           ]
         }
