@@ -57,25 +57,28 @@
             // 
             this.pnlHeader.Controls.Add(this.lbltextinHeader);
             this.pnlHeader.Controls.Add(this.btnBackinHeader);
-            this.pnlHeader.Location = new System.Drawing.Point(-1, 0);
+            this.pnlHeader.Location = new System.Drawing.Point(-2, 0);
+            this.pnlHeader.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pnlHeader.Name = "pnlHeader";
-            this.pnlHeader.Size = new System.Drawing.Size(692, 61);
+            this.pnlHeader.Size = new System.Drawing.Size(1038, 94);
             this.pnlHeader.TabIndex = 10;
             // 
             // lbltextinHeader
             // 
             this.lbltextinHeader.AutoSize = true;
-            this.lbltextinHeader.Location = new System.Drawing.Point(10, 19);
+            this.lbltextinHeader.Location = new System.Drawing.Point(15, 29);
+            this.lbltextinHeader.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbltextinHeader.Name = "lbltextinHeader";
-            this.lbltextinHeader.Size = new System.Drawing.Size(78, 13);
+            this.lbltextinHeader.Size = new System.Drawing.Size(115, 20);
             this.lbltextinHeader.TabIndex = 5;
             this.lbltextinHeader.Text = "Faites un choix";
             // 
             // btnBackinHeader
             // 
-            this.btnBackinHeader.Location = new System.Drawing.Point(519, 3);
+            this.btnBackinHeader.Location = new System.Drawing.Point(778, 5);
+            this.btnBackinHeader.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnBackinHeader.Name = "btnBackinHeader";
-            this.btnBackinHeader.Size = new System.Drawing.Size(167, 55);
+            this.btnBackinHeader.Size = new System.Drawing.Size(250, 85);
             this.btnBackinHeader.TabIndex = 4;
             this.btnBackinHeader.Text = "RETOUR";
             this.btnBackinHeader.UseVisualStyleBackColor = true;
@@ -89,79 +92,94 @@
             this.pnlFooter.Controls.Add(this.btnEnglishinFooter);
             this.pnlFooter.Controls.Add(this.btnFrenchinFooter);
             this.pnlFooter.Controls.Add(this.btnStopInFooter);
-            this.pnlFooter.Location = new System.Drawing.Point(-1, 389);
+            this.pnlFooter.Location = new System.Drawing.Point(-2, 598);
+            this.pnlFooter.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pnlFooter.Name = "pnlFooter";
-            this.pnlFooter.Size = new System.Drawing.Size(802, 61);
+            this.pnlFooter.Size = new System.Drawing.Size(1203, 94);
             this.pnlFooter.TabIndex = 11;
             // 
             // btnItalianinFooter
             // 
-            this.btnItalianinFooter.Location = new System.Drawing.Point(680, 3);
+            this.btnItalianinFooter.Location = new System.Drawing.Point(1020, 5);
+            this.btnItalianinFooter.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnItalianinFooter.Name = "btnItalianinFooter";
-            this.btnItalianinFooter.Size = new System.Drawing.Size(111, 55);
+            this.btnItalianinFooter.Size = new System.Drawing.Size(166, 85);
             this.btnItalianinFooter.TabIndex = 5;
             this.btnItalianinFooter.Text = "Italanio";
             this.btnItalianinFooter.UseVisualStyleBackColor = true;
+            this.btnItalianinFooter.Click += new System.EventHandler(this.btnItalianinFooter_Click);
             // 
             // btnDeutshinFooter
             // 
-            this.btnDeutshinFooter.Location = new System.Drawing.Point(563, 3);
+            this.btnDeutshinFooter.Location = new System.Drawing.Point(844, 5);
+            this.btnDeutshinFooter.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnDeutshinFooter.Name = "btnDeutshinFooter";
-            this.btnDeutshinFooter.Size = new System.Drawing.Size(111, 55);
+            this.btnDeutshinFooter.Size = new System.Drawing.Size(166, 85);
             this.btnDeutshinFooter.TabIndex = 4;
             this.btnDeutshinFooter.Text = "Deutsch";
             this.btnDeutshinFooter.UseVisualStyleBackColor = true;
+            this.btnDeutshinFooter.Click += new System.EventHandler(this.btnDeutshinFooter_Click);
             // 
             // btnSpanishinFooter
             // 
-            this.btnSpanishinFooter.Location = new System.Drawing.Point(446, 3);
+            this.btnSpanishinFooter.Location = new System.Drawing.Point(669, 5);
+            this.btnSpanishinFooter.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSpanishinFooter.Name = "btnSpanishinFooter";
-            this.btnSpanishinFooter.Size = new System.Drawing.Size(111, 55);
+            this.btnSpanishinFooter.Size = new System.Drawing.Size(166, 85);
             this.btnSpanishinFooter.TabIndex = 3;
             this.btnSpanishinFooter.Text = "Español";
             this.btnSpanishinFooter.UseVisualStyleBackColor = true;
+            this.btnSpanishinFooter.Click += new System.EventHandler(this.btnSpanishinFooter_Click);
             // 
             // btnEnglishinFooter
             // 
-            this.btnEnglishinFooter.Location = new System.Drawing.Point(329, 3);
+            this.btnEnglishinFooter.Location = new System.Drawing.Point(494, 5);
+            this.btnEnglishinFooter.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnEnglishinFooter.Name = "btnEnglishinFooter";
-            this.btnEnglishinFooter.Size = new System.Drawing.Size(111, 55);
+            this.btnEnglishinFooter.Size = new System.Drawing.Size(166, 85);
             this.btnEnglishinFooter.TabIndex = 2;
             this.btnEnglishinFooter.Text = "English";
             this.btnEnglishinFooter.UseVisualStyleBackColor = true;
+            this.btnEnglishinFooter.Click += new System.EventHandler(this.btnEnglishinFooter_Click);
             // 
             // btnFrenchinFooter
             // 
-            this.btnFrenchinFooter.Location = new System.Drawing.Point(212, 3);
+            this.btnFrenchinFooter.Location = new System.Drawing.Point(318, 5);
+            this.btnFrenchinFooter.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnFrenchinFooter.Name = "btnFrenchinFooter";
-            this.btnFrenchinFooter.Size = new System.Drawing.Size(111, 55);
+            this.btnFrenchinFooter.Size = new System.Drawing.Size(166, 85);
             this.btnFrenchinFooter.TabIndex = 1;
             this.btnFrenchinFooter.Text = "Français";
             this.btnFrenchinFooter.UseVisualStyleBackColor = true;
+            this.btnFrenchinFooter.Click += new System.EventHandler(this.btnFrenchinFooter_Click);
             // 
             // btnStopInFooter
             // 
-            this.btnStopInFooter.Location = new System.Drawing.Point(3, 3);
+            this.btnStopInFooter.Location = new System.Drawing.Point(4, 5);
+            this.btnStopInFooter.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnStopInFooter.Name = "btnStopInFooter";
-            this.btnStopInFooter.Size = new System.Drawing.Size(111, 55);
+            this.btnStopInFooter.Size = new System.Drawing.Size(166, 85);
             this.btnStopInFooter.TabIndex = 0;
             this.btnStopInFooter.Text = "STOP";
             this.btnStopInFooter.UseVisualStyleBackColor = true;
+            this.btnStopInFooter.Click += new System.EventHandler(this.btnStopInFooter_Click);
             // 
             // pnlCurrentpurchase
             // 
             this.pnlCurrentpurchase.Controls.Add(this.lblTextInside);
-            this.pnlCurrentpurchase.Location = new System.Drawing.Point(691, 1);
+            this.pnlCurrentpurchase.Location = new System.Drawing.Point(1036, 2);
+            this.pnlCurrentpurchase.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pnlCurrentpurchase.Name = "pnlCurrentpurchase";
-            this.pnlCurrentpurchase.Size = new System.Drawing.Size(109, 388);
+            this.pnlCurrentpurchase.Size = new System.Drawing.Size(164, 597);
             this.pnlCurrentpurchase.TabIndex = 12;
             // 
             // lblTextInside
             // 
             this.lblTextInside.AutoSize = true;
-            this.lblTextInside.Location = new System.Drawing.Point(9, 10);
+            this.lblTextInside.Location = new System.Drawing.Point(14, 15);
+            this.lblTextInside.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTextInside.Name = "lblTextInside";
-            this.lblTextInside.Size = new System.Drawing.Size(80, 13);
+            this.lblTextInside.Size = new System.Drawing.Size(119, 20);
             this.lblTextInside.TabIndex = 0;
             this.lblTextInside.Text = "First Purchase :";
             // 
@@ -173,17 +191,17 @@
             this.pnlInfos.Controls.Add(this.lblAirportTicket);
             this.pnlInfos.Controls.Add(this.lblParisvisiteTicket);
             this.pnlInfos.Controls.Add(this.lblChessydisneyTicket);
-            this.pnlInfos.Location = new System.Drawing.Point(3, 64);
+            this.pnlInfos.Location = new System.Drawing.Point(4, 98);
+            this.pnlInfos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pnlInfos.Name = "pnlInfos";
-            this.pnlInfos.Size = new System.Drawing.Size(681, 319);
+            this.pnlInfos.Size = new System.Drawing.Size(1022, 491);
             this.pnlInfos.TabIndex = 13;
             // 
             // btnAirportticket
             // 
-            this.btnAirportticket.Location = new System.Drawing.Point(96, 220);
-            this.btnAirportticket.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAirportticket.Location = new System.Drawing.Point(144, 338);
             this.btnAirportticket.Name = "btnAirportticket";
-            this.btnAirportticket.Size = new System.Drawing.Size(186, 47);
+            this.btnAirportticket.Size = new System.Drawing.Size(279, 72);
             this.btnAirportticket.TabIndex = 5;
             this.btnAirportticket.Text = "Aéroport ";
             this.btnAirportticket.UseVisualStyleBackColor = true;
@@ -191,10 +209,9 @@
             // 
             // btnParisvisite
             // 
-            this.btnParisvisite.Location = new System.Drawing.Point(96, 126);
-            this.btnParisvisite.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnParisvisite.Location = new System.Drawing.Point(144, 194);
             this.btnParisvisite.Name = "btnParisvisite";
-            this.btnParisvisite.Size = new System.Drawing.Size(186, 47);
+            this.btnParisvisite.Size = new System.Drawing.Size(279, 72);
             this.btnParisvisite.TabIndex = 4;
             this.btnParisvisite.Text = "Paris Visite";
             this.btnParisvisite.UseVisualStyleBackColor = true;
@@ -202,10 +219,9 @@
             // 
             // btnChessydisneyTicket
             // 
-            this.btnChessydisneyTicket.Location = new System.Drawing.Point(96, 23);
-            this.btnChessydisneyTicket.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnChessydisneyTicket.Location = new System.Drawing.Point(144, 35);
             this.btnChessydisneyTicket.Name = "btnChessydisneyTicket";
-            this.btnChessydisneyTicket.Size = new System.Drawing.Size(186, 47);
+            this.btnChessydisneyTicket.Size = new System.Drawing.Size(279, 72);
             this.btnChessydisneyTicket.TabIndex = 3;
             this.btnChessydisneyTicket.Text = "Disneyland Paris";
             this.btnChessydisneyTicket.UseVisualStyleBackColor = true;
@@ -214,42 +230,44 @@
             // lblAirportTicket
             // 
             this.lblAirportTicket.AutoSize = true;
-            this.lblAirportTicket.Location = new System.Drawing.Point(26, 237);
+            this.lblAirportTicket.Location = new System.Drawing.Point(39, 365);
+            this.lblAirportTicket.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAirportTicket.Name = "lblAirportTicket";
-            this.lblAirportTicket.Size = new System.Drawing.Size(16, 13);
+            this.lblAirportTicket.Size = new System.Drawing.Size(22, 20);
             this.lblAirportTicket.TabIndex = 2;
             this.lblAirportTicket.Text = "3.";
             // 
             // lblParisvisiteTicket
             // 
             this.lblParisvisiteTicket.AutoSize = true;
-            this.lblParisvisiteTicket.Location = new System.Drawing.Point(26, 143);
+            this.lblParisvisiteTicket.Location = new System.Drawing.Point(39, 220);
+            this.lblParisvisiteTicket.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblParisvisiteTicket.Name = "lblParisvisiteTicket";
-            this.lblParisvisiteTicket.Size = new System.Drawing.Size(16, 13);
+            this.lblParisvisiteTicket.Size = new System.Drawing.Size(22, 20);
             this.lblParisvisiteTicket.TabIndex = 1;
             this.lblParisvisiteTicket.Text = "2.";
             // 
             // lblChessydisneyTicket
             // 
             this.lblChessydisneyTicket.AutoSize = true;
-            this.lblChessydisneyTicket.Location = new System.Drawing.Point(26, 40);
+            this.lblChessydisneyTicket.Location = new System.Drawing.Point(39, 62);
+            this.lblChessydisneyTicket.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblChessydisneyTicket.Name = "lblChessydisneyTicket";
-            this.lblChessydisneyTicket.Size = new System.Drawing.Size(16, 13);
+            this.lblChessydisneyTicket.Size = new System.Drawing.Size(22, 20);
             this.lblChessydisneyTicket.TabIndex = 0;
             this.lblChessydisneyTicket.Text = "1.";
             // 
             // ViewselectSpecialtickets
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1200, 692);
             this.Controls.Add(this.pnlHeader);
             this.Controls.Add(this.pnlFooter);
             this.Controls.Add(this.pnlCurrentpurchase);
             this.Controls.Add(this.pnlInfos);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ViewselectSpecialtickets";
-            this.Text = "View5";
+            this.Text = "RATP";
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();
             this.pnlFooter.ResumeLayout(false);

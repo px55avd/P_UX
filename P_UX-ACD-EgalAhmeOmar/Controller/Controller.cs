@@ -30,9 +30,8 @@ namespace P_UX_ACD_EgalAhmeOmar.Controller
         private string _currentSpecialticket= "";
         private int _numberDayofspecialTicket = 0;
         
-
         // Enumération pour les langues disponibles.
-        public enum Language { French, English };
+        public enum Language { French, English, Spanish, Deutsh, Italian };
 
         // Langue actuelle de l'application.
         private Language _currentLanguage;
@@ -89,7 +88,6 @@ namespace P_UX_ACD_EgalAhmeOmar.Controller
             _viewSelectnavigoOrnot.Controller = this;
         }
 
-
         /// <summary>
         /// 
         /// </summary>
@@ -114,8 +112,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Controller
         /// </summary>
         public void ShowViewselectSpecialtickets()
         {
-            HideShow(_viewSelectnavigoOrnot, _viewSelectspecialtickets);
-            
+            HideShow(_viewSelectspecialorNormaltickets, _viewSelectspecialtickets);
         }
 
         /// <summary>
@@ -123,7 +120,6 @@ namespace P_UX_ACD_EgalAhmeOmar.Controller
         /// </summary>
         public void ShowViewSpecialticketChoices()
         {
-
             //
             HideShow(_viewSelectspecialtickets, _viewSpecialticketsChoices);
         }
@@ -137,24 +133,35 @@ namespace P_UX_ACD_EgalAhmeOmar.Controller
              _currentSpecialticket = rManager.GetString("_nameChessyDisneyticket").ToString();
         }
 
-
+        /// <summary>
+        /// 
+        /// </summary>
         public void GetlabelHeardertextAirportticket()
         {
             _currentSpecialticket = rManager.GetString("_nameAirporticket").ToString();
         }
 
-
+        /// <summary>
+        /// 
+        /// </summary>
         public void GetlabelHeardertextParisvisiteTicket()
         {
             _currentSpecialticket = rManager.GetString("_nameParisVisiteticket").ToString();
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public string SetcurrentSpecialticket()
         {
             return _currentSpecialticket;
         }
 
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public string SetnullSpecialticket()
         {
             string value = "";
@@ -217,7 +224,6 @@ namespace P_UX_ACD_EgalAhmeOmar.Controller
         /// </summary>
         public void ShowViewallMychoicestoViewnormalTicketChoices()
         {
-            
             HideShow(_viewNormalticketChoices, _viewMyallChoices);
             _specialOrnormalTickets = 1;
         }
@@ -339,6 +345,25 @@ namespace P_UX_ACD_EgalAhmeOmar.Controller
         /// <summary>
         /// 
         /// </summary>
+        /// <param name="form"></param>
+        public void ShowviewWithbtnStop(Form form)
+        {
+            HideShow(form, _view);
+
+            //Réinitialise les variable en cours
+            _specialOrnormalTickets = 0;
+            _countNormalpriceTicket = 0;
+            _countReducedpriceTicket = 0;
+            _currentSpecialticket = "";
+            _numberDayofspecialTicket = 0;
+
+            //Réinitailise la langue
+            _currentLanguage = Language.French;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
         public void ShowViewselectSpecialorNormaltickettoViewallMychoices()
         {
             HideShow(_viewMyallChoices, _viewSelectspecialorNormaltickets);
@@ -386,6 +411,13 @@ namespace P_UX_ACD_EgalAhmeOmar.Controller
 
             }
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="date"></param>
+        /// <param name="numberTicket"></param>
+        /// <param name="reducedMultiply"></param>
         public void GetnewSpecialticket(DateTime date, int numberTicket, double reducedMultiply)
         {
             if (_currentSpecialticket == rManager.GetString("_nameChessyDisneyticket").ToString())
@@ -414,9 +446,6 @@ namespace P_UX_ACD_EgalAhmeOmar.Controller
                     _model.Tickets.Add(new Ticket(price: (_model.PricesParisVisiteticketOne) * reducedMultiply, name: _currentSpecialticket, created: date));
                 }
             }
-
-
-
         }
 
 
@@ -439,6 +468,15 @@ namespace P_UX_ACD_EgalAhmeOmar.Controller
                 case Language.French:
                     rManager = new ResourceManager(typeof(Ressources.French));
                     break;
+                case Language.Spanish:
+                    rManager = new ResourceManager(typeof(Ressources.Spanish));
+                    break;
+                case Language.Deutsh:
+                    rManager = new ResourceManager(typeof(Ressources.Deutsh));
+                    break;
+                case Language.Italian:
+                    rManager = new ResourceManager(typeof(Ressources.Italian));
+                    break;
                 default:
                     break;
             }
@@ -453,7 +491,6 @@ namespace P_UX_ACD_EgalAhmeOmar.Controller
             _viewSelectspecialorNormaltickets.UpdateLang(rManager);
             _viewSelectspecialtickets.UpdateLang(rManager);
             _viewSpecialticketsChoices.UpdateLang(rManager);
-
         }
 
         /// <summary>
@@ -605,7 +642,10 @@ namespace P_UX_ACD_EgalAhmeOmar.Controller
             return infoNumberreducedTicket;
         }
 
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="panel"></param>
         public void DisplayTickets(Panel panel)
         {
 
@@ -614,20 +654,22 @@ namespace P_UX_ACD_EgalAhmeOmar.Controller
             int discountedCount = discountedTickets.Count;
             double discountedTotalPrice = discountedTickets.Sum(t => t.Price);
 
+            //
             var standardTickets = _model.Tickets.Where(t => t.Name == (rManager.GetString("_nameStandardticket")).ToString()).ToList();
             int standardCount = standardTickets.Count;
             double standardTotalPrice = standardTickets.Sum(t => t.Price);
 
-
-
+            //
             var disneyChessytikets = _model.Tickets.Where(t => t.Name == (rManager.GetString("_nameChessyDisneyticket")).ToString()).ToList();
             int disneyChessycount = disneyChessytikets.Count;
             double disneyChessyTotalPrice = disneyChessytikets.Sum(t => t.Price);
 
+            //
             var airportTickets = _model.Tickets.Where(t => t.Name == (rManager.GetString("_nameAirporticket")).ToString()).ToList();
             int airportCount = airportTickets.Count;
             double airportTotalPrice = airportTickets.Sum(t => t.Price);
 
+            //
             var parisVisitetikets = _model.Tickets.Where(t => t.Name == (rManager.GetString("_nameParisVisiteticket")).ToString()).ToList();
             int parisVisitecount = parisVisitetikets.Count;
             double parisVisitetotalprice = parisVisitetikets.Sum(t => t.Price);
@@ -646,7 +688,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Controller
             AddLabelToPanel(panel, rManager.GetString("_nameParisVisiteticket").ToString(), 4);
             AddLabelToPanel(panel, "Total des tickets :", 5);
 
-
+            //
             AddLabelCountToPanel(panel, totalTickets,5);
             AddLabelCountToPanel(panel, discountedCount, 4);
             AddLabelCountToPanel(panel, standardCount, 1);
@@ -655,15 +697,13 @@ namespace P_UX_ACD_EgalAhmeOmar.Controller
             AddLabelCountToPanel(panel, parisVisitecount, 0);
 
             
-
+            //
             AddLabelPriceToPanel(panel,  totalPrice, 5);
             AddLabelPriceToPanel(panel,  discountedTotalPrice, 4);
             AddLabelPriceToPanel(panel, standardTotalPrice, 1);
             AddLabelPriceToPanel(panel, disneyChessyTotalPrice, 2);
             AddLabelPriceToPanel(panel, airportTotalPrice, 3);
             AddLabelPriceToPanel(panel, parisVisitetotalprice, 0);
-
-
         }
 
 
@@ -693,7 +733,12 @@ namespace P_UX_ACD_EgalAhmeOmar.Controller
             panel.Controls.Add(lblText);
         }
 
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="panel"></param>
+        /// <param name="count"></param>
+        /// <param name="rowIndex"></param>
         private static void AddLabelCountToPanel(Panel panel, double count, int rowIndex)
         {
 
@@ -713,7 +758,12 @@ namespace P_UX_ACD_EgalAhmeOmar.Controller
         }
 
 
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="panel"></param>
+        /// <param name="count"></param>
+        /// <param name="rowIndex"></param>
         private static void AddLabelPriceToPanel(Panel panel, double count, int rowIndex)
         {
             int labelWidth = 150;
@@ -729,10 +779,6 @@ namespace P_UX_ACD_EgalAhmeOmar.Controller
 
             panel.Controls.Add(lblPrice);
         }
-
-
-
-
 
         /// <summary>
         /// Méthode pour appeler le texte de controle de champs nombre de tickets
@@ -753,12 +799,12 @@ namespace P_UX_ACD_EgalAhmeOmar.Controller
             MessageBox.Show(rManager.GetString("validTicketselected"));
         }
 
-
+        /// <summary>
+        /// 
+        /// </summary>
         public void PrintinvalidTicketmessage()
         {
            
         }
-
-
     }
 }

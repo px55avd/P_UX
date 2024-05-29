@@ -29,15 +29,30 @@ namespace P_UX_ACD_EgalAhmeOmar.Views
         /// <param name="_resourcesManager">ResourceManager pour les ressources de localisation.</param>
         public void UpdateLang(ResourceManager _resourcesManager)
         {
-            ResourceManager resources = _resourcesManager;
+            ResourceManager resourceManager = _resourcesManager;
 
-            // Parcourt tous les contrôles de la vue et met à jour leur texte selon la langue sélectionnée.
-            foreach (Control c in Controls)
+
+            foreach (Control c in this.Controls)
             {
-                if (resources.GetString(c.Name) != null)
+                UpdateLevel(c);
+            }
+
+            // Recursivly translate in child control
+            void UpdateLevel(Control parentControl)
+            {
+
+                if (parentControl.HasChildren)
                 {
-                    c.Text = resources.GetString(c.Name);
+                    foreach (Control childControl in parentControl.Controls)
+                    {
+                        UpdateLevel(childControl);
+                    }
                 }
+                if (resourceManager.GetString(parentControl.Name) != null)
+                {
+                    parentControl.Text = resourceManager.GetString(parentControl.Name);
+                }
+
             }
         }
 
@@ -91,6 +106,73 @@ namespace P_UX_ACD_EgalAhmeOmar.Views
 
             //
             Controller.ShowViewSpecialticketChoices();
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnFrenchinFooter_Click(object sender, EventArgs e)
+        {
+            //
+            Controller.Lang(P_UX_ACD_EgalAhmeOmar.Controller.Controller.Language.French);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnEnglishinFooter_Click(object sender, EventArgs e)
+        {
+            //
+            Controller.Lang(P_UX_ACD_EgalAhmeOmar.Controller.Controller.Language.English);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnSpanishinFooter_Click(object sender, EventArgs e)
+        {
+            //
+            Controller.Lang(P_UX_ACD_EgalAhmeOmar.Controller.Controller.Language.Spanish);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnDeutshinFooter_Click(object sender, EventArgs e)
+        {
+            //
+            Controller.Lang(P_UX_ACD_EgalAhmeOmar.Controller.Controller.Language.Deutsh);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnItalianinFooter_Click(object sender, EventArgs e)
+        {
+            //
+            Controller.Lang(P_UX_ACD_EgalAhmeOmar.Controller.Controller.Language.Italian);
+
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnStopInFooter_Click(object sender, EventArgs e)
+        {
+            //
+            Controller.ShowviewWithbtnStop(FindForm());
         }
     }
 }

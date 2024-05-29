@@ -101,28 +101,114 @@ namespace P_UX_ACD_EgalAhmeOmar.Views
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnUpstandardPrice_Click(object sender, EventArgs e)
         {
             //
             lblNumberstandardTickets.Text = Controller.UpCountNormalprice(lblNumberstandardTickets.Text);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnDownstandardPrice_Click(object sender, EventArgs e)
         {
             //
             lblNumberstandardTickets.Text = Controller.DownCountNormalprice( lblNumberstandardTickets.Text);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnUpreducedPrice_Click(object sender, EventArgs e)
         {
             //
             lblNumberreducedTickets.Text = Controller.UpCountReducedprice(lblNumberreducedTickets.Text);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnDownreducedPrice_Click(object sender, EventArgs e)
         {
             //
             lblNumberreducedTickets.Text = Controller.DowmCountReducedprice(lblNumberreducedTickets.Text);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnFrenchinFooter_Click(object sender, EventArgs e)
+        {
+            //
+            Controller.Lang(P_UX_ACD_EgalAhmeOmar.Controller.Controller.Language.French);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnEnglishinFooter_Click(object sender, EventArgs e)
+        {
+            //
+            Controller.Lang(P_UX_ACD_EgalAhmeOmar.Controller.Controller.Language.English);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnSpanishinFooter_Click(object sender, EventArgs e)
+        {
+            //
+            Controller.Lang(P_UX_ACD_EgalAhmeOmar.Controller.Controller.Language.Spanish);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnDeutshinFooter_Click(object sender, EventArgs e)
+        {
+            //
+            Controller.Lang(P_UX_ACD_EgalAhmeOmar.Controller.Controller.Language.Deutsh);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnItalianinFooter_Click(object sender, EventArgs e)
+        {
+            //
+            Controller.Lang(P_UX_ACD_EgalAhmeOmar.Controller.Controller.Language.Italian);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnStopInFooter_Click(object sender, EventArgs e)
+        {
+            //
+            Controller.ShowviewWithbtnStop(FindForm());
         }
     }
 }

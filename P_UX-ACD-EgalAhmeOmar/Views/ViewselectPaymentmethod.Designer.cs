@@ -113,6 +113,7 @@
             this.btnItalianinFooter.TabIndex = 5;
             this.btnItalianinFooter.Text = "Italanio";
             this.btnItalianinFooter.UseVisualStyleBackColor = true;
+            this.btnItalianinFooter.Click += new System.EventHandler(this.btnItalianinFooter_Click);
             // 
             // btnDeutshinFooter
             // 
@@ -123,6 +124,7 @@
             this.btnDeutshinFooter.TabIndex = 4;
             this.btnDeutshinFooter.Text = "Deutsch";
             this.btnDeutshinFooter.UseVisualStyleBackColor = true;
+            this.btnDeutshinFooter.Click += new System.EventHandler(this.btnDeutshinFooter_Click);
             // 
             // btnSpanishinFooter
             // 
@@ -133,6 +135,7 @@
             this.btnSpanishinFooter.TabIndex = 3;
             this.btnSpanishinFooter.Text = "Español";
             this.btnSpanishinFooter.UseVisualStyleBackColor = true;
+            this.btnSpanishinFooter.Click += new System.EventHandler(this.btnSpanishinFooter_Click);
             // 
             // btnEnglishinFooter
             // 
@@ -143,6 +146,7 @@
             this.btnEnglishinFooter.TabIndex = 2;
             this.btnEnglishinFooter.Text = "English";
             this.btnEnglishinFooter.UseVisualStyleBackColor = true;
+            this.btnEnglishinFooter.Click += new System.EventHandler(this.btnEnglishinFooter_Click);
             // 
             // btnFrenchinFooter
             // 
@@ -153,6 +157,7 @@
             this.btnFrenchinFooter.TabIndex = 1;
             this.btnFrenchinFooter.Text = "Français";
             this.btnFrenchinFooter.UseVisualStyleBackColor = true;
+            this.btnFrenchinFooter.Click += new System.EventHandler(this.btnFrenchinFooter_Click);
             // 
             // btnStopInFooter
             // 
@@ -163,6 +168,7 @@
             this.btnStopInFooter.TabIndex = 0;
             this.btnStopInFooter.Text = "STOP";
             this.btnStopInFooter.UseVisualStyleBackColor = true;
+            this.btnStopInFooter.Click += new System.EventHandler(this.btnStopInFooter_Click);
             // 
             // pnlCurrentpurchase
             // 
@@ -294,7 +300,7 @@
             this.Controls.Add(this.pnlCurrentpurchase);
             this.Controls.Add(this.pnlInfos);
             this.Name = "ViewselectPaymentmethod";
-            this.Text = "View8";
+            this.Text = "RATP";
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();
             this.pnlFooter.ResumeLayout(false);

@@ -161,6 +161,7 @@
             this.btnPasstoFrench.TabIndex = 8;
             this.btnPasstoFrench.Text = "Passer, Vous êtes déjâ en français";
             this.btnPasstoFrench.UseVisualStyleBackColor = true;
+            this.btnPasstoFrench.Click += new System.EventHandler(this.btnPasstoFrench_Click);
             // 
             // View
             // 

@@ -26,8 +26,6 @@ namespace P_UX_ACD_EgalAhmeOmar
         public Controller.Controller Controller { get; set; }
 
 
-
-
         /// <summary>
         /// Iterate through every Controls in the view recursivly and update language with ressource 
         /// </summary>
@@ -82,6 +80,9 @@ namespace P_UX_ACD_EgalAhmeOmar
         private void btnDeutshinFirstpage_Click(object sender, EventArgs e)
         {
             //
+            Controller.Lang(P_UX_ACD_EgalAhmeOmar.Controller.Controller.Language.Deutsh);
+
+            //
             Controller.ShowViewselectNavigoOrnot();
         }
 
@@ -93,6 +94,9 @@ namespace P_UX_ACD_EgalAhmeOmar
         private void btnSpanishinFirstpage_Click(object sender, EventArgs e)
         {
             //
+            Controller.Lang(P_UX_ACD_EgalAhmeOmar.Controller.Controller.Language.Spanish);
+
+            //
             Controller.ShowViewselectNavigoOrnot();
         }
 
@@ -103,6 +107,23 @@ namespace P_UX_ACD_EgalAhmeOmar
         /// <param name="e"></param>
         private void btnItalianinFirstpage_Click(object sender, EventArgs e)
         {
+            //
+            Controller.Lang(P_UX_ACD_EgalAhmeOmar.Controller.Controller.Language.Italian);
+
+            //
+            Controller.ShowViewselectNavigoOrnot();
+        }
+        
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnPasstoFrench_Click(object sender, EventArgs e)
+        {
+            //
+            Controller.Lang(P_UX_ACD_EgalAhmeOmar.Controller.Controller.Language.French);
+
             //
             Controller.ShowViewselectNavigoOrnot();
         }

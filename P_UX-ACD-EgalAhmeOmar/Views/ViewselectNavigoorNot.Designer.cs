@@ -81,7 +81,7 @@
             this.Controls.Add(this.pnlSelectnavigoOrnot);
             this.Controls.Add(this.btnBack);
             this.Name = "ViewselectNavigoorNot";
-            this.Text = "View2";
+            this.Text = "RATP";
             this.pnlSelectnavigoOrnot.ResumeLayout(false);
             this.ResumeLayout(false);
 

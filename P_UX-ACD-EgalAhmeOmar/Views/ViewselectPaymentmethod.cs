@@ -84,5 +84,41 @@ namespace P_UX_ACD_EgalAhmeOmar.Views
             //
             Controller.ShowViewbillOrnot();
         }
+
+        private void btnFrenchinFooter_Click(object sender, EventArgs e)
+        {
+            //
+            Controller.Lang(P_UX_ACD_EgalAhmeOmar.Controller.Controller.Language.French);
+        }
+
+        private void btnEnglishinFooter_Click(object sender, EventArgs e)
+        {
+            //
+            Controller.Lang(P_UX_ACD_EgalAhmeOmar.Controller.Controller.Language.English);
+        }
+
+        private void btnSpanishinFooter_Click(object sender, EventArgs e)
+        {
+            //
+            Controller.Lang(P_UX_ACD_EgalAhmeOmar.Controller.Controller.Language.Spanish);
+        }
+
+        private void btnDeutshinFooter_Click(object sender, EventArgs e)
+        {
+            //
+            Controller.Lang(P_UX_ACD_EgalAhmeOmar.Controller.Controller.Language.Deutsh);
+        }
+
+        private void btnItalianinFooter_Click(object sender, EventArgs e)
+        {
+            //
+            Controller.Lang(P_UX_ACD_EgalAhmeOmar.Controller.Controller.Language.Italian);
+        }
+
+        private void btnStopInFooter_Click(object sender, EventArgs e)
+        {
+            //
+            Controller.ShowviewWithbtnStop(FindForm());
+        }
     }
 }
