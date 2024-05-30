@@ -223,6 +223,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "ViewselectSpecialorNormaltickets";
             this.Text = "RATP";
+            this.Activated += new System.EventHandler(this.ViewselectSpecialorNormaltickets_Activated);
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();
             this.pnlFooter.ResumeLayout(false);

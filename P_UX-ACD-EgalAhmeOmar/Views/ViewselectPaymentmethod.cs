@@ -6,14 +6,7 @@
 ///utilisation du Pattern Model, View, Controler. Vous êtes actuellement dans une des vues.
 ///**************************************************************************************
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Resources;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace P_UX_ACD_EgalAhmeOmar.Views
@@ -177,6 +170,17 @@ namespace P_UX_ACD_EgalAhmeOmar.Views
         {
             // Affiche la vue avec le bouton "Arrêt".
             Controller.ShowviewWithbtnStop(FindForm());
+        }
+
+        /// <summary>
+        /// Événement déclenché lors de l'activation de la vue
+        /// </summary>
+        /// <param name="sender">L'objet qui a déclenché l'événement.</param>
+        /// <param name="e">Les arguments de l'événement.</param>
+        private void ViewselectPaymentmethod_Activated(object sender, EventArgs e)
+        {
+            //Affiche le total des prix dans le pnlCurrentPurshase
+            Controller.SetcurrentTotalpriceinPanel(pnlCurrentpurchase);
         }
     }
 }

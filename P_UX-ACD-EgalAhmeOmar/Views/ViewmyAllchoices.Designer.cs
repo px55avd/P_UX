@@ -46,7 +46,6 @@
             this.pnlHeader.SuspendLayout();
             this.pnlFooter.SuspendLayout();
             this.pnlCurrentpurchase.SuspendLayout();
-            this.pnlInfos.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlHeader
@@ -181,7 +180,7 @@
             // 
             // btnPay
             // 
-            this.btnPay.Location = new System.Drawing.Point(771, 402);
+            this.btnPay.Location = new System.Drawing.Point(775, 503);
             this.btnPay.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnPay.Name = "btnPay";
             this.btnPay.Size = new System.Drawing.Size(250, 85);
@@ -192,17 +191,15 @@
             // 
             // pnlInfos
             // 
-            this.pnlInfos.Controls.Add(this.btnNextpurchase);
-            this.pnlInfos.Controls.Add(this.btnPay);
             this.pnlInfos.Location = new System.Drawing.Point(4, 98);
             this.pnlInfos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pnlInfos.Name = "pnlInfos";
-            this.pnlInfos.Size = new System.Drawing.Size(1022, 491);
+            this.pnlInfos.Size = new System.Drawing.Size(1032, 395);
             this.pnlInfos.TabIndex = 13;
             // 
             // btnNextpurchase
             // 
-            this.btnNextpurchase.Location = new System.Drawing.Point(488, 402);
+            this.btnNextpurchase.Location = new System.Drawing.Point(492, 503);
             this.btnNextpurchase.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnNextpurchase.Name = "btnNextpurchase";
             this.btnNextpurchase.Size = new System.Drawing.Size(250, 85);
@@ -216,6 +213,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.Controls.Add(this.btnNextpurchase);
+            this.Controls.Add(this.btnPay);
             this.Controls.Add(this.pnlHeader);
             this.Controls.Add(this.pnlFooter);
             this.Controls.Add(this.pnlCurrentpurchase);
@@ -228,7 +227,6 @@
             this.pnlFooter.ResumeLayout(false);
             this.pnlCurrentpurchase.ResumeLayout(false);
             this.pnlCurrentpurchase.PerformLayout();
-            this.pnlInfos.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

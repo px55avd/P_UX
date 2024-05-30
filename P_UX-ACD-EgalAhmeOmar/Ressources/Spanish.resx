@@ -213,6 +213,9 @@
   <data name="btnYesforReceipt" xml:space="preserve">
     <value>Sí</value>
   </data>
+  <data name="currentTotalprice" xml:space="preserve">
+    <value>Precios totales :</value>
+  </data>
   <data name="lblAcceptedbankCards" xml:space="preserve">
     <value>Tarjetas bancarias aceptadas :</value>
   </data>
@@ -270,6 +273,9 @@
   <data name="lblTypeofPayement" xml:space="preserve">
     <value>Uso de Google Pay :</value>
   </data>
+  <data name="numberTickets" xml:space="preserve">
+    <value>Numero di biglietti :</value>
+  </data>
   <data name="pleasePay" xml:space="preserve">
     <value>Utilice el método de pago seleccionado.</value>
   </data>
@@ -287,6 +293,15 @@
   </data>
   <data name="radioBtnthreeSpecialticket" xml:space="preserve">
     <value>3 días</value>
+  </data>
+  <data name="textPriceinBasket" xml:space="preserve">
+    <value>Prezzo( €) :</value>
+  </data>
+  <data name="textTotalpriceInmybasket" xml:space="preserve">
+    <value>Prezzo totale :</value>
+  </data>
+  <data name="typeTicket" xml:space="preserve">
+    <value>Tipo di biglietto :</value>
   </data>
   <data name="validTicketselected" xml:space="preserve">
     <value>Sus entradas se han añadido a la cesta.</value>

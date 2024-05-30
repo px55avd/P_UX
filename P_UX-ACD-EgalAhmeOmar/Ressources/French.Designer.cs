@@ -394,6 +394,15 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Total prix en cours :.
+        /// </summary>
+        internal static string currentTotalprice {
+            get {
+                return ResourceManager.GetString("currentTotalprice", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Cartes banquaires acceptées :.
         /// </summary>
         internal static string lblAcceptedbankCards {
@@ -565,6 +574,15 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Nombre de billet :.
+        /// </summary>
+        internal static string numberTickets {
+            get {
+                return ResourceManager.GetString("numberTickets", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Merci de procéder au moyen de paiment selectionné..
         /// </summary>
         internal static string pleasePay {
@@ -615,6 +633,42 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         internal static string radioBtnthreeSpecialticket {
             get {
                 return ResourceManager.GetString("radioBtnthreeSpecialticket", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à .
+        /// </summary>
+        internal static string String1 {
+            get {
+                return ResourceManager.GetString("String1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Prix( €) :.
+        /// </summary>
+        internal static string textPriceinBasket {
+            get {
+                return ResourceManager.GetString("textPriceinBasket", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Total des prix :.
+        /// </summary>
+        internal static string textTotalpriceInmybasket {
+            get {
+                return ResourceManager.GetString("textTotalpriceInmybasket", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Type de billet :.
+        /// </summary>
+        internal static string typeTicket {
+            get {
+                return ResourceManager.GetString("typeTicket", resourceCulture);
             }
         }
         

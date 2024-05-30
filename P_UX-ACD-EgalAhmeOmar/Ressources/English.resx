@@ -213,6 +213,9 @@
   <data name="btnYesforReceipt" xml:space="preserve">
     <value>Yes</value>
   </data>
+  <data name="currentTotalprice" xml:space="preserve">
+    <value>Total prices :</value>
+  </data>
   <data name="lblAcceptedbankCards" xml:space="preserve">
     <value>Bank cards accepted :</value>
   </data>
@@ -256,7 +259,7 @@
     <value>Make a choice:</value>
   </data>
   <data name="lbltextinHeaderinAllmyChoices" xml:space="preserve">
-    <value>Mey choices :</value>
+    <value>Make choices :</value>
   </data>
   <data name="lbltextinHeaderinBillorNot" xml:space="preserve">
     <value>Would you like a receipt?</value>
@@ -269,6 +272,9 @@
   </data>
   <data name="lblTypeofPayement" xml:space="preserve">
     <value>Using Google Pay :</value>
+  </data>
+  <data name="numberTickets" xml:space="preserve">
+    <value>Number of tickets :</value>
   </data>
   <data name="pleasePay" xml:space="preserve">
     <value>Please use the payment method selected.</value>
@@ -287,6 +293,15 @@
   </data>
   <data name="radioBtnthreeSpecialticket" xml:space="preserve">
     <value>3 days</value>
+  </data>
+  <data name="textPriceinBasket" xml:space="preserve">
+    <value>Price( €) :</value>
+  </data>
+  <data name="textTotalpriceInmybasket" xml:space="preserve">
+    <value>Total prices :</value>
+  </data>
+  <data name="typeTicket" xml:space="preserve">
+    <value>Type of tickets</value>
   </data>
   <data name="validTicketselected" xml:space="preserve">
     <value>Your tickets have been added to the basket.</value>

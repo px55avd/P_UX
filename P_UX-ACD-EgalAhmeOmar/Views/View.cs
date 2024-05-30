@@ -5,17 +5,8 @@
 ///Description : Création d'une application d'achat de billets de trains et metro parisiens.
 ///utilisation du Pattern Model, View, Controler. Vous êtes actuellement dans une des vues.
 ///**************************************************************************************
-using P_UX_ACD_EgalAhmeOmar.Controller;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Diagnostics;
-using System.Drawing;
-using System.Linq;
 using System.Resources;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace P_UX_ACD_EgalAhmeOmar

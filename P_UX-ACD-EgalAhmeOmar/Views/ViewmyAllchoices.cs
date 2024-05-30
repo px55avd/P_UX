@@ -6,14 +6,7 @@
 ///utilisation du Pattern Model, View, Controler. Vous êtes actuellement dans une des vues.
 ///**************************************************************************************
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Resources;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace P_UX_ACD_EgalAhmeOmar.Views
@@ -95,6 +88,9 @@ namespace P_UX_ACD_EgalAhmeOmar.Views
         {
             // Afficher les billets dans le panneau d'informations.
             Controller.DisplayTickets(pnlInfos);
+
+            //Affiche le total des prix dans le pnlCurrentPurshase
+            Controller.SetcurrentTotalpriceinPanel(pnlCurrentpurchase);
         }
 
         /// <summary>

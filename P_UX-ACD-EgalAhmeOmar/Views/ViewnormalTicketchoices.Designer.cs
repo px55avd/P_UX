@@ -212,7 +212,7 @@
             this.btnDownreducedPrice.Location = new System.Drawing.Point(372, 226);
             this.btnDownreducedPrice.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnDownreducedPrice.Name = "btnDownreducedPrice";
-            this.btnDownreducedPrice.Size = new System.Drawing.Size(44, 40);
+            this.btnDownreducedPrice.Size = new System.Drawing.Size(105, 40);
             this.btnDownreducedPrice.TabIndex = 10;
             this.btnDownreducedPrice.Text = "Down";
             this.btnDownreducedPrice.UseVisualStyleBackColor = true;
@@ -223,7 +223,7 @@
             this.btnUpreducedPrice.Location = new System.Drawing.Point(372, 177);
             this.btnUpreducedPrice.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnUpreducedPrice.Name = "btnUpreducedPrice";
-            this.btnUpreducedPrice.Size = new System.Drawing.Size(44, 40);
+            this.btnUpreducedPrice.Size = new System.Drawing.Size(105, 40);
             this.btnUpreducedPrice.TabIndex = 9;
             this.btnUpreducedPrice.Text = "Up";
             this.btnUpreducedPrice.UseVisualStyleBackColor = true;
@@ -234,7 +234,7 @@
             this.btnDownstandardPrice.Location = new System.Drawing.Point(372, 69);
             this.btnDownstandardPrice.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnDownstandardPrice.Name = "btnDownstandardPrice";
-            this.btnDownstandardPrice.Size = new System.Drawing.Size(44, 40);
+            this.btnDownstandardPrice.Size = new System.Drawing.Size(105, 40);
             this.btnDownstandardPrice.TabIndex = 8;
             this.btnDownstandardPrice.Text = "Down";
             this.btnDownstandardPrice.UseVisualStyleBackColor = true;
@@ -245,7 +245,7 @@
             this.btnUpstandardPrice.Location = new System.Drawing.Point(372, 20);
             this.btnUpstandardPrice.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnUpstandardPrice.Name = "btnUpstandardPrice";
-            this.btnUpstandardPrice.Size = new System.Drawing.Size(44, 40);
+            this.btnUpstandardPrice.Size = new System.Drawing.Size(105, 40);
             this.btnUpstandardPrice.TabIndex = 7;
             this.btnUpstandardPrice.Text = "Up";
             this.btnUpstandardPrice.UseVisualStyleBackColor = true;
@@ -332,6 +332,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "ViewnormalTicketchoices";
             this.Text = "RATP";
+            this.Activated += new System.EventHandler(this.ViewnormalTicketchoices_Activated);
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();
             this.pnlFooter.ResumeLayout(false);

@@ -1,9 +1,3 @@
-gérer lorsque qu'il n'y pas de radio button selectionné.
-
-mettre toutes mes string dans les fichiers ressources et mettre les langues à jour.
-
-Mettre tous les commentaire et entete de fichier
-
 Trouver actualiser le panier et ne pas affficher les tickets à zéro.
 
 s'il reste du temps faire la validation du payement et un messge pour ticket.

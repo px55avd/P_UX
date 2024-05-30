@@ -7,10 +7,6 @@
 ///qui se trouve dans le repertoire Model. La class Ticket sert a optimiser la gstion des tickets
 ///**************************************************************************************
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace P_UX_ACD_EgalAhmeOmar.Model
 {

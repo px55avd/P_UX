@@ -37,6 +37,13 @@ namespace P_UX_ACD_EgalAhmeOmar.Controller
         private int _countReducedpriceTicket = 0;
         private string _currentSpecialticket = "";
         private int _numberDayofspecialTicket = 0;
+        private double _currentTotalprice = 0;
+
+        private const string _nameAirporticket = "_nameAirporticket";
+        private const string _nameChessyDisneyticket = "_nameChessyDisneyticket";
+        private const string _nameParisVisiteticket = "_nameParisVisiteticket";
+        private const string _nameReducedticket = "_nameReducedticket";
+        private const string _nameStandardticket = "_nameStandardticket";
 
         // Enumération pour les langues disponibles.
         public enum Language { French, English, Spanish, Deutsh, Italian };
@@ -339,6 +346,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Controller
             _countReducedpriceTicket = 0;  // Réinitialise le compteur de billets à prix réduit.
             _currentSpecialticket = "";  // Réinitialise le nom du billet spécial actuel.
             _numberDayofspecialTicket = 0;  // Réinitialise le nombre de jours pour les billets spéciaux.
+            _currentTotalprice = 0; // // Réinitialise le total des prix des billets selectionnés.
 
             // Réinitialise la langue à la langue par défaut (français).
             _currentLanguage = Language.French;
@@ -362,6 +370,45 @@ namespace P_UX_ACD_EgalAhmeOmar.Controller
             // Réinitialise le nom du billet spécial actuellement sélectionné en le définissant sur une valeur nulle.
             string value = "";
             return value;
+        }
+        
+        /// <summary>
+        /// Méthode pour retourner le total des prix des billets en cours de validations.
+        /// </summary>
+        /// <returns>le total des prix des billets en cours</returns>
+        public double GetcurrentTotalPrice()
+        {
+            return _currentTotalprice;
+        }
+
+        public void SetcurrentTotalpriceinPanel(Panel panel)
+        {
+            // Nettoyer le panneau avant d'ajouter de nouveaux contrôles.
+            panel.Controls.Clear();
+
+            // Nettoyer le panneau avant d'ajouter de nouveaux contrôles.
+            panel.Controls.Clear();
+
+            // Définir la position et la taille de l'étiquette.
+            int xPosition = 10;
+            int yPosition = 20;
+            int labelWidth = 300; // Augmenter la largeur pour accueillir le texte explicatif.
+            int labelHeight = 40; // Augmenter la hauteur pour deux lignes de texte.
+
+            // Formater le texte de l'étiquette.
+            string totalPriceText = GetcurrentTotalPrice().ToString("0.00") + " \u20AC";
+            string labelText = $"{rManager.GetString("currentTotalprice")}\n{totalPriceText}";
+
+            // Créer l'étiquette pour le compte avec les propriétés spécifiées.
+            Label lblCount = new Label
+            {
+                Text = labelText, // Texte formaté avec explication et montant en euros.
+                Location = new System.Drawing.Point(xPosition, yPosition), // Position de l'étiquette.
+                Size = new System.Drawing.Size(labelWidth, labelHeight) // Taille de l'étiquette.
+            };
+
+            // Ajouter l'étiquette au panneau.
+            panel.Controls.Add(lblCount);
         }
 
         /// <summary>
@@ -457,6 +504,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Controller
         /// <param name="reducedMultiply">Le multiplicateur appliqué pour réduire le prix des billets.</param>
         public void GetnewSpecialticket(DateTime date, int numberTicket, double reducedMultiply)
         {
+
             // Vérifie si le billet spécial actuel est un billet Chessy Disney.
             if (_currentSpecialticket == rManager.GetString("_nameChessyDisneyticket").ToString())
             {
@@ -464,7 +512,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Controller
                 for (int i = 0; i < numberTicket; i++)
                 {
                     // Ajoute un nouveau billet à la liste des billets dans le modèle.
-                    _model.Tickets.Add(new Ticket(price: (_model.PricesChessyDisneyticketOne) * reducedMultiply, name: _currentSpecialticket, created: date));
+                    _model.Tickets.Add(new Ticket(price: (_model.PricesChessyDisneyticketOne) * reducedMultiply, name: _nameChessyDisneyticket, created: date));
                 }
             }
 
@@ -475,7 +523,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Controller
                 for (int i = 0; i < numberTicket; i++)
                 {
                     // Ajoute un nouveau billet à la liste des billets dans le modèle.
-                    _model.Tickets.Add(new Ticket(price: (_model.PricesAirportyticketOne) * reducedMultiply, name: _currentSpecialticket, created: date));
+                    _model.Tickets.Add(new Ticket(price: (_model.PricesAirportyticketOne) * reducedMultiply, name: _nameAirporticket, created: date));
                 }
             }
 
@@ -486,7 +534,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Controller
                 for (int i = 0; i < numberTicket; i++)
                 {
                     // Ajoute un nouveau billet à la liste des billets dans le modèle.
-                    _model.Tickets.Add(new Ticket(price: (_model.PricesParisVisiteticketOne) * reducedMultiply, name: _currentSpecialticket, created: date));
+                    _model.Tickets.Add(new Ticket(price: (_model.PricesParisVisiteticketOne) * reducedMultiply, name: _nameParisVisiteticket, created: date));
                 }
             }
         }
@@ -550,7 +598,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Controller
             {
                 // Créer un nouveau billet avec le prix standard, le nom et la date spécifiés,
                 // puis l'ajouter à la liste des billets du modèle.
-                _model.Tickets.Add(new Ticket(price: _model.PriceStandardTicket, name: _model.NameStandardticket, created: date));
+                _model.Tickets.Add(new Ticket(price: _model.PriceStandardTicket, name: _nameStandardticket, created: date));
             }
         }
 
@@ -569,7 +617,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Controller
             {
                 // Créer un nouveau billet avec le prix réduit, le nom et la date spécifiés,
                 // puis l'ajouter à la liste des billets du modèle.
-                _model.Tickets.Add(new Ticket(price: _model.PriceReducedticket, name: _model.NameReducedticket, created: date));
+                _model.Tickets.Add(new Ticket(price: _model.PriceReducedticket, name: _nameReducedticket, created: date));
             }
         }
 
@@ -702,55 +750,37 @@ namespace P_UX_ACD_EgalAhmeOmar.Controller
         /// <param name="panel">Le panneau où les informations des billets seront affichées.</param>
         public void DisplayTickets(Panel panel)
         {
+            // Nettoyer le panneau avant d'ajouter de nouveaux contrôles
+            panel.Controls.Clear();
+
+            // Ajout des en-têtes de colonne
+            AddLabelToPanel(panel, rManager.GetString("typeTicket"), 0, 0);
+            AddLabelToPanel(panel, rManager.GetString("numberTickets"), 1, 0);
+            AddLabelToPanel(panel, rManager.GetString("textPriceinBasket"), 2, 0);
 
             // Regroupe les billets à prix réduit en fonction de leur nom, obtenu à partir du gestionnaire de ressources.
-            var discountedTickets = _model.Tickets
-                .Where(t => t.Name == (rManager.GetString("_nameReducedticket")).ToString())
-                .ToList();
-
-            // Compte le nombre de billets à prix réduit.
+            var discountedTickets = _model.Tickets.Where(t => t.Name == _nameReducedticket).ToList();
             int discountedCount = discountedTickets.Count;
-            // Calcule le prix total des billets à prix réduit.
             double discountedTotalPrice = discountedTickets.Sum(t => t.Price);
 
             // Regroupe les billets standard en fonction de leur nom, obtenu à partir du gestionnaire de ressources.
-            var standardTickets = _model.Tickets
-                .Where(t => t.Name == (rManager.GetString("_nameStandardticket")).ToString())
-                .ToList();
-
-            // Compte le nombre de billets standard.
+            var standardTickets = _model.Tickets.Where(t => t.Name == _nameStandardticket).ToList();
             int standardCount = standardTickets.Count;
-            // Calcule le prix total des billets standard.
             double standardTotalPrice = standardTickets.Sum(t => t.Price);
 
             // Regroupe les billets Chessy Disney en fonction de leur nom, obtenu à partir du gestionnaire de ressources.
-            var disneyChessytikets = _model.Tickets
-                .Where(t => t.Name == (rManager.GetString("_nameChessyDisneyticket")).ToString())
-                .ToList();
-
-            // Compte le nombre de billets Chessy Disney.
+            var disneyChessytikets = _model.Tickets.Where(t => t.Name == _nameChessyDisneyticket).ToList();
             int disneyChessycount = disneyChessytikets.Count;
-            // Calcule le prix total des billets Chessy Disney.
             double disneyChessyTotalPrice = disneyChessytikets.Sum(t => t.Price);
 
             // Regroupe les billets pour l'aéroport en fonction de leur nom, obtenu à partir du gestionnaire de ressources.
-            var airportTickets = _model.Tickets
-                .Where(t => t.Name == (rManager.GetString("_nameAirporticket")).ToString())
-                .ToList();
-
-            // Compte le nombre de billets pour l'aéroport.
+            var airportTickets = _model.Tickets.Where(t => t.Name == _nameAirporticket).ToList();
             int airportCount = airportTickets.Count;
-            // Calcule le prix total des billets pour l'aéroport.
             double airportTotalPrice = airportTickets.Sum(t => t.Price);
 
             // Regroupe les billets Paris Visite en fonction de leur nom, obtenu à partir du gestionnaire de ressources.
-            var parisVisitetikets = _model.Tickets
-                .Where(t => t.Name == (rManager.GetString("_nameParisVisiteticket")).ToString())
-                .ToList();
-
-            // Compte le nombre de billets Paris Visite.
+            var parisVisitetikets = _model.Tickets.Where(t => t.Name == _nameParisVisiteticket).ToList();
             int parisVisitecount = parisVisitetikets.Count;
-            // Calcule le prix total des billets Paris Visite.
             double parisVisitetotalprice = parisVisitetikets.Sum(t => t.Price);
 
             // Calcule le nombre total de billets.
@@ -758,33 +788,56 @@ namespace P_UX_ACD_EgalAhmeOmar.Controller
             // Calcule le prix total de tous les billets.
             double totalPrice = discountedTotalPrice + standardTotalPrice + disneyChessyTotalPrice + airportTotalPrice + parisVisitetotalprice;
 
-            // Crée et positionne les étiquettes (labels) pour afficher les noms des types de billets.
-            AddLabelToPanel(panel, rManager.GetString("_nameReducedticket").ToString(), 0);
-            AddLabelToPanel(panel, rManager.GetString("_nameStandardticket").ToString(), 1);
-            AddLabelToPanel(panel, rManager.GetString("_nameChessyDisneyticket").ToString(), 2);
-            AddLabelToPanel(panel, rManager.GetString("_nameAirporticket").ToString(), 3);
-            AddLabelToPanel(panel, rManager.GetString("_nameParisVisiteticket").ToString(), 4);
-            AddLabelToPanel(panel, "Total des tickets :", 5);
-            
+            _currentTotalprice = totalPrice;
 
-            // Crée et positionne les étiquettes pour afficher le nombre de chaque type de billet.
-            AddLabelCountToPanel(panel, totalTickets, 5);
-            AddLabelCountToPanel(panel, discountedCount, 4);
-            AddLabelCountToPanel(panel, standardCount, 1);
-            AddLabelCountToPanel(panel, disneyChessycount, 2);
-            AddLabelCountToPanel(panel, airportCount, 3);
-            AddLabelCountToPanel(panel, parisVisitecount, 0);
+            int currentRow = 1; // Initialiser à 1 pour laisser de l'espace pour les en-têtes de colonne
 
+            if (discountedCount > 0)
+            {
+                AddLabelToPanel(panel, rManager.GetString("_nameReducedticket").ToString(), 0, currentRow);
+                AddLabelCountToPanel(panel, discountedCount, 1, currentRow);
+                AddLabelPriceToPanel(panel, discountedTotalPrice, 2, currentRow);
+                currentRow++;
+            }
 
+            if (standardCount > 0)
+            {
+                AddLabelToPanel(panel, rManager.GetString("_nameStandardticket").ToString(), 0, currentRow);
+                AddLabelCountToPanel(panel, standardCount, 1, currentRow);
+                AddLabelPriceToPanel(panel, standardTotalPrice, 2, currentRow);
+                currentRow++;
+            }
 
-            // Crée et positionne les étiquettes pour afficher le prix total de chaque type de billet.
-            AddLabelPriceToPanel(panel, totalPrice, 5);
-            AddLabelPriceToPanel(panel, discountedTotalPrice, 4);
-            AddLabelPriceToPanel(panel, standardTotalPrice, 1);
-            AddLabelPriceToPanel(panel, disneyChessyTotalPrice, 2);
-            AddLabelPriceToPanel(panel, airportTotalPrice, 3);
-            AddLabelPriceToPanel(panel, parisVisitetotalprice, 0);
-            
+            if (disneyChessycount > 0)
+            {
+                AddLabelToPanel(panel, rManager.GetString("_nameChessyDisneyticket").ToString(), 0, currentRow);
+                AddLabelCountToPanel(panel, disneyChessycount, 1, currentRow);
+                AddLabelPriceToPanel(panel, disneyChessyTotalPrice, 2, currentRow);
+                currentRow++;
+            }
+
+            if (airportCount > 0)
+            {
+                AddLabelToPanel(panel, rManager.GetString("_nameAirporticket").ToString(), 0, currentRow);
+                AddLabelCountToPanel(panel, airportCount, 1, currentRow);
+                AddLabelPriceToPanel(panel, airportTotalPrice, 2, currentRow);
+                currentRow++;
+            }
+
+            if (parisVisitecount > 0)
+            {
+                AddLabelToPanel(panel, rManager.GetString("_nameParisVisiteticket").ToString(), 0, currentRow);
+                AddLabelCountToPanel(panel, parisVisitecount, 1, currentRow);
+                AddLabelPriceToPanel(panel, parisVisitetotalprice, 2, currentRow);
+                currentRow++;
+            }
+
+            if (totalTickets > 0)
+            {
+                AddLabelToPanel(panel, rManager.GetString("textTotalpriceInmybasket"), 0, currentRow);
+                AddLabelCountToPanel(panel, totalTickets, 1, currentRow);
+                AddLabelPriceToPanel(panel, totalPrice, 2, currentRow);
+            }
         }
 
         /// <summary>
@@ -792,24 +845,21 @@ namespace P_UX_ACD_EgalAhmeOmar.Controller
         /// </summary>
         /// <param name="panel">Le panneau où l'étiquette sera ajoutée.</param>
         /// <param name="labelText">Le texte à afficher dans l'étiquette.</param>
+        /// <param name="columnIndex">L'index de la colonne où l'étiquette sera positionnée.</param>
         /// <param name="rowIndex">L'index de la ligne où l'étiquette sera positionnée.</param>
-        private static void AddLabelToPanel(Panel panel, string labelText, int rowIndex)
+        private static void AddLabelToPanel(Panel panel, string labelText, int columnIndex, int rowIndex)
         {
-            // Définir la largeur et la hauteur de l'étiquette.
             int labelWidth = 150;
             int labelHeight = 20;
-            // Espacement vertical entre les étiquettes.
             int labelSpacing = 30;
 
-            // Créer l'étiquette pour le texte avec les propriétés spécifiées.
             Label lblText = new Label
             {
-                Text = labelText, // Texte de l'étiquette.
-                Location = new System.Drawing.Point(10, rowIndex * labelSpacing), // Position de l'étiquette.
-                Size = new System.Drawing.Size(labelWidth, labelHeight) // Taille de l'étiquette.
+                Text = labelText,
+                Location = new System.Drawing.Point(10 + columnIndex * 160, rowIndex * labelSpacing),
+                Size = new System.Drawing.Size(labelWidth, labelHeight)
             };
 
-            // Ajouter l'étiquette au panneau.
             panel.Controls.Add(lblText);
         }
 
@@ -818,24 +868,21 @@ namespace P_UX_ACD_EgalAhmeOmar.Controller
         /// </summary>
         /// <param name="panel">Le panneau où l'étiquette sera ajoutée.</param>
         /// <param name="count">Le nombre à afficher dans l'étiquette.</param>
+        /// <param name="columnIndex">L'index de la colonne où l'étiquette sera positionnée.</param>
         /// <param name="rowIndex">L'index de la ligne où l'étiquette sera positionnée.</param>
-        private static void AddLabelCountToPanel(Panel panel, double count, int rowIndex)
+        private static void AddLabelCountToPanel(Panel panel, double count, int columnIndex, int rowIndex)
         {
-            // Définir la largeur et la hauteur de l'étiquette.
             int labelWidth = 150;
             int labelHeight = 20;
-            // Espacement vertical entre les étiquettes.
             int labelSpacing = 30;
 
-            // Créer l'étiquette pour le compte avec les propriétés spécifiées.
             Label lblCount = new Label
             {
-                Text = count.ToString(), // Convertir le nombre en chaîne de caractères.
-                Location = new System.Drawing.Point(170, rowIndex * labelSpacing), // Position de l'étiquette.
-                Size = new System.Drawing.Size(labelWidth, labelHeight) // Taille de l'étiquette.
+                Text = count.ToString(),
+                Location = new System.Drawing.Point(10 + columnIndex * 160, rowIndex * labelSpacing),
+                Size = new System.Drawing.Size(labelWidth, labelHeight)
             };
 
-            // Ajouter l'étiquette au panneau.
             panel.Controls.Add(lblCount);
         }
 
@@ -843,25 +890,22 @@ namespace P_UX_ACD_EgalAhmeOmar.Controller
         /// Ajoute une étiquette pour afficher un prix à un panneau à la position spécifiée.
         /// </summary>
         /// <param name="panel">Le panneau où l'étiquette sera ajoutée.</param>
-        /// <param name="count">Le prix à afficher dans l'étiquette.</param>
+        /// <param name="price">Le prix à afficher dans l'étiquette.</param>
+        /// <param name="columnIndex">L'index de la colonne où l'étiquette sera positionnée.</param>
         /// <param name="rowIndex">L'index de la ligne où l'étiquette sera positionnée.</param>
-        private static void AddLabelPriceToPanel(Panel panel, double count, int rowIndex)
+        private static void AddLabelPriceToPanel(Panel panel, double price, int columnIndex, int rowIndex)
         {
-            // Définir la largeur et la hauteur de l'étiquette.
             int labelWidth = 150;
             int labelHeight = 20;
-            // Espacement vertical entre les étiquettes.
             int labelSpacing = 30;
 
-            // Créer l'étiquette pour le prix avec les propriétés spécifiées.
             Label lblPrice = new Label
             {
-                Text = count.ToString(), // Convertir le prix en chaîne de caractères. Ici, on pourrait formater en tant que devise si nécessaire.
-                Location = new System.Drawing.Point(330, rowIndex * labelSpacing), // Position de l'étiquette.
-                Size = new System.Drawing.Size(labelWidth, labelHeight) // Taille de l'étiquette.
+                Text = price.ToString("0.00") + " \u20AC",
+                Location = new System.Drawing.Point(10 + columnIndex * 160, rowIndex * labelSpacing),
+                Size = new System.Drawing.Size(labelWidth, labelHeight)
             };
 
-            // Ajouter l'étiquette au panneau.
             panel.Controls.Add(lblPrice);
         }
 
@@ -874,48 +918,50 @@ namespace P_UX_ACD_EgalAhmeOmar.Controller
             MessageBox.Show(rManager.GetString("zeroTicketselected"));
         }
 
-
         /// <summary>
-        /// 
+        /// Affiche un message indiquant que le billet sélectionné est valide.
         /// </summary>
         public void ShowvalidTicketmessage()
         {
-            //
+            // Affiche une boîte de message avec le texte récupéré depuis les ressources.
             MessageBox.Show(rManager.GetString("validTicketselected"));
         }
 
-
         /// <summary>
-        /// 
+        /// Met à jour l'étiquette du ticket spécial avec le texte correspondant au ticket Chessy Disney.
         /// </summary>
         public void GetlabelHeardertextChessydisneyTicket()
         {
+            // Récupère le texte du ticket Chessy Disney depuis les ressources et le stocke dans _currentSpecialticket.
             _currentSpecialticket = rManager.GetString("_nameChessyDisneyticket").ToString();
         }
 
         /// <summary>
-        /// 
+        /// Met à jour l'étiquette du ticket spécial avec le texte correspondant au ticket d'aéroport.
         /// </summary>
         public void GetlabelHeardertextAirportticket()
         {
+            // Récupère le texte du ticket d'aéroport depuis les ressources et le stocke dans _currentSpecialticket.
             _currentSpecialticket = rManager.GetString("_nameAirporticket").ToString();
         }
 
         /// <summary>
-        /// 
+        /// Met à jour l'étiquette du ticket spécial avec le texte correspondant au ticket Paris Visite.
         /// </summary>
         public void GetlabelHeardertextParisvisiteTicket()
         {
+            // Récupère le texte du ticket Paris Visite depuis les ressources et le stocke dans _currentSpecialticket.
             _currentSpecialticket = rManager.GetString("_nameParisVisiteticket").ToString();
         }
 
         /// <summary>
-        /// 
+        /// Affiche un message demandant à l'utilisateur de payer.
         /// </summary>
         public void MessagetoPay()
         {
-            //
+            // Affiche une boîte de message avec le texte récupéré depuis les ressources.
             MessageBox.Show(rManager.GetString("pleasePay"));
         }
+
     }
 }

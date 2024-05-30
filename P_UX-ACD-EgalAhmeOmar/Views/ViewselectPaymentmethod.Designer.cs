@@ -301,6 +301,7 @@
             this.Controls.Add(this.pnlInfos);
             this.Name = "ViewselectPaymentmethod";
             this.Text = "RATP";
+            this.Activated += new System.EventHandler(this.ViewselectPaymentmethod_Activated);
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();
             this.pnlFooter.ResumeLayout(false);

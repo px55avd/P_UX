@@ -7,13 +7,8 @@
 ///qui contient l'ensemble des instanciation des vues, modèle et vues. elle lance la première au 
 ///démarrage de l'application.
 ///**************************************************************************************
-using P_UX_ACD_EgalAhmeOmar.Controller;
 using P_UX_ACD_EgalAhmeOmar.Views;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace P_UX_ACD_EgalAhmeOmar

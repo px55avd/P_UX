@@ -207,6 +207,7 @@
             this.Controls.Add(this.pnlInfos);
             this.Name = "ViewbillOrnot";
             this.Text = "RATP";
+            this.Activated += new System.EventHandler(this.ViewbillOrnot_Activated);
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();
             this.pnlFooter.ResumeLayout(false);
