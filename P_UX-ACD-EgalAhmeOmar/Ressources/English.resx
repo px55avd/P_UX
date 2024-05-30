@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="btnAirportticket" xml:space="preserve">
-    <value>Aéroport</value>
+    <value>Airport</value>
   </data>
   <data name="btnBack" xml:space="preserve">
     <value>Back</value>
@@ -175,7 +175,7 @@
     <value>Passer, Vous êtes déjâ en français</value>
   </data>
   <data name="btnPay" xml:space="preserve">
-    <value>Payer</value>
+    <value>Pay</value>
   </data>
   <data name="btnPlacenavigoPass" xml:space="preserve">
     <value>Deposite your Navigo card.</value>
@@ -214,10 +214,10 @@
     <value>Yes</value>
   </data>
   <data name="lblAcceptedbankCards" xml:space="preserve">
-    <value>Cartes banquaires acceptées :</value>
+    <value>Bank cards accepted :</value>
   </data>
   <data name="lblAcceptedcoinsAndnotes" xml:space="preserve">
-    <value>Pièces et billets acceptés :</value>
+    <value>Coins and notes accepted :</value>
   </data>
   <data name="lblDeutshlangage" xml:space="preserve">
     <value>Deutsh</value>
@@ -232,78 +232,81 @@
     <value>0</value>
   </data>
   <data name="lblnumberSpecialTicket" xml:space="preserve">
-    <value>Nombre de billet Spéciaux :</value>
+    <value>Number of Special Tickets :</value>
   </data>
   <data name="lblNumberstandardTickets" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="lblRadiobuttonTypeticket" xml:space="preserve">
-    <value>Type de tarification :</value>
+    <value>Type of pricing :</value>
   </data>
   <data name="lblReducedprice" xml:space="preserve">
-    <value>Prix réduit :</value>
+    <value>Reduced price :</value>
   </data>
   <data name="lblSelectlangages" xml:space="preserve">
-    <value>Selectionnner une langue</value>
+    <value>Select a language</value>
   </data>
   <data name="lblSpanishlangage" xml:space="preserve">
     <value>Español</value>
   </data>
   <data name="lblStandardprice" xml:space="preserve">
-    <value>Prix standard :</value>
+    <value>Standard price :</value>
   </data>
   <data name="lbltextinHeader" xml:space="preserve">
-    <value>Faites un choix :</value>
+    <value>Make a choice:</value>
   </data>
   <data name="lbltextinHeaderinAllmyChoices" xml:space="preserve">
-    <value>Mes choix :</value>
+    <value>Mey choices :</value>
   </data>
   <data name="lbltextinHeaderinBillorNot" xml:space="preserve">
-    <value>Voulez-vous une quittance ?</value>
+    <value>Would you like a receipt?</value>
   </data>
   <data name="lbltextinHeaderinSelectpaymentMethod" xml:space="preserve">
-    <value>Total à payer :</value>
+    <value>Total payable :</value>
   </data>
   <data name="lblTextInside" xml:space="preserve">
-    <value>total en cours :</value>
+    <value>total in progress :</value>
   </data>
   <data name="lblTypeofPayement" xml:space="preserve">
-    <value>Utiliser Google Pay :</value>
+    <value>Using Google Pay :</value>
+  </data>
+  <data name="pleasePay" xml:space="preserve">
+    <value>Please use the payment method selected.</value>
   </data>
   <data name="radioBtnfiveSpecialticket" xml:space="preserve">
-    <value>5 Jours</value>
+    <value>5 days</value>
   </data>
   <data name="radioBtnoneSpecialticket" xml:space="preserve">
-    <value>1 Jour</value>
+    <value>1 day</value>
   </data>
   <data name="radioBtnreducedPrice" xml:space="preserve">
-    <value>Prix réduit</value>
+    <value>Reduced price</value>
   </data>
   <data name="radioBtnStandardprice" xml:space="preserve">
-    <value>Prix standard</value>
+    <value>Standard price</value>
   </data>
   <data name="radioBtnthreeSpecialticket" xml:space="preserve">
-    <value>3 Jours</value>
+    <value>3 days</value>
   </data>
   <data name="validTicketselected" xml:space="preserve">
-    <value>Vos billet ont bien été ajoutée au panier.</value>
+    <value>Your tickets have been added to the basket.</value>
   </data>
   <data name="zeroTicketselected" xml:space="preserve">
-    <value>Aucun ticket n'est selectionné !</value>
+    <value>No tickets selected!</value>
   </data>
   <data name="_nameAirporticket" xml:space="preserve">
-    <value>Ticket Aéroport</value>
+    <value>Airport ticket</value>
   </data>
   <data name="_nameChessyDisneyticket" xml:space="preserve">
-    <value>Ticket Dineyland Paris</value>
+    <value>Chessy Disney Paris Ticket</value>
   </data>
   <data name="_nameParisVisiteticket" xml:space="preserve">
     <value>Ticket Paris Visite</value>
   </data>
   <data name="_nameReducedticket" xml:space="preserve">
-    <value>Ticket à prix Réduit</value>
+    <value>Reduced price ticket</value>
   </data>
   <data name="_nameStandardticket" xml:space="preserve">
-    <value>Ticket standard</value>
+    <value>Standard ticket</value>
   </data>
 </root>

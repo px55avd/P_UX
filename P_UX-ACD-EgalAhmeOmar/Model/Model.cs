@@ -1,9 +1,18 @@
-﻿using P_UX_ACD_EgalAhmeOmar.Controller;
+﻿///**************************************************************************************
+///ETML
+///Auteur : Omar Egal Ahmed
+///Date : 21.03.2024
+///Description : Création d'une application d'achat de billets de trains et metro parisiens.
+///utilisation du Pattern Model, View, Controler. Vous êtes actuellement dans le modèle qui contient 
+///l'ensemble des valeurs des billets de la RATP ainsi que la liste de tickets de l'utilisateur.
+///**************************************************************************************
+using P_UX_ACD_EgalAhmeOmar.Controller;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 // Importer les éléments visuels de la bibliothèque de styles visuels de Windows Forms
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar;

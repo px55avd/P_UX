@@ -118,16 +118,16 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="btnAirportticket" xml:space="preserve">
-    <value>Aéroport</value>
+    <value>Flughafen</value>
   </data>
   <data name="btnBack" xml:space="preserve">
-    <value>Retour</value>
+    <value>Zurück</value>
   </data>
   <data name="btnBackinHeader" xml:space="preserve">
-    <value>Retour</value>
+    <value>Zurück</value>
   </data>
   <data name="btnBasicTickets" xml:space="preserve">
-    <value>Tickets Normaux</value>
+    <value>Normale Tickets</value>
   </data>
   <data name="btnChessydisneyTicket" xml:space="preserve">
     <value>Disneyland Paris</value>
@@ -139,13 +139,13 @@
     <value>Deutsh</value>
   </data>
   <data name="btnDonthaveNavigo" xml:space="preserve">
-    <value>Vous n'avez de Carte Navigo, Appuyer ici</value>
+    <value>Sie haben keine Navigo-Karte, drücken Sie hier</value>
   </data>
   <data name="btnDownreducedPrice" xml:space="preserve">
-    <value>Moins</value>
+    <value>Minus</value>
   </data>
   <data name="btnDownstandardPrice" xml:space="preserve">
-    <value>Moins</value>
+    <value>Minus</value>
   </data>
   <data name="btnEnglishinFirstpage" xml:space="preserve">
     <value>English</value>
@@ -163,22 +163,22 @@
     <value>Italino</value>
   </data>
   <data name="btnNextpurchase" xml:space="preserve">
-    <value>Prochain Achat</value>
+    <value>Nächster Kauf</value>
   </data>
   <data name="btnNoforReceipt" xml:space="preserve">
-    <value>Non</value>
+    <value>Nein</value>
   </data>
   <data name="btnParisvisite" xml:space="preserve">
-    <value>Paris Visite</value>
+    <value>Paris Besuch</value>
   </data>
   <data name="btnPasstoFrench" xml:space="preserve">
     <value>Passer, Vous êtes déjâ en français</value>
   </data>
   <data name="btnPay" xml:space="preserve">
-    <value>Payer</value>
+    <value>Bezahlen</value>
   </data>
   <data name="btnPlacenavigoPass" xml:space="preserve">
-    <value>Déposer votre carte Navigo</value>
+    <value>Ihre Navigo-Karte hinterlegen</value>
   </data>
   <data name="btnSpanishinFirstpage" xml:space="preserve">
     <value>Español</value>
@@ -187,37 +187,37 @@
     <value>Español</value>
   </data>
   <data name="btnSpecialtickets" xml:space="preserve">
-    <value>Tickets Spéciaux</value>
+    <value>Spezielle Tickets</value>
   </data>
   <data name="btnStopInFooter" xml:space="preserve">
-    <value>Stop</value>
+    <value>Stopp</value>
   </data>
   <data name="btnUpreducedPrice" xml:space="preserve">
-    <value>Plus</value>
+    <value>Mehr</value>
   </data>
   <data name="btnUpstandardPrice" xml:space="preserve">
-    <value>Plus</value>
+    <value>Mehr</value>
   </data>
   <data name="btnValidatorcard" xml:space="preserve">
-    <value>Valider</value>
+    <value>Bestätigen</value>
   </data>
   <data name="btnValidatorcoinsAndnotes" xml:space="preserve">
-    <value>Valider</value>
+    <value>Bestätigen</value>
   </data>
   <data name="btnValidatorgooglePay" xml:space="preserve">
-    <value>Valider</value>
+    <value>Bestätigen</value>
   </data>
   <data name="btnValidatorInfos" xml:space="preserve">
-    <value>Valider</value>
+    <value>Bestätigen</value>
   </data>
   <data name="btnYesforReceipt" xml:space="preserve">
-    <value>Oui</value>
+    <value>Ja</value>
   </data>
   <data name="lblAcceptedbankCards" xml:space="preserve">
-    <value>Cartes banquaires acceptées :</value>
+    <value>Akzeptierte Bankkarten :</value>
   </data>
   <data name="lblAcceptedcoinsAndnotes" xml:space="preserve">
-    <value>Pièces et billets acceptés :</value>
+    <value>Akzeptierte Münzen und Banknoten :</value>
   </data>
   <data name="lblDeutshlangage" xml:space="preserve">
     <value>Deutsh</value>
@@ -232,78 +232,81 @@
     <value>0</value>
   </data>
   <data name="lblnumberSpecialTicket" xml:space="preserve">
-    <value>Nombre de billet Spéciaux :</value>
+    <value>Anzahl der Sonderscheine :</value>
   </data>
   <data name="lblNumberstandardTickets" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="lblRadiobuttonTypeticket" xml:space="preserve">
-    <value>Type de tarification :</value>
+    <value>Art der Preisgestaltung :</value>
   </data>
   <data name="lblReducedprice" xml:space="preserve">
-    <value>Prix réduit :</value>
+    <value>Reduzierter Preis :</value>
   </data>
   <data name="lblSelectlangages" xml:space="preserve">
-    <value>Selectionnner une langue</value>
+    <value>Sprache auswählen</value>
   </data>
   <data name="lblSpanishlangage" xml:space="preserve">
     <value>Español</value>
   </data>
   <data name="lblStandardprice" xml:space="preserve">
-    <value>Prix standard :</value>
+    <value>Standardpreis :</value>
   </data>
   <data name="lbltextinHeader" xml:space="preserve">
-    <value>Faites un choix :</value>
+    <value>Treffen Sie eine Wahl :</value>
   </data>
   <data name="lbltextinHeaderinAllmyChoices" xml:space="preserve">
-    <value>Mes choix :</value>
+    <value>Meine Auswahl :</value>
   </data>
   <data name="lbltextinHeaderinBillorNot" xml:space="preserve">
-    <value>Voulez-vous une quittance ?</value>
+    <value>Möchten Sie eine Quittung?</value>
   </data>
   <data name="lbltextinHeaderinSelectpaymentMethod" xml:space="preserve">
-    <value>Total à payer :</value>
+    <value>Zu zahlender Gesamtbetrag :</value>
   </data>
   <data name="lblTextInside" xml:space="preserve">
-    <value>total en cours :</value>
+    <value>gesamt laufend :</value>
   </data>
   <data name="lblTypeofPayement" xml:space="preserve">
-    <value>Utiliser Google Pay :</value>
+    <value>Google Pay verwenden :</value>
+  </data>
+  <data name="pleasePay" xml:space="preserve">
+    <value>Bitte wählen Sie die von Ihnen gewählte Zahlungsmethode.</value>
   </data>
   <data name="radioBtnfiveSpecialticket" xml:space="preserve">
-    <value>5 Jours</value>
+    <value>5 Tage</value>
   </data>
   <data name="radioBtnoneSpecialticket" xml:space="preserve">
-    <value>1 Jour</value>
+    <value>1 Tag</value>
   </data>
   <data name="radioBtnreducedPrice" xml:space="preserve">
-    <value>Prix réduit</value>
+    <value>Reduzierter Preis</value>
   </data>
   <data name="radioBtnStandardprice" xml:space="preserve">
-    <value>Prix standard</value>
+    <value>Standardpreis</value>
   </data>
   <data name="radioBtnthreeSpecialticket" xml:space="preserve">
-    <value>3 Jours</value>
+    <value>3 Tage</value>
   </data>
   <data name="validTicketselected" xml:space="preserve">
-    <value>Vos billet ont bien été ajoutée au panier.</value>
+    <value>Ihre Tickets wurden in den Warenkorb gelegt.</value>
   </data>
   <data name="zeroTicketselected" xml:space="preserve">
-    <value>Aucun ticket n'est selectionné !</value>
+    <value>Es wurde kein Ticket ausgewählt !</value>
   </data>
   <data name="_nameAirporticket" xml:space="preserve">
-    <value>Ticket Aéroport</value>
+    <value>Flughafen-Ticket</value>
   </data>
   <data name="_nameChessyDisneyticket" xml:space="preserve">
     <value>Ticket Dineyland Paris</value>
   </data>
   <data name="_nameParisVisiteticket" xml:space="preserve">
-    <value>Ticket Paris Visite</value>
+    <value>Ticket Paris Besichtigung</value>
   </data>
   <data name="_nameReducedticket" xml:space="preserve">
-    <value>Ticket à prix Réduit</value>
+    <value>Ermäßigtes Ticket</value>
   </data>
   <data name="_nameStandardticket" xml:space="preserve">
-    <value>Ticket standard</value>
+    <value>Standardticket</value>
   </data>
 </root>

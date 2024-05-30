@@ -565,6 +565,15 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Merci de procéder au moyen de paiment selectionné..
+        /// </summary>
+        internal static string pleasePay {
+            get {
+                return ResourceManager.GetString("pleasePay", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à 5 Jours.
         /// </summary>
         internal static string radioBtnfiveSpecialticket {

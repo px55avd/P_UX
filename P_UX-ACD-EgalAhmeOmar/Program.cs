@@ -1,4 +1,13 @@
-﻿using P_UX_ACD_EgalAhmeOmar.Controller;
+﻿///**************************************************************************************
+///ETML
+///Auteur : Omar Egal Ahmed
+///Date : 21.03.2024
+///Description : Création d'une application d'achat de billets de trains et metro parisiens.
+///utilisation du Pattern Model, View, Controler. Vous êtes actuellement dans le classe Program
+///qui contient l'ensemble des instanciation des vues, modèle et vues. elle lance la première au 
+///démarrage de l'application.
+///**************************************************************************************
+using P_UX_ACD_EgalAhmeOmar.Controller;
 using P_UX_ACD_EgalAhmeOmar.Views;
 using System;
 using System.Collections.Generic;
@@ -9,7 +18,7 @@ using System.Windows.Forms;
 
 namespace P_UX_ACD_EgalAhmeOmar
 {
-    internal static class Program
+    public static class Program
     {
         /// <summary>
         /// Point d'entrée principal de l'application.

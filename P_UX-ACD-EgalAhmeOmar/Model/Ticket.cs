@@ -1,4 +1,12 @@
-﻿using System;
+﻿///**************************************************************************************
+///ETML
+///Auteur : Omar Egal Ahmed
+///Date : 21.03.2024
+///Description : Création d'une application d'achat de billets de trains et metro parisiens.
+///utilisation du Pattern Model, View, Controler. Vous êtes actuellement dans une class Ticket
+///qui se trouve dans le repertoire Model. La class Ticket sert a optimiser la gstion des tickets
+///**************************************************************************************
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

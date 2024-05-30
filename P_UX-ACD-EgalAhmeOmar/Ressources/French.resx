@@ -270,6 +270,9 @@
   <data name="lblTypeofPayement" xml:space="preserve">
     <value>Utiliser Google Pay :</value>
   </data>
+  <data name="pleasePay" xml:space="preserve">
+    <value>Merci de procéder au moyen de paiment selectionné.</value>
+  </data>
   <data name="radioBtnfiveSpecialticket" xml:space="preserve">
     <value>5 Jours</value>
   </data>

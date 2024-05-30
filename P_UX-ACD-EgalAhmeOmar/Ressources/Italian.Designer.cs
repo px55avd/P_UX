@@ -61,7 +61,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Ticket Aéroport.
+        ///   Recherche une chaîne localisée semblable à Biglietto aeroportuale.
         /// </summary>
         internal static string _nameAirporticket {
             get {
@@ -70,7 +70,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Ticket Dineyland Paris.
+        ///   Recherche une chaîne localisée semblable à Biglietto Dineyland Parigi.
         /// </summary>
         internal static string _nameChessyDisneyticket {
             get {
@@ -79,7 +79,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Ticket Paris Visite.
+        ///   Recherche une chaîne localisée semblable à Biglietto Visite Parigi.
         /// </summary>
         internal static string _nameParisVisiteticket {
             get {
@@ -88,7 +88,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Ticket à prix Réduit.
+        ///   Recherche une chaîne localisée semblable à Biglietto ridotto.
         /// </summary>
         internal static string _nameReducedticket {
             get {
@@ -97,7 +97,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Ticket standard.
+        ///   Recherche une chaîne localisée semblable à Biglietto standard.
         /// </summary>
         internal static string _nameStandardticket {
             get {
@@ -106,7 +106,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Aéroport.
+        ///   Recherche une chaîne localisée semblable à Aeroporto.
         /// </summary>
         internal static string btnAirportticket {
             get {
@@ -115,7 +115,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Retour.
+        ///   Recherche une chaîne localisée semblable à Torna a.
         /// </summary>
         internal static string btnBack {
             get {
@@ -124,7 +124,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Retour.
+        ///   Recherche une chaîne localisée semblable à Torna a.
         /// </summary>
         internal static string btnBackinHeader {
             get {
@@ -133,7 +133,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Tickets Normaux.
+        ///   Recherche une chaîne localisée semblable à Biglietti standard.
         /// </summary>
         internal static string btnBasicTickets {
             get {
@@ -142,7 +142,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Disneyland Paris.
+        ///   Recherche une chaîne localisée semblable à Disneyland Parigi.
         /// </summary>
         internal static string btnChessydisneyTicket {
             get {
@@ -169,7 +169,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Vous n&apos;avez de Carte Navigo, Appuyer ici.
+        ///   Recherche une chaîne localisée semblable à Se non si dispone di una carta Navigo, premere qui.
         /// </summary>
         internal static string btnDonthaveNavigo {
             get {
@@ -178,7 +178,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Moins.
+        ///   Recherche une chaîne localisée semblable à Meno.
         /// </summary>
         internal static string btnDownreducedPrice {
             get {
@@ -187,7 +187,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Moins.
+        ///   Recherche une chaîne localisée semblable à Meno.
         /// </summary>
         internal static string btnDownstandardPrice {
             get {
@@ -241,7 +241,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Prochain Achat.
+        ///   Recherche une chaîne localisée semblable à Prossimo acquisto.
         /// </summary>
         internal static string btnNextpurchase {
             get {
@@ -250,7 +250,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Non.
+        ///   Recherche une chaîne localisée semblable à No.
         /// </summary>
         internal static string btnNoforReceipt {
             get {
@@ -259,7 +259,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Paris Visite.
+        ///   Recherche une chaîne localisée semblable à Visita a Parigi.
         /// </summary>
         internal static string btnParisvisite {
             get {
@@ -277,7 +277,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Payer.
+        ///   Recherche une chaîne localisée semblable à Paga.
         /// </summary>
         internal static string btnPay {
             get {
@@ -286,7 +286,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Déposer votre carte Navigo.
+        ///   Recherche une chaîne localisée semblable à Depositare la carta Navigo.
         /// </summary>
         internal static string btnPlacenavigoPass {
             get {
@@ -313,7 +313,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Tickets Spéciaux.
+        ///   Recherche une chaîne localisée semblable à Biglietti speciali.
         /// </summary>
         internal static string btnSpecialtickets {
             get {
@@ -322,7 +322,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Stop.
+        ///   Recherche une chaîne localisée semblable à Fermarsi.
         /// </summary>
         internal static string btnStopInFooter {
             get {
@@ -331,7 +331,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Plus.
+        ///   Recherche une chaîne localisée semblable à Di più.
         /// </summary>
         internal static string btnUpreducedPrice {
             get {
@@ -340,7 +340,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Plus.
+        ///   Recherche une chaîne localisée semblable à Di più.
         /// </summary>
         internal static string btnUpstandardPrice {
             get {
@@ -349,7 +349,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Valider.
+        ///   Recherche une chaîne localisée semblable à Confermare.
         /// </summary>
         internal static string btnValidatorcard {
             get {
@@ -358,7 +358,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Valider.
+        ///   Recherche une chaîne localisée semblable à Confermare.
         /// </summary>
         internal static string btnValidatorcoinsAndnotes {
             get {
@@ -367,7 +367,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Valider.
+        ///   Recherche une chaîne localisée semblable à Confermare.
         /// </summary>
         internal static string btnValidatorgooglePay {
             get {
@@ -376,7 +376,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Valider.
+        ///   Recherche une chaîne localisée semblable à Confermare.
         /// </summary>
         internal static string btnValidatorInfos {
             get {
@@ -385,7 +385,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Oui.
+        ///   Recherche une chaîne localisée semblable à Sì.
         /// </summary>
         internal static string btnYesforReceipt {
             get {
@@ -394,7 +394,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Cartes banquaires acceptées :.
+        ///   Recherche une chaîne localisée semblable à Carte bancarie accettate :.
         /// </summary>
         internal static string lblAcceptedbankCards {
             get {
@@ -403,7 +403,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Pièces et billets acceptés :.
+        ///   Recherche une chaîne localisée semblable à Si accettano monete e banconote:.
         /// </summary>
         internal static string lblAcceptedcoinsAndnotes {
             get {
@@ -448,7 +448,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Nombre de billet Spéciaux :.
+        ///   Recherche une chaîne localisée semblable à Numero di biglietti speciali :.
         /// </summary>
         internal static string lblnumberSpecialTicket {
             get {
@@ -466,7 +466,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Type de tarification :.
+        ///   Recherche une chaîne localisée semblable à Tipo di prezzo :.
         /// </summary>
         internal static string lblRadiobuttonTypeticket {
             get {
@@ -475,7 +475,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Prix réduit :.
+        ///   Recherche une chaîne localisée semblable à Prezzo ridotto :.
         /// </summary>
         internal static string lblReducedprice {
             get {
@@ -484,7 +484,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Selectionnner une langue.
+        ///   Recherche une chaîne localisée semblable à Selezionare una lingua.
         /// </summary>
         internal static string lblSelectlangages {
             get {
@@ -502,7 +502,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Prix standard :.
+        ///   Recherche une chaîne localisée semblable à Prezzo standard :.
         /// </summary>
         internal static string lblStandardprice {
             get {
@@ -511,7 +511,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Faites un choix :.
+        ///   Recherche une chaîne localisée semblable à Fate una scelta:.
         /// </summary>
         internal static string lbltextinHeader {
             get {
@@ -520,7 +520,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Mes choix :.
+        ///   Recherche une chaîne localisée semblable à Le mie scelte :.
         /// </summary>
         internal static string lbltextinHeaderinAllmyChoices {
             get {
@@ -529,7 +529,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Voulez-vous une quittance ?.
+        ///   Recherche une chaîne localisée semblable à Desidera una ricevuta?.
         /// </summary>
         internal static string lbltextinHeaderinBillorNot {
             get {
@@ -538,7 +538,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Total à payer :.
+        ///   Recherche une chaîne localisée semblable à Totale da pagare :.
         /// </summary>
         internal static string lbltextinHeaderinSelectpaymentMethod {
             get {
@@ -547,7 +547,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à total en cours :.
+        ///   Recherche une chaîne localisée semblable à totale in corso :.
         /// </summary>
         internal static string lblTextInside {
             get {
@@ -556,7 +556,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Utiliser Google Pay :.
+        ///   Recherche une chaîne localisée semblable à Utilizzo di Google Pay :.
         /// </summary>
         internal static string lblTypeofPayement {
             get {
@@ -565,7 +565,16 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à 5 Jours.
+        ///   Recherche une chaîne localisée semblable à Si prega di utilizzare il metodo di pagamento selezionato..
+        /// </summary>
+        internal static string pleasePay {
+            get {
+                return ResourceManager.GetString("pleasePay", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à 5 giorni.
         /// </summary>
         internal static string radioBtnfiveSpecialticket {
             get {
@@ -574,7 +583,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à 1 Jour.
+        ///   Recherche une chaîne localisée semblable à 1 giorno.
         /// </summary>
         internal static string radioBtnoneSpecialticket {
             get {
@@ -583,7 +592,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Prix réduit.
+        ///   Recherche une chaîne localisée semblable à Prezzo ridotto.
         /// </summary>
         internal static string radioBtnreducedPrice {
             get {
@@ -592,7 +601,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Prix standard.
+        ///   Recherche une chaîne localisée semblable à Prezzo standard.
         /// </summary>
         internal static string radioBtnStandardprice {
             get {
@@ -601,7 +610,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à 3 Jours.
+        ///   Recherche une chaîne localisée semblable à 3 giorni.
         /// </summary>
         internal static string radioBtnthreeSpecialticket {
             get {
@@ -610,7 +619,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Vos billet ont bien été ajoutée au panier..
+        ///   Recherche une chaîne localisée semblable à I biglietti sono stati aggiunti al carrello..
         /// </summary>
         internal static string validTicketselected {
             get {
@@ -619,7 +628,7 @@ namespace P_UX_ACD_EgalAhmeOmar.Ressources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Aucun ticket n&apos;est selectionné !.
+        ///   Recherche une chaîne localisée semblable à Nessun biglietto selezionato!.
         /// </summary>
         internal static string zeroTicketselected {
             get {

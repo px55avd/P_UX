@@ -1,4 +1,11 @@
-﻿using System;
+﻿///**************************************************************************************
+///ETML
+///Auteur : Omar Egal Ahmed
+///Date : 21.03.2024
+///Description : Création d'une application d'achat de billets de trains et metro parisiens.
+///utilisation du Pattern Model, View, Controler. Vous êtes actuellement dans une des vues.
+///**************************************************************************************
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,7 +18,6 @@ using System.Windows.Forms;
 
 namespace P_UX_ACD_EgalAhmeOmar.Views
 {
-    // Cette classe représente une fenêtre (Form) spécifique dans l'application.
     public partial class ViewbillOrnot : Form
     {
         public ViewbillOrnot()
@@ -25,31 +31,31 @@ namespace P_UX_ACD_EgalAhmeOmar.Views
         public Controller.Controller Controller { get; set; }
 
         /// <summary>
-        /// Parcourt récursivement tous les contrôles dans la vue et met à jour la langue avec les ressources fournies.
+        /// Met à jour la langue de l'interface utilisateur en utilisant un ResourceManager.
         /// </summary>
-        /// <param name="resourceManager">Gestionnaire de ressources pour la langue cible.</param>
-        public void UpdateLang(ResourceManager _resourceManager)
+        /// <param name="_resourcesManager">ResourceManager pour les ressources de localisation.</param>
+        public void UpdateLang(ResourceManager _resourcesManager)
         {
-            ResourceManager resourceManager = _resourceManager;
+            ResourceManager resourceManager = _resourcesManager; // Initialise le gestionnaire de ressources.
 
-            foreach (Control c in this.Controls)
+            foreach (Control c in this.Controls) // Parcourt tous les contrôles dans cette vue.
             {
-                UpdateLevel(c);
+                UpdateLevel(c); // Appelle la méthode pour mettre à jour les contrôles enfants.
             }
 
-            // Traduit récursivement dans les contrôles enfants
+            // Traduction récursive dans les contrôles enfants
             void UpdateLevel(Control parentControl)
             {
-                if (parentControl.HasChildren)
+                if (parentControl.HasChildren) // Si le contrôle a des enfants.
                 {
-                    foreach (Control childControl in parentControl.Controls)
+                    foreach (Control childControl in parentControl.Controls) // Parcourt tous les enfants du contrôle.
                     {
-                        UpdateLevel(childControl);
+                        UpdateLevel(childControl); // Appelle récursivement la méthode pour mettre à jour chaque enfant.
                     }
                 }
-                if (resourceManager.GetString(parentControl.Name) != null)
+                if (resourceManager.GetString(parentControl.Name) != null) // Vérifie si le nom du contrôle est une clé de ressource.
                 {
-                    parentControl.Text = resourceManager.GetString(parentControl.Name);
+                    parentControl.Text = resourceManager.GetString(parentControl.Name); // Met à jour le texte du contrôle avec la valeur de la ressource correspondante.
                 }
             }
         }
@@ -74,51 +80,68 @@ namespace P_UX_ACD_EgalAhmeOmar.Views
 
 
         /// <summary>
-        /// Action exécutée lors du clic sur le bouton pour le français dans le pied de page.
+        /// Événement déclenché lors du clic sur le bouton "Français" dans le pied de page.
         /// </summary>
+        /// <param name="sender">L'objet qui a déclenché l'événement.</param>
+        /// <param name="e">Les arguments de l'événement.</param>
         private void btnFrenchinFooter_Click(object sender, EventArgs e)
         {
+            // Définit la langue de l'application sur le français.
             Controller.Lang(P_UX_ACD_EgalAhmeOmar.Controller.Controller.Language.French);
         }
 
         /// <summary>
-        /// Action exécutée lors du clic sur le bouton pour l'anglais dans le pied de page.
+        /// Événement déclenché lors du clic sur le bouton "Anglais" dans le pied de page.
         /// </summary>
+        /// <param name="sender">L'objet qui a déclenché l'événement.</param>
+        /// <param name="e">Les arguments de l'événement.</param>
         private void btnEnglishinFooter_Click(object sender, EventArgs e)
         {
+            // Définit la langue de l'application sur l'anglais.
             Controller.Lang(P_UX_ACD_EgalAhmeOmar.Controller.Controller.Language.English);
         }
 
         /// <summary>
-        /// Action exécutée lors du clic sur le bouton pour l'espagnol dans le pied de page.
+        /// Événement déclenché lors du clic sur le bouton "Espagnol" dans le pied de page.
         /// </summary>
+        /// <param name="sender">L'objet qui a déclenché l'événement.</param>
+        /// <param name="e">Les arguments de l'événement.</param>
         private void btnSpanishinFooter_Click(object sender, EventArgs e)
         {
+            // Définit la langue de l'application sur l'espagnol.
             Controller.Lang(P_UX_ACD_EgalAhmeOmar.Controller.Controller.Language.Spanish);
         }
 
         /// <summary>
-        /// Action exécutée lors du clic sur le bouton pour l'allemand dans le pied de page.
+        /// Événement déclenché lors du clic sur le bouton "Allemand" dans le pied de page.
         /// </summary>
+        /// <param name="sender">L'objet qui a déclenché l'événement.</param>
+        /// <param name="e">Les arguments de l'événement.</param>
         private void btnDeutshinFooter_Click(object sender, EventArgs e)
         {
+            // Définit la langue de l'application sur l'allemand.
             Controller.Lang(P_UX_ACD_EgalAhmeOmar.Controller.Controller.Language.Deutsh);
         }
 
         /// <summary>
-        /// Action exécutée lors du clic sur le bouton pour l'italien dans le pied de page.
+        /// Événement déclenché lors du clic sur le bouton "Italien" dans le pied de page.
         /// </summary>
+        /// <param name="sender">L'objet qui a déclenché l'événement.</param>
+        /// <param name="e">Les arguments de l'événement.</param>
         private void btnItalianinFooter_Click(object sender, EventArgs e)
         {
+            // Définit la langue de l'application sur l'italien.
             Controller.Lang(P_UX_ACD_EgalAhmeOmar.Controller.Controller.Language.Italian);
         }
 
         /// <summary>
-        /// Action exécutée lors du clic sur le bouton "Arrêter" dans le pied de page.
+        /// Événement déclenché lors du clic sur le bouton "Arrêt" dans le pied de page.
         /// </summary>
+        /// <param name="sender">L'objet qui a déclenché l'événement.</param>
+        /// <param name="e">Les arguments de l'événement.</param>
         private void btnStopInFooter_Click(object sender, EventArgs e)
         {
-            // Afficher la vue associée au bouton "Arrêter".
+            // Affiche la vue avec le bouton "Arrêt".
             Controller.ShowviewWithbtnStop(FindForm());
         }
     }
